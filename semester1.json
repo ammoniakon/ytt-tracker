@@ -1,0 +1,971 @@
+{
+  "semester_id": "S1",
+  "title": "YTT integration",
+  "total_weeks": 14,
+  "weeks": [
+    {
+      "id": "S1-W1",
+      "week_number": 1,
+      "title": "Subtle Bodies",
+      "ytt_module": "M1",
+      "tradition_focus": "YTT kosha system; foundational MMK; AKBh dharma-ontology.",
+      "is_heavy": false,
+      "is_integration": false,
+      "tensions": [
+        "T1",
+        "T4"
+      ],
+      "items": [
+        {
+          "id": "S1-W1-READ-ytt-manual-section-1-kosha-system-chakra",
+          "type": "READ",
+          "label": "YTT Manual: Section 1 — Kosha System, Chakras, Nāḍīs, Prāṇa, Aura"
+        },
+        {
+          "id": "S1-W1-READ-satchidananda-yoga-sutras-11111-117119-1",
+          "type": "READ",
+          "label": "Satchidananda, Yoga Sūtras: 1.1–1.11; 1.17–1.19; 1.41"
+        },
+        {
+          "id": "S1-W1-READ-iyengar-light-on-yoga-introduction-the-w",
+          "type": "READ",
+          "label": "Iyengar, Light on Yoga: Introduction (\"The whole man\"); prāṇāyāma intro"
+        },
+        {
+          "id": "S1-W1-READ-module-b-wk-1-mmk-preface-intro-siderits",
+          "type": "READ",
+          "label": "Module B Wk 1: MMK Preface \\+ Intro (Siderits & Katsura); VV Introduction (Westerhoff); GSN Ch. 1"
+        },
+        {
+          "id": "S1-W1-READ-module-c-wk-1-akbh-ch-1-i15-sangpo-vol-1",
+          "type": "READ",
+          "label": "Module C Wk 1: AKBh Ch. 1, I.1–5 (Sangpo Vol. 1\\)"
+        },
+        {
+          "id": "S1-W1-READ-module-a-wk-1-smith-yoga-of-the-natural-",
+          "type": "READ",
+          "label": "Module A Wk 1: Smith, Yoga of the Natural State — Translator's Preface \\+ opening orientation to gzhi"
+        },
+        {
+          "id": "S1-W1-READ-ksemaraja-pratyabhijnahrdayam-sutras-14-",
+          "type": "READ",
+          "label": "Kṣemarāja, Pratyabhijñāhṛdayam sūtras 1–4 (Singh)"
+        },
+        {
+          "id": "S1-W1-WRITE-subtle-body-baseline",
+          "type": "WRITE",
+          "label": "*Subtle-body baseline",
+          "note_file": "S1-W01-subtle-bodies-baseline.md",
+          "word_target": "500–800 words"
+        },
+        {
+          "id": "S1-W1-PRACTICE-samatha-foundation",
+          "type": "PRACTICE",
+          "label": "Śamatha foundation."
+        }
+      ]
+    },
+    {
+      "id": "S1-W2",
+      "week_number": 2,
+      "title": "Subtle Bodies, continued",
+      "ytt_module": "M1",
+      "tradition_focus": "Causation and motion (MMK); rūpa-skandha (AKBh); Kunjed Gyalpo orientation.",
+      "is_heavy": false,
+      "is_integration": false,
+      "tensions": [
+        "T3",
+        "T4"
+      ],
+      "items": [
+        {
+          "id": "S1-W2-READ-ytt-manual-section-1-finish-annamayapran",
+          "type": "READ",
+          "label": "YTT Manual: Section 1 (finish) — Annamaya/Prāṇamaya; Manomaya/Vijñānamaya; Aura"
+        },
+        {
+          "id": "S1-W2-READ-module-b-wk-2-mmk-ch-1-analysis-of-condi",
+          "type": "READ",
+          "label": "Module B Wk 2: MMK Ch. 1 (Analysis of Conditions); MMK Ch. 2 (Analysis of Motion)"
+        },
+        {
+          "id": "S1-W2-READ-module-c-wk-2-akbh-ch-1-i628-rupa-skandh",
+          "type": "READ",
+          "label": "Module C Wk 2: AKBh Ch. 1, I.6–28 (rūpa-skandha, four primary elements, eight-substance molecule); I.29–47 (eighteen dhātus enumeration — skim structure)"
+        },
+        {
+          "id": "S1-W2-READ-module-a-wk-2-smith-yns-kunjed-gyalpo-se",
+          "type": "READ",
+          "label": "Module A Wk 2: Smith, YNS — Kunjed Gyalpo section; gzhi as ground of all appearances"
+        },
+        {
+          "id": "S1-W2-READ-d-integration-tenzin-wangyal-awakening-t",
+          "type": "READ",
+          "label": "\\[\\[D-integration\\]\\] Tenzin Wangyal, Awakening the Sacred Body — introductory chapters on Bön/Dzogchen subtle body (nine breathings, tsa-lung)"
+        },
+        {
+          "id": "S1-W2-WRITE-causation-in-the-prana-claim",
+          "type": "WRITE",
+          "label": "*Causation in the prāṇa-claim",
+          "note_file": "S1-W02-prana-causation-analysis.md",
+          "word_target": "400–600 words"
+        },
+        {
+          "id": "S1-W2-PRACTICE-continue-samatha-add-brief-analytic",
+          "type": "PRACTICE",
+          "label": "Continue śamatha; add brief analytical sit on \"where does the breath come from?\" (MMK 1 applied somatically)."
+        }
+      ]
+    },
+    {
+      "id": "S1-W3",
+      "week_number": 3,
+      "title": "Ayurveda",
+      "ytt_module": "M2",
+      "tradition_focus": "Guṇas, tattvas, doṣas; āyatanas/skandhas/dhātus; Leick three-doors investigation.",
+      "is_heavy": false,
+      "is_integration": false,
+      "tensions": [
+        "T1",
+        "T3"
+      ],
+      "items": [
+        {
+          "id": "S1-W3-READ-ytt-manual-section-2-vedas-gunas-tattvas",
+          "type": "READ",
+          "label": "YTT Manual: Section 2 — Vedas, Guṇas, Tattvas, Tridoṣic System, Disease Process"
+        },
+        {
+          "id": "S1-W3-READ-satchidananda-ys-2129-kriya-yoga-klesas-",
+          "type": "READ",
+          "label": "Satchidananda, YS: 2.1–2.9 (kriyā yoga, kleśas, avidyā); 2.18–2.25 (the seen and the Seer; three guṇas)"
+        },
+        {
+          "id": "S1-W3-READ-iyengar-loy-review-eight-limbs-material-",
+          "type": "READ",
+          "label": "Iyengar, LoY: review eight-limbs material with attention to the body's relationship to constitution"
+        },
+        {
+          "id": "S1-W3-READ-module-b-wk-3-mmk-ch-35-ayatanas-skandha",
+          "type": "READ",
+          "label": "Module B Wk 3: MMK Ch. 3–5 (Āyatanas, Skandhas, Dhātus); Letter to a Friend — opening verses on six sense-spheres"
+        },
+        {
+          "id": "S1-W3-READ-module-c-wk-3-akbh-ch-1-i515-five-skandh",
+          "type": "READ",
+          "label": "Module C Wk 3: AKBh Ch. 1, I.5–15 (five skandhas formally defined); three unconditioned dharmas; conditioned characteristics"
+        },
+        {
+          "id": "S1-W3-READ-module-a-wk-3-smith-yns-short-aural-line",
+          "type": "READ",
+          "label": "Module A Wk 3: Smith, YNS — short aural lineage I"
+        },
+        {
+          "id": "S1-W3-READ-d-integration-tenzin-wangyal-healing-wit",
+          "type": "READ",
+          "label": "\\[\\[D-integration\\]\\] Tenzin Wangyal, Healing with Form, Energy, and Light — five elements as outer/inner phenomena (chapters covering threefold path)"
+        },
+        {
+          "id": "S1-W3-LISTEN-leick-the-way-to-understand-nature-and-o",
+          "type": "LISTEN",
+          "label": "Leick, \"The Way to Understand Nature and Oneself\""
+        },
+        {
+          "id": "S1-W3-WRITE-three-doors-vs",
+          "type": "WRITE",
+          "label": "*Three-doors vs",
+          "note_file": "S1-W03-three-doors-vs-tridosic.md",
+          "word_target": "500–700 words"
+        },
+        {
+          "id": "S1-W3-PRACTICE-brief-daily-three-doors-investigati",
+          "type": "PRACTICE",
+          "label": "Brief daily three-doors investigation (body / energy / mind, as Leick demonstrates)."
+        }
+      ]
+    },
+    {
+      "id": "S1-W4",
+      "week_number": 4,
+      "title": "Yoga Nidra",
+      "ytt_module": "M3",
+      "tradition_focus": "Four states, *turīya*, witness-self, *saṅkalpa*, iRest; *bsam pa* applied to consciousness states.",
+      "is_heavy": false,
+      "is_integration": false,
+      "tensions": [
+        "T1",
+        "T2"
+      ],
+      "items": [
+        {
+          "id": "S1-W4-READ-ytt-manual-section-3-states-of-conscious",
+          "type": "READ",
+          "label": "YTT Manual: Section 3 — States of Consciousness, Turīya, Saṅkalpa, Self as Witness, iRest"
+        },
+        {
+          "id": "S1-W4-READ-satchidananda-ys-117151-samadhi-stages-t",
+          "type": "READ",
+          "label": "Satchidananda, YS: 1.17–1.51 (samādhi stages through nirbīja); 3.1–3.11 (dhāraṇā/dhyāna/samādhi)"
+        },
+        {
+          "id": "S1-W4-READ-iyengar-loy-pranayama-intro-technique-se",
+          "type": "READ",
+          "label": "Iyengar, LoY: prāṇāyāma intro \\+ technique sections (the bridge from gross to subtle)"
+        },
+        {
+          "id": "S1-W4-READ-module-b-wk-4-mmk-ch-69-relational-ident",
+          "type": "READ",
+          "label": "Module B Wk 4: MMK Ch. 6–9 (relational identity; agent/action; saṃsāra; the composite)"
+        },
+        {
+          "id": "S1-W4-READ-module-c-wk-4-akbh-ch-2-samskara-citta-m",
+          "type": "READ",
+          "label": "Module C Wk 4: AKBh Ch. 2 (saṃskāra; citta; mahābhūmika mental factors — Mental Factors selections)"
+        },
+        {
+          "id": "S1-W4-READ-module-a-wk-4-smith-yns-short-aural-line",
+          "type": "READ",
+          "label": "Module A Wk 4: Smith, YNS — short aural lineage II; rang rig introduction"
+        },
+        {
+          "id": "S1-W4-READ-ksemaraja-pratyabhijnahrdayam-sutra-18-t",
+          "type": "READ",
+          "label": "Kṣemarāja, Pratyabhijñāhṛdayam sūtra 18 (turīya and turyātīta — the strongest defense of witness-self)"
+        },
+        {
+          "id": "S1-W4-READ-d-integration-satyananda-yoga-nidra-intr",
+          "type": "READ",
+          "label": "\\[\\[D-integration\\]\\] Satyananda, Yoga Nidrā — introductory chapters; four-level consciousness map; rotation-of-consciousness protocol"
+        },
+        {
+          "id": "S1-W4-LISTEN-berkovich-ohana-meditation-psychedelics-",
+          "type": "LISTEN",
+          "label": "Berkovich-Ohana, \"Meditation, Psychedelics and the Self\""
+        },
+        {
+          "id": "S1-W4-WRITE-three-accounts-of-turiya",
+          "type": "WRITE",
+          "label": "*Three accounts of turīya",
+          "note_file": "S1-W04-turiya-three-accounts.md",
+          "word_target": "600–800 words"
+        },
+        {
+          "id": "S1-W4-PRACTICE-samatha-vipasyana-integration-one-y",
+          "type": "PRACTICE",
+          "label": "Śamatha-vipaśyanā integration; one Yoga Nidra session this week observed analytically (notice when the cueing language imports a witness-self, and what your mind does with it)."
+        }
+      ]
+    },
+    {
+      "id": "S1-W5",
+      "week_number": 5,
+      "title": "Advanced Anatomy & Physiology",
+      "ytt_module": "M4",
+      "tradition_focus": "Subtle ↔ gross interaction; nervous system; fascia; prāṇāyāma anatomy; bardo material compressed from Module A.",
+      "is_heavy": true,
+      "is_integration": false,
+      "tensions": [
+        "T3",
+        "T4"
+      ],
+      "items": [
+        {
+          "id": "S1-W5-READ-ytt-manual-section-4-subtle-energy-physi",
+          "type": "READ",
+          "label": "YTT Manual: Section 4 — Subtle Energy \\+ Physical Body Interaction, Nervous System, Fascia, Prāṇāyāma Anatomy"
+        },
+        {
+          "id": "S1-W5-READ-satchidananda-ys-326348-samyama-on-the-b",
+          "type": "READ",
+          "label": "Satchidananda, YS: 3.26–3.48 (saṃyama on the body and its elements)"
+        },
+        {
+          "id": "S1-W5-READ-iyengar-loy-asana-intro-56-specific-asan",
+          "type": "READ",
+          "label": "Iyengar, LoY: āsana intro; 5–6 specific āsana descriptions from your current teaching practice (read for implicit assumptions about the practitioner-self)"
+        },
+        {
+          "id": "S1-W5-READ-module-b-wk-5-mmk-ch-1012-firefuel-samsa",
+          "type": "READ",
+          "label": "Module B Wk 5: MMK Ch. 10–12 (Fire/Fuel; Saṃsāra; Suffering)"
+        },
+        {
+          "id": "S1-W5-READ-module-c-wk-5-akbh-ch-2-cittaviprayukta-",
+          "type": "READ",
+          "label": "Module C Wk 5: AKBh Ch. 2 — cittaviprayukta (factors dissociated from mind)"
+        },
+        {
+          "id": "S1-W5-READ-module-a-wks-56-compressed-smith-yns-mid",
+          "type": "READ",
+          "label": "Module A Wks 5–6 compressed: Smith, YNS — middle-length aural lineage (bardo material). This is the only compression point in Module A; give it real attention."
+        },
+        {
+          "id": "S1-W5-READ-ksemaraja-pratyabhijnahrdayam-sutra-14-f",
+          "type": "READ",
+          "label": "Kṣemarāja, Pratyabhijñāhṛdayam sūtra 14 (fivefold activity of citi)"
+        },
+        {
+          "id": "S1-W5-READ-d-integration-anand-neuroscience-of-yoga",
+          "type": "READ",
+          "label": "\\[\\[D-integration\\]\\] Anand, Neuroscience of Yoga Part 1 — autonomic regulation, HPA-axis, vagal tone"
+        },
+        {
+          "id": "S1-W5-READ-d-integration-murphy-brewer-interoceptio",
+          "type": "READ",
+          "label": "\\[\\[D-integration\\]\\] Murphy & Brewer, Interoception: A Comprehensive Guide — introductory chapters defining interoception"
+        },
+        {
+          "id": "S1-W5-WRITE-the-fascia-as-prana-medium-audit",
+          "type": "WRITE",
+          "label": "*The fascia-as-prāṇa-medium audit",
+          "note_file": "S1-W05-fascia-prana-audit.md",
+          "word_target": "400–600 words"
+        },
+        {
+          "id": "S1-W5-PRACTICE-add-interoceptive-precision-to-your",
+          "type": "PRACTICE",
+          "label": "Add interoceptive precision to your daily practice: name temperature, pressure, density rather than \"energy\" or \"prāṇa.\" Begin Cue Log entries explicitly testing replacement cues."
+        }
+      ]
+    },
+    {
+      "id": "S1-W6",
+      "week_number": 6,
+      "title": "Advanced Sequencing",
+      "ytt_module": "M5",
+      "tradition_focus": "Sequencing as dependent origination; peak-pose logic; pedagogical theory.",
+      "is_heavy": false,
+      "is_integration": false,
+      "tensions": [
+        "T3"
+      ],
+      "items": [
+        {
+          "id": "S1-W6-READ-ytt-manual-section-5-sequencing-logic-as",
+          "type": "READ",
+          "label": "YTT Manual: Section 5 — Sequencing Logic, Āsana Architecture, Mind-Body in Āsana, Chakra-Informed Sequencing"
+        },
+        {
+          "id": "S1-W6-READ-satchidananda-ys-112116-abhyasa-and-vair",
+          "type": "READ",
+          "label": "Satchidananda, YS: 1.12–1.16 (abhyāsa and vairāgya); 2.46–2.53 (āsana, prāṇāyāma, pratyāhāra)"
+        },
+        {
+          "id": "S1-W6-READ-iyengar-loy-asana-classification-section",
+          "type": "READ",
+          "label": "Iyengar, LoY: āsana classification sections (forward bends, back bends, twists, inversions); at least one complete standing pose set"
+        },
+        {
+          "id": "S1-W6-READ-module-b-wk-6-mmk-ch-1315-conjunction-th",
+          "type": "READ",
+          "label": "Module B Wk 6: MMK Ch. 13–15 (Conjunction, the Composite, Svabhāva — the heart of the emptiness argument)"
+        },
+        {
+          "id": "S1-W6-READ-module-c-wk-6-akbh-ch-3-loka-sentient-be",
+          "type": "READ",
+          "label": "Module C Wk 6: AKBh Ch. 3 (loka — sentient beings and their world; six hetus \\+ four pratyayas as causal framework)"
+        },
+        {
+          "id": "S1-W6-READ-module-a-wk-7-smith-yns-middle-length-au",
+          "type": "READ",
+          "label": "Module A Wk 7: Smith, YNS — middle-length aural lineage II"
+        },
+        {
+          "id": "S1-W6-READ-ksemaraja-pratyabhijnahrdayam-sutra-8-un",
+          "type": "READ",
+          "label": "Kṣemarāja, Pratyabhijñāhṛdayam sūtra 8 (unmeṣa / nimeṣa; spanda)"
+        },
+        {
+          "id": "S1-W6-READ-d-integration-betsy-ng-ed-self-determina",
+          "type": "READ",
+          "label": "\\[\\[D-integration\\]\\] Betsy Ng (ed.), Self-Determination Theory and Socioemotional Learning — autonomy-supportive teaching chapters"
+        },
+        {
+          "id": "S1-W6-WRITE-a-6-pose-sequence-built-on-dependent-ori",
+          "type": "WRITE",
+          "label": "*A 6-pose sequence built on dependent origination",
+          "note_file": "S1-W06-dependent-origination-sequence.md"
+        },
+        {
+          "id": "S1-W6-PRACTICE-teach-this-sequence-or-rehearse-it-",
+          "type": "PRACTICE",
+          "label": "Teach this sequence (or rehearse it solo if no class)."
+        }
+      ]
+    },
+    {
+      "id": "S1-W7",
+      "week_number": 7,
+      "title": "Prenatal Yoga",
+      "ytt_module": "M6",
+      "tradition_focus": "Ethics of interdependence; ratnāvalī axis opens; AKBh karma; Lifshitz/Veissière threading begins.",
+      "is_heavy": false,
+      "is_integration": false,
+      "tensions": [
+        "T1"
+      ],
+      "items": [
+        {
+          "id": "S1-W7-READ-ytt-manual-section-6-female-anatomy-repr",
+          "type": "READ",
+          "label": "YTT Manual: Section 6 — Female Anatomy, Reproductive Cycle, Developing Fetus, Fourth Trimester"
+        },
+        {
+          "id": "S1-W7-READ-satchidananda-ys-230245-yamas-niyamas-in",
+          "type": "READ",
+          "label": "Satchidananda, YS: 2.30–2.45 (yamas \\+ niyamas in detail); special attention to ahiṃsā and aparigraha"
+        },
+        {
+          "id": "S1-W7-READ-iyengar-loy-sections-on-womens-health-as",
+          "type": "READ",
+          "label": "Iyengar, LoY: sections on women's health āsanas / supported inversions (Sarvāṅgāsana family)"
+        },
+        {
+          "id": "S1-W7-READ-module-b-wk-7-mmk-ch-1617-bondage-and-li",
+          "type": "READ",
+          "label": "Module B Wk 7: MMK Ch. 16–17 (Bondage and Liberation; Examination of Action) — opens Phase III"
+        },
+        {
+          "id": "S1-W7-READ-module-c-wk-7-akbh-ch-4-karma-opens-the-",
+          "type": "READ",
+          "label": "Module C Wk 7: AKBh Ch. 4 (karma — opens the ethics module)"
+        },
+        {
+          "id": "S1-W7-READ-module-a-wk-8-smith-yns-great-aural-line",
+          "type": "READ",
+          "label": "Module A Wk 8: Smith, YNS — great aural lineage I"
+        },
+        {
+          "id": "S1-W7-READ-ksemaraja-pratyabhijnahrdayam-sutra-13-c",
+          "type": "READ",
+          "label": "Kṣemarāja, Pratyabhijñāhṛdayam sūtra 13 (cidānanda-lābha)"
+        },
+        {
+          "id": "S1-W7-LISTEN-lifshitz-veissiere-cultural-neurophenome",
+          "type": "LISTEN",
+          "label": "Lifshitz & Veissière, \"Cultural Neurophenomenology of Hypnosis and Meditation\""
+        },
+        {
+          "id": "S1-W7-WRITE-the-self-other-boundary-in-prenatal-teac",
+          "type": "WRITE",
+          "label": "*The self-other boundary in prenatal teaching",
+          "note_file": "S1-W07-prenatal-self-other.md",
+          "word_target": "400–600 words"
+        },
+        {
+          "id": "S1-W7-PRACTICE-continue-samatha-vipasyana",
+          "type": "PRACTICE",
+          "label": "Continue śamatha-vipaśyanā."
+        }
+      ]
+    },
+    {
+      "id": "S1-W8",
+      "week_number": 8,
+      "title": "Restorative Yoga",
+      "ytt_module": "M7",
+      "tradition_focus": "*Praśrabdhi* (suppleness); CNS regulation; \"surrender\" and its theological commitments.",
+      "is_heavy": false,
+      "is_integration": false,
+      "tensions": [
+        "T1",
+        "T4"
+      ],
+      "items": [
+        {
+          "id": "S1-W8-READ-ytt-manual-section-7-cns-regulation-nerv",
+          "type": "READ",
+          "label": "YTT Manual: Section 7 — CNS Regulation, Nervous System, Props, Therapeutic Sequencing"
+        },
+        {
+          "id": "S1-W8-READ-satchidananda-ys-130139-obstacles-isvara",
+          "type": "READ",
+          "label": "Satchidananda, YS: 1.30–1.39 (obstacles \\+ īśvarapraṇidhāna as antidote); 2.46–2.48 (āsana as sthira-sukha)"
+        },
+        {
+          "id": "S1-W8-READ-iyengar-loy-savasana-and-viparita-karani",
+          "type": "READ",
+          "label": "Iyengar, LoY: Śavāsana and Viparīta Karaṇī in detail"
+        },
+        {
+          "id": "S1-W8-READ-module-b-wk-8-mmk-ch-1820-self-time-comb",
+          "type": "READ",
+          "label": "Module B Wk 8: MMK Ch. 18–20 (Self, Time, Combination — Phase II close)"
+        },
+        {
+          "id": "S1-W8-READ-module-c-wk-8-akbh-ch-5-anusaya-latent-d",
+          "type": "READ",
+          "label": "Module C Wk 8: AKBh Ch. 5 (anuśaya / latent dispositions — the kleśa map begins)"
+        },
+        {
+          "id": "S1-W8-READ-module-a-wk-9-smith-yns-great-aural-line",
+          "type": "READ",
+          "label": "Module A Wk 9: Smith, YNS — great aural lineage II"
+        },
+        {
+          "id": "S1-W8-READ-ksemaraja-pratyabhijnahrdayam-sutra-19-s",
+          "type": "READ",
+          "label": "Kṣemarāja, Pratyabhijñāhṛdayam sūtra 19 (samāveśa; cittapralaya)"
+        },
+        {
+          "id": "S1-W8-READ-d-integration-chogyal-namkhai-norbu-teac",
+          "type": "READ",
+          "label": "\\[\\[D-integration\\]\\] Chögyal Namkhai Norbu, Teachers' Training — discussion of teacher's responsibility in pointing-out moments (opening chapters)"
+        },
+        {
+          "id": "S1-W8-LISTEN-kirkland-harnessing-the-power-of-physica",
+          "type": "LISTEN",
+          "label": "Kirkland, \"Harnessing the Power of Physical Activity for Mental Health\""
+        },
+        {
+          "id": "S1-W8-WRITE-surrender-without-atman",
+          "type": "WRITE",
+          "label": "*\"Surrender\" without ātman",
+          "note_file": "S1-W08-savasana-three-drafts.md",
+          "word_target": "400–600 words"
+        },
+        {
+          "id": "S1-W8-PRACTICE-longer-restorative-session-this-wee",
+          "type": "PRACTICE",
+          "label": "Longer restorative session this week observed as condition-creation rather than rest-attainment."
+        }
+      ]
+    },
+    {
+      "id": "S1-W9",
+      "week_number": 9,
+      "title": "Yin Yoga",
+      "ytt_module": "M8",
+      "tradition_focus": "Daoism, yin-yang, meridians; two truths; *abhyāsa-vairāgya* as the more rigorous polarity.",
+      "is_heavy": false,
+      "is_integration": false,
+      "tensions": [
+        "T3"
+      ],
+      "items": [
+        {
+          "id": "S1-W9-READ-ytt-manual-section-8-daoism-yin-yang-mer",
+          "type": "READ",
+          "label": "YTT Manual: Section 8 — Daoism, Yin-Yang, Meridians, Fascia, Long Holds"
+        },
+        {
+          "id": "S1-W9-READ-satchidananda-ys-112116-revisit-abhyasa-",
+          "type": "READ",
+          "label": "Satchidananda, YS: 1.12–1.16 (revisit abhyāsa \\+ vairāgya with yin-yang in mind)"
+        },
+        {
+          "id": "S1-W9-READ-iyengar-loy-forward-bend-descriptions-pa",
+          "type": "READ",
+          "label": "Iyengar, LoY: forward-bend descriptions (Paścimottānāsana family) — read for what sustained passive stretching is described as doing"
+        },
+        {
+          "id": "S1-W9-READ-module-b-wk-9-mmk-ch-2123-arising-and-ce",
+          "type": "READ",
+          "label": "Module B Wk 9: MMK Ch. 21–23 (Arising and Ceasing; Tathāgata; False Conceptions — Phase III work)"
+        },
+        {
+          "id": "S1-W9-READ-module-c-wk-9-akbh-ch-5-klesa-map-contin",
+          "type": "READ",
+          "label": "Module C Wk 9: AKBh Ch. 5 (kleśa map continued)"
+        },
+        {
+          "id": "S1-W9-READ-module-a-wk-10-smith-yns-great-guide-six",
+          "type": "READ",
+          "label": "Module A Wk 10: Smith, YNS — Great Guide; six lamps introduction"
+        },
+        {
+          "id": "S1-W9-READ-ksemaraja-pratyabhijnahrdayam-sutra-8-re",
+          "type": "READ",
+          "label": "Kṣemarāja, Pratyabhijñāhṛdayam sūtra 8 (revisit spanda)"
+        },
+        {
+          "id": "S1-W9-WRITE-three-frameworks-for-a-yin-class",
+          "type": "WRITE",
+          "label": "*Three frameworks for a Yin class",
+          "note_file": "S1-W09-yin-three-frameworks.md",
+          "word_target": "400–600 words"
+        },
+        {
+          "id": "S1-W9-PRACTICE-one-long-hold-session-this-week-310",
+          "type": "PRACTICE",
+          "label": "One long-hold session this week (3–10 min per pose) as temporal phenomenology — observe the moment-to-moment shifts in sensation, thought, attention."
+        }
+      ]
+    },
+    {
+      "id": "S1-W10",
+      "week_number": 10,
+      "title": "Trauma-Informed Yoga",
+      "ytt_module": "M9",
+      "tradition_focus": "Suffering as process, not possession; the *kleśa* map; Capriles on Four Noble Truths of Ecology. **The heaviest listening week of the semester — plan accordingly.**",
+      "is_heavy": true,
+      "is_integration": false,
+      "tensions": [
+        "T1",
+        "T4"
+      ],
+      "items": [
+        {
+          "id": "S1-W10-READ-ytt-manual-section-9-somatic-experiencin",
+          "type": "READ",
+          "label": "YTT Manual: Section 9 — Somatic Experiencing, ANS, Identity, Separation, Inner Critic"
+        },
+        {
+          "id": "S1-W10-READ-satchidananda-ys-21217-klesas-samskaras-",
+          "type": "READ",
+          "label": "Satchidananda, YS: 2.1–2.17 (kleśas \\+ saṃskāras); 2.33–2.34 (pratipakṣa bhāvanā)"
+        },
+        {
+          "id": "S1-W10-READ-iyengar-loy-pranayama-chapter-psychologi",
+          "type": "READ",
+          "label": "Iyengar, LoY: prāṇāyāma chapter — psychological effects sections"
+        },
+        {
+          "id": "S1-W10-READ-module-b-wk-10-mmk-ch-24-examination-of-",
+          "type": "READ",
+          "label": "Module B Wk 10: MMK Ch. 24 (Examination of the Four Noble Truths — the prapañcopaśama / dependent-origination verse)"
+        },
+        {
+          "id": "S1-W10-READ-module-c-wk-10-akbh-ch-5-continued-full-",
+          "type": "READ",
+          "label": "Module C Wk 10: AKBh Ch. 5 continued (full kleśa exhaustive taxonomy)"
+        },
+        {
+          "id": "S1-W10-READ-module-a-wk-11-smith-yns-six-lamps-detai",
+          "type": "READ",
+          "label": "Module A Wk 11: Smith, YNS — six lamps detailed"
+        },
+        {
+          "id": "S1-W10-READ-d-integration-anand-neuroscience-of-yoga",
+          "type": "READ",
+          "label": "\\[\\[D-integration\\]\\] Anand, Neuroscience of Yoga Part 1 — trauma-relevant chapters (vagal tone, HPA, documented PTSD findings)"
+        },
+        {
+          "id": "S1-W10-LISTEN-capriles-the-four-noble-truths-of-ecolog",
+          "type": "LISTEN",
+          "label": "Capriles, \"The Four Noble Truths of Ecology\""
+        },
+        {
+          "id": "S1-W10-LISTEN-if-pacing-wont-accommodate-both-split-ca",
+          "type": "LISTEN",
+          "label": "If pacing won't accommodate both, split Capriles across Weeks 10 and 12 rather than displace him. The MMK 24 \\+ Capriles convergence is too clean to give up."
+        },
+        {
+          "id": "S1-W10-WRITE-trauma-as-conditioned-pattern-not-stored",
+          "type": "WRITE",
+          "label": "*Trauma as conditioned pattern (not stored object)",
+          "note_file": "S1-W10-trauma-conditioned-pattern.md",
+          "word_target": "500–700 words"
+        },
+        {
+          "id": "S1-W10-PRACTICE-honest-evaluation-of-your-own-pract",
+          "type": "PRACTICE",
+          "label": "Honest evaluation of your own practice in difficult conditions this week."
+        }
+      ]
+    },
+    {
+      "id": "S1-W11",
+      "week_number": 11,
+      "title": "Adaptive Yoga (M10) \\+ M11 Business deep-dive lands",
+      "ytt_module": "",
+      "tradition_focus": "*Upāya-kauśalya*; the path adapted to capacity; M11 Business / Ethics receives its full philosophical analysis this week (per Module D structure).",
+      "is_heavy": true,
+      "is_integration": false,
+      "tensions": [
+        "T1",
+        "T3"
+      ],
+      "items": [
+        {
+          "id": "S1-W11-READ-ytt-manual-section-10-adaptive-populatio",
+          "type": "READ",
+          "label": "YTT Manual: Section 10 — Adaptive Populations, Modification, Inclusion, Chair Yoga"
+        },
+        {
+          "id": "S1-W11-READ-ytt-manual-section-11-business-of-yoga-f",
+          "type": "READ",
+          "label": "YTT Manual: Section 11 — Business of Yoga (full read this week; module material was threaded earlier but the deep analysis lands here)"
+        },
+        {
+          "id": "S1-W11-READ-satchidananda-ys-120122-three-levels-of-",
+          "type": "READ",
+          "label": "Satchidananda, YS: 1.20–1.22 (three levels of intensity); 2.30–2.39 revisited (yamas, esp. aparigraha)"
+        },
+        {
+          "id": "S1-W11-READ-iyengar-loy-prop-system-sections-preface",
+          "type": "READ",
+          "label": "Iyengar, LoY: prop-system sections; preface (Krishnamacharya relationship)"
+        },
+        {
+          "id": "S1-W11-READ-module-b-wk-11-mmk-ch-2527-nirvana-twelv",
+          "type": "READ",
+          "label": "Module B Wk 11: MMK Ch. 25–27 (Nirvāṇa; Twelve-link chain; Views — closing of MMK)"
+        },
+        {
+          "id": "S1-W11-READ-module-c-wk-11-akbh-ch-5-close-bridge-to",
+          "type": "READ",
+          "label": "Module C Wk 11: AKBh Ch. 5 close \\+ bridge to Ch. 6 (mārga survey)"
+        },
+        {
+          "id": "S1-W11-READ-module-a-wks-1112-begin-smith-yns-four-t",
+          "type": "READ",
+          "label": "Module A Wks 11–12 begin: Smith, YNS — four thögal visions; Ultimate Mirror"
+        },
+        {
+          "id": "S1-W11-READ-ksemaraja-pratyabhijnahrdayam-sutra-19-r",
+          "type": "READ",
+          "label": "Kṣemarāja, Pratyabhijñāhṛdayam sūtra 19 (revisit — Trika tripartite upāyas)"
+        },
+        {
+          "id": "S1-W11-READ-d-integration-norbu-teachers-training-fu",
+          "type": "READ",
+          "label": "\\[\\[D-integration\\]\\] Norbu, Teachers' Training — full priority pick: opening chapters on authentic teacher qualities \\+ relational discipline of transmission"
+        },
+        {
+          "id": "S1-W11-READ-d-integration-tien-feng-lee-buddhist-eth",
+          "type": "READ",
+          "label": "\\[\\[D-integration\\]\\] Tien-Feng Lee, Buddhist Ethics for Laypeople — chapters on right speech, right livelihood"
+        },
+        {
+          "id": "S1-W11-READ-d-integration-nicholson-buddhism-cogniti",
+          "type": "READ",
+          "label": "\\[\\[D-integration\\]\\] Nicholson, Buddhism, Cognitive Science, and the Doctrine of Selflessness — selective for studio-translation language"
+        },
+        {
+          "id": "S1-W11-LISTEN-lifshitzveissiere-pt-3",
+          "type": "LISTEN",
+          "label": "Lifshitz/Veissière Pt. 3"
+        },
+        {
+          "id": "S1-W11-WRITE-adaptive-teaching-without-a-normative-bo",
+          "type": "WRITE",
+          "label": "Adaptive teaching without a normative body",
+          "note_file": "S1-W11a-adaptive-no-norm-body.md"
+        },
+        {
+          "id": "S1-W11-WRITE-cue-log-working-entry-the-brand-question",
+          "type": "WRITE",
+          "label": "Cue Log working entry — the brand question",
+          "note_file": "S1-W11b-brand-aparigraha-audit.md"
+        },
+        {
+          "id": "S1-W11-PRACTICE-adaptive-variations-explored-in-you",
+          "type": "PRACTICE",
+          "label": "Adaptive variations explored in your own sit; honest evaluation of how your practice serves (or doesn't) the breadth of bodies you encounter."
+        }
+      ]
+    },
+    {
+      "id": "S1-W12",
+      "week_number": 12,
+      "title": "INTEGRATION: Tensions Review",
+      "ytt_module": "",
+      "tradition_focus": "",
+      "is_heavy": false,
+      "is_integration": true,
+      "tensions": [
+        "T1",
+        "T2",
+        "T3",
+        "T4"
+      ],
+      "items": [
+        {
+          "id": "S1-W12-READ-module-d-appendix-b-central-philosophica",
+          "type": "READ",
+          "label": "Module D Appendix B (Central Philosophical Tensions Tracker) — full read-through with your semester's journal entries on each tension"
+        },
+        {
+          "id": "S1-W12-READ-re-read-your-week-1-week-4-week-7-writte",
+          "type": "READ",
+          "label": "Re-read your Week 1, Week 4, Week 7 written deliverables (the tension anchors)"
+        },
+        {
+          "id": "S1-W12-READ-smith-on-the-gzhi-nyingma-madhyamaka-syn",
+          "type": "READ",
+          "label": "Smith on the gzhi / Nyingma-Madhyamaka synthesis (re-read of YNS introduction)"
+        },
+        {
+          "id": "S1-W12-READ-ksemaraja-ph-sutras-14-and-12-counterpoi",
+          "type": "READ",
+          "label": "Kṣemarāja PH sūtras 1–4 and 12 (counterpoint anchors)"
+        },
+        {
+          "id": "S1-W12-READ-vasubandhu-akbh-ix-selections-on-the-ref",
+          "type": "READ",
+          "label": "Vasubandhu AKBh IX selections on the refutation of the self (the Pudgala-pratiṣedha; this is preview material — the chapter itself is not formally on the Module C 15-week scope, but selections frame Week 12's tensions work)"
+        },
+        {
+          "id": "S1-W12-READ-module-b-wk-12-candrakirti-madhyamakavat",
+          "type": "READ",
+          "label": "Module B Wk 12: Candrakīrti Madhyamakāvatāra Ch. 1–6 (first six perfections; bodhisattva grounds)"
+        },
+        {
+          "id": "S1-W12-READ-module-c-wk-12-akbh-ch-6-marga-the-path-",
+          "type": "READ",
+          "label": "Module C Wk 12: AKBh Ch. 6 (mārga — the path), Vol. 2 close. (Note: the recalibrated Module C ends with Ch. 5; mārga is preview-only via the Series II overview class.)"
+        },
+        {
+          "id": "S1-W12-READ-module-a-four-thogal-visions-continued",
+          "type": "READ",
+          "label": "Module A: four thögal visions continued"
+        },
+        {
+          "id": "S1-W12-LISTEN-capriles-re-listen-on-the-saksin-critiqu",
+          "type": "LISTEN",
+          "label": "Capriles re-listen on the sākṣin critique (the \"false non-duality\" formulation) — Running Tension \\#1 anchor"
+        },
+        {
+          "id": "S1-W12-LISTEN-berkovich-ohana-re-listen-on-self-patter",
+          "type": "LISTEN",
+          "label": "Berkovich-Ohana re-listen on self-pattern theory — Running Tension \\#1 anchor"
+        },
+        {
+          "id": "S1-W12-WRITE-the-tensions-document-week-12-deliverabl",
+          "type": "WRITE",
+          "label": "The Tensions Document (Week 12 deliverable)",
+          "note_file": "S1-W12-tensions-document.md"
+        },
+        {
+          "id": "S1-W12-PRACTICE-sitting-prompts-one-per-tension-fro",
+          "type": "PRACTICE",
+          "label": "Sitting prompts (one per tension, from Module D Week 12):"
+        }
+      ]
+    },
+    {
+      "id": "S1-W13",
+      "week_number": 13,
+      "title": "INTEGRATION: Cue Log Audit",
+      "ytt_module": "",
+      "tradition_focus": "",
+      "is_heavy": false,
+      "is_integration": true,
+      "tensions": [
+        "T1"
+      ],
+      "items": [
+        {
+          "id": "S1-W13-READ-your-cue-log-fourteen-weeks-of-entries-c",
+          "type": "READ",
+          "label": "Your Cue Log — fourteen weeks of entries, chronological order"
+        },
+        {
+          "id": "S1-W13-READ-norbu-teachers-training-sections-on-view",
+          "type": "READ",
+          "label": "Norbu, Teachers' Training — sections on view / conduct / speech (the audit framework)"
+        },
+        {
+          "id": "S1-W13-READ-module-b-wk-13-candrakirti-ma-ch-611-san",
+          "type": "READ",
+          "label": "Module B Wk 13: Candrakīrti MA Ch. 6–11; Śāntarakṣita Madhyamakālaṃkāra (Yogācāra-Madhyamaka synthesis as model for holding two views together)"
+        },
+        {
+          "id": "S1-W13-READ-module-c-wk-13-madhyamika-critique-of-ab",
+          "type": "READ",
+          "label": "Module C Wk 13: Mādhyamika critique of Abhidharma (transition material; AKBh IX selections on the refutation of the self where Module C bridges to Module B's Phase IV)"
+        },
+        {
+          "id": "S1-W13-READ-module-a-integration-synthesis-of-the-fo",
+          "type": "READ",
+          "label": "Module A: integration / synthesis of the four visions"
+        },
+        {
+          "id": "S1-W13-WRITE-uncertain",
+          "type": "WRITE",
+          "label": "uncertain",
+          "note_file": "S1-W13-cue-inventory.md"
+        },
+        {
+          "id": "S1-W13-PRACTICE-practice-from-view-test-the-survivi",
+          "type": "PRACTICE",
+          "label": "Practice from view: test the surviving cues in studio."
+        }
+      ]
+    },
+    {
+      "id": "S1-W14",
+      "week_number": 14,
+      "title": "INTEGRATION: Teaching Philosophy Statement",
+      "ytt_module": "",
+      "tradition_focus": "",
+      "is_heavy": false,
+      "is_integration": true,
+      "tensions": [
+        "T1"
+      ],
+      "items": [
+        {
+          "id": "S1-W14-READ-your-tensions-document-week-12",
+          "type": "READ",
+          "label": "Your Tensions Document (Week 12\\)"
+        },
+        {
+          "id": "S1-W14-READ-your-working-cue-inventory-week-13",
+          "type": "READ",
+          "label": "Your Working Cue Inventory (Week 13\\)"
+        },
+        {
+          "id": "S1-W14-READ-smith-yns-re-read-of-the-introduction",
+          "type": "READ",
+          "label": "Smith, YNS — re-read of the Introduction"
+        },
+        {
+          "id": "S1-W14-READ-norbu-teachers-training-final-chapters-o",
+          "type": "READ",
+          "label": "Norbu, Teachers' Training — final chapters on integration of teaching and practice"
+        },
+        {
+          "id": "S1-W14-READ-module-b-wk-14-nagarjuna-ratnavali-surve",
+          "type": "READ",
+          "label": "Module B Wk 14: Nāgārjuna Ratnāvalī survey (esp. chapters on teaching, transmission, teacher-student); second-semester orientation"
+        },
+        {
+          "id": "S1-W14-READ-module-c-wk-14-bridge-madhyamika-critiqu",
+          "type": "READ",
+          "label": "Module C Wk 14: bridge / Mādhyamika critique of Abhidharma; orientation toward the deferred Vols 3–4 module"
+        },
+        {
+          "id": "S1-W14-READ-module-a-wks-1112-close-compressed-final",
+          "type": "READ",
+          "label": "Module A Wks 11–12 close compressed: final YNS synthesis of the four visions"
+        },
+        {
+          "id": "S1-W14-WRITE-the-teaching-philosophy-statement-week-1",
+          "type": "WRITE",
+          "label": "The Teaching Philosophy Statement (Week 14 deliverable)",
+          "note_file": "S1-W14-teaching-philosophy.md",
+          "word_target": "250–400 words"
+        },
+        {
+          "id": "S1-W14-PRACTICE-whatever-practice-has-emerged-as-fo",
+          "type": "PRACTICE",
+          "label": "Whatever practice has emerged as foundational over the semester."
+        }
+      ]
+    }
+  ],
+  "tensions": [
+    {
+      "id": "T1",
+      "label": "ātman / anātman",
+      "color": "#7F77DD"
+    },
+    {
+      "id": "T2",
+      "label": "svāsaṃvedana / vimarśa / rang rig",
+      "color": "#1D9E75"
+    },
+    {
+      "id": "T3",
+      "label": "prapañca / māyā",
+      "color": "#E24B4A"
+    },
+    {
+      "id": "T4",
+      "label": "gzhi vs. ground",
+      "color": "#D4537E"
+    }
+  ]
+}

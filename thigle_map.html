@@ -1,0 +1,2367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YTT Curriculum — Thigle Map</title>
+<style>
+/* ── reset & base ─────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { height: 100%; }
+
+/* ── design tokens ────────────────────────────────────────── */
+:root {
+  --bg:           #0c0d12;
+  --surface:      #14151c;
+  --surface-2:    #1b1c26;
+  --surface-3:    #22232f;
+  --border:       rgba(255,255,255,0.07);
+  --border-mid:   rgba(255,255,255,0.12);
+  --text:         #e4e2f2;
+  --text-muted:   #8f8da8;
+  --text-dim:     #4e4d63;
+
+  /* state colours — dark mode primary */
+  --c-complete:        #5DCAA5;
+  --c-complete-fill:   #1d9e7533;
+  --c-complete-text:   #9FE1CB;
+  --c-active:          #AFA9EC;
+  --c-active-fill:     #7f77dd22;
+  --c-active-text:     #CECBF6;
+  --c-heavy:           #F09595;
+  --c-heavy-fill:      #e24b4a18;
+  --c-heavy-text:      #F7C1C1;
+  --c-integration:     #AFA9EC;
+  --c-upcoming:        #44435a;
+  --c-upcoming-text:   #8f8da8;
+
+  /* tension thread colours */
+  --t1: #AFA9EC;
+  --t2: #5DCAA5;
+  --t3: #F09595;
+  --t4: #ED93B1;
+
+  --panel-w:    292px;
+  --topbar-h:   72px;
+  --legend-h:   52px;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg:           #f5f4f8;
+    --surface:      #ffffff;
+    --surface-2:    #f0eff6;
+    --surface-3:    #e8e7f0;
+    --border:       rgba(0,0,0,0.07);
+    --border-mid:   rgba(0,0,0,0.12);
+    --text:         #1e1c2e;
+    --text-muted:   #6e6c88;
+    --text-dim:     #b0aec8;
+    --c-complete:        #0F6E56;
+    --c-complete-fill:   #1d9e7518;
+    --c-complete-text:   #0F6E56;
+    --c-active:          #7F77DD;
+    --c-active-fill:     #7f77dd14;
+    --c-active-text:     #3C3489;
+    --c-heavy:           #E24B4A;
+    --c-heavy-fill:      #e24b4a12;
+    --c-heavy-text:      #A32D2D;
+    --c-integration:     #7F77DD;
+    --c-upcoming:        #c8c7d6;
+    --c-upcoming-text:   #888780;
+    --t1: #7F77DD;
+    --t2: #1D9E75;
+    --t3: #E24B4A;
+    --t4: #D4537E;
+  }
+}
+
+/* ── layout ───────────────────────────────────────────────── */
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", sans-serif;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+
+#app { display: flex; flex-direction: column; height: 100%; }
+
+/* ── top bar ──────────────────────────────────────────────── */
+#top-bar {
+  height: var(--topbar-h);
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 28px;
+  border-bottom: 1px solid var(--border);
+  background: var(--surface);
+}
+
+.topbar-left { display: flex; flex-direction: column; gap: 2px; }
+.topbar-eyebrow {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+.topbar-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1.2;
+}
+
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+.topbar-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1px;
+}
+.stat-label {
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+.stat-value {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text);
+  font-variant-numeric: tabular-nums;
+}
+
+#btn-export {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid var(--border-mid);
+  background: var(--surface-2);
+  color: var(--text);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+}
+#btn-export:hover { background: var(--surface-3); border-color: var(--c-active); }
+#btn-export svg { opacity: 0.7; }
+
+/* ── main content area ────────────────────────────────────── */
+#main {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+}
+
+/* ── thigle container ─────────────────────────────────────── */
+#thigle-container {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 8px 8px 12px;
+  overflow: hidden;
+}
+
+#thigle-svg {
+  width: 100%;
+  height: 100%;
+  max-width: min(calc(100vh - var(--topbar-h) - var(--legend-h) - 24px), 100%);
+  max-height: calc(100vh - var(--topbar-h) - var(--legend-h) - 24px);
+  aspect-ratio: 1;
+  overflow: visible;
+}
+
+/* ── side panel ───────────────────────────────────────────── */
+#side-panel {
+  width: var(--panel-w);
+  flex-shrink: 0;
+  border-left: 1px solid var(--border);
+  background: var(--surface);
+  padding: 20px 18px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.panel-section-label {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+}
+
+/* summary panel */
+.summary-stat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border);
+}
+.summary-stat:last-child { border-bottom: none; }
+.summary-stat-label { color: var(--text-muted); font-size: 13px; }
+.summary-stat-value { font-weight: 600; font-size: 13px; }
+
+/* week panel */
+.panel-week-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 2px;
+}
+.panel-week-subtitle {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+}
+.panel-progress-bar {
+  height: 4px;
+  border-radius: 2px;
+  background: var(--surface-3);
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+.panel-progress-fill {
+  height: 100%;
+  background: var(--c-active);
+  border-radius: 2px;
+  transition: width 0.3s;
+}
+
+.item-list { display: flex; flex-direction: column; gap: 6px; }
+.item-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  font-size: 13px;
+  line-height: 1.4;
+  cursor: pointer;
+  border-radius: 6px;
+  padding: 4px 6px;
+  transition: background 0.12s;
+}
+.item-row:hover { background: var(--surface-2); }
+.item-icon { flex-shrink: 0; width: 16px; height: 16px; margin-top: 1px; }
+.item-label { color: var(--text); }
+.item-label.done {
+  text-decoration: line-through;
+  color: var(--text-dim);
+}
+.item-type-badge {
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  padding: 1px 5px;
+  border-radius: 3px;
+  background: var(--surface-3);
+  color: var(--text-muted);
+  flex-shrink: 0;
+  align-self: center;
+}
+
+.tensions-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 4px;
+}
+.tension-chip {
+  font-size: 11px;
+  font-weight: 500;
+  padding: 3px 10px;
+  border-radius: 20px;
+  border: 1px solid;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+.tension-chip:hover { opacity: 0.75; }
+
+/* ── legend ───────────────────────────────────────────────── */
+#legend {
+  height: var(--legend-h);
+  flex-shrink: 0;
+  border-top: 1px solid var(--border);
+  background: var(--surface);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  gap: 20px;
+  overflow: hidden;
+}
+
+.legend-items {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11.5px;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+.legend-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.legend-dash {
+  width: 20px;
+  height: 2px;
+  background: var(--text-dim);
+  border-radius: 1px;
+  flex-shrink: 0;
+  border-top: 2px dashed var(--text-muted);
+  background: none;
+}
+.legend-tensions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.legend-tension {
+  font-size: 11px;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+.legend-tension span {
+  font-weight: 600;
+  margin-right: 3px;
+}
+
+/* ── SVG node hover styles (applied via JS class) ─────────── */
+.week-node { cursor: pointer; }
+.week-node:hover .node-ring { filter: brightness(1.25); }
+.week-node.selected .node-ring { filter: none; }
+.satellite { cursor: pointer; }
+.satellite:hover circle { filter: brightness(1.4); }
+</style>
+</head>
+<body>
+<div id="app">
+
+  <!-- Top bar -->
+  <header id="top-bar">
+    <div class="topbar-left">
+      <span class="topbar-eyebrow">Semester 1 thigle</span>
+      <span class="topbar-title">YTT integration</span>
+    </div>
+    <div class="topbar-right">
+      <div class="topbar-stat">
+        <span class="stat-label">Progress</span>
+        <span class="stat-value" id="stat-progress">0%</span>
+      </div>
+      <div class="topbar-stat">
+        <span class="stat-label">Streak</span>
+        <span class="stat-value" id="stat-streak">0 days</span>
+      </div>
+      <button id="btn-export" title="Export state to JSON">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6">
+          <path d="M7 1v8M4 6l3 3 3-3"/>
+          <path d="M2 10v2h10v-2"/>
+        </svg>
+        Export
+      </button>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main id="main">
+    <div id="thigle-container">
+      <svg id="thigle-svg" viewBox="0 0 540 540"
+           xmlns="http://www.w3.org/2000/svg"
+           role="img" aria-label="YTT curriculum thigle map">
+        <!-- Populated by renderThigle() -->
+      </svg>
+    </div>
+
+    <aside id="side-panel" aria-label="Week details">
+      <!-- Populated by renderPanel() -->
+    </aside>
+  </main>
+
+  <!-- Legend -->
+  <footer id="legend">
+    <div class="legend-items">
+      <div class="legend-item">
+        <div class="legend-dot" style="background:var(--c-complete);"></div>
+        Complete
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot" style="background:transparent;border:2px solid var(--c-active);"></div>
+        Active
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot" style="background:transparent;border:2px solid var(--c-upcoming);"></div>
+        Upcoming
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot" style="background:transparent;border:2px solid var(--c-heavy);"></div>
+        Heavy week
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot" style="background:transparent;border:2px dashed var(--c-integration);"></div>
+        Integration
+      </div>
+      <div class="legend-item">
+        <div class="legend-dash"></div>
+        Tension chord
+      </div>
+    </div>
+    <div class="legend-tensions">
+      <div class="legend-tension"><span style="color:var(--t1)">T1</span> ātman / anātman</div>
+      <div class="legend-tension"><span style="color:var(--t2)">T2</span> svāsaṃvedana</div>
+      <div class="legend-tension"><span style="color:var(--t3)">T3</span> prapañca / māyā</div>
+      <div class="legend-tension"><span style="color:var(--t4)">T4</span> gzhi vs. ground</div>
+    </div>
+  </footer>
+
+</div>
+
+<!-- ── Curriculum data ─────────────────────────────────────── -->
+<script type="application/json" id="semester-data">
+{
+  "semester_id": "S1",
+  "title": "YTT integration",
+  "total_weeks": 14,
+  "weeks": [
+    {
+      "id": "S1-W1",
+      "week_number": 1,
+      "title": "Subtle Bodies",
+      "ytt_module": "M1",
+      "tradition_focus": "YTT kosha system; foundational MMK; AKBh dharma-ontology.",
+      "is_heavy": false,
+      "is_integration": false,
+      "tensions": [
+        "T1",
+        "T4"
+      ],
+      "items": [
+        {
+          "id": "S1-W1-READ-ytt-manual-section-1-kosha-system-chakra",
+          "type": "READ",
+          "label": "YTT Manual: Section 1 — Kosha System, Chakras, Nāḍīs, Prāṇa, Aura"
+        },
+        {
+          "id": "S1-W1-READ-satchidananda-yoga-sutras-11111-117119-1",
+          "type": "READ",
+          "label": "Satchidananda, Yoga Sūtras: 1.1–1.11; 1.17–1.19; 1.41"
+        },
+        {
+          "id": "S1-W1-READ-iyengar-light-on-yoga-introduction-the-w",
+          "type": "READ",
+          "label": "Iyengar, Light on Yoga: Introduction (\"The whole man\"); prāṇāyāma intro"
+        },
+        {
+          "id": "S1-W1-READ-module-b-wk-1-mmk-preface-intro-siderits",
+          "type": "READ",
+          "label": "Module B Wk 1: MMK Preface \\+ Intro (Siderits & Katsura); VV Introduction (Westerhoff); GSN Ch. 1"
+        },
+        {
+          "id": "S1-W1-READ-module-c-wk-1-akbh-ch-1-i15-sangpo-vol-1",
+          "type": "READ",
+          "label": "Module C Wk 1: AKBh Ch. 1, I.1–5 (Sangpo Vol. 1\\)"
+        },
+        {
+          "id": "S1-W1-READ-module-a-wk-1-smith-yoga-of-the-natural-",
+          "type": "READ",
+          "label": "Module A Wk 1: Smith, Yoga of the Natural State — Translator's Preface \\+ opening orientation to gzhi"
+        },
+        {
+          "id": "S1-W1-READ-ksemaraja-pratyabhijnahrdayam-sutras-14-",
+          "type": "READ",
+          "label": "Kṣemarāja, Pratyabhijñāhṛdayam sūtras 1–4 (Singh)"
+        },
+        {
+          "id": "S1-W1-WRITE-subtle-body-baseline",
+          "type": "WRITE",
+          "label": "*Subtle-body baseline",
+          "note_file": "S1-W01-subtle-bodies-baseline.md",
+          "word_target": "500–800 words"
+        },
+        {
+          "id": "S1-W1-PRACTICE-samatha-foundation",
+          "type": "PRACTICE",
+          "label": "Śamatha foundation."
+        }
+      ]
+    },
+    {
+      "id": "S1-W2",
+      "week_number": 2,
+      "title": "Subtle Bodies, continued",
+      "ytt_module": "M1",
+      "tradition_focus": "Causation and motion (MMK); rūpa-skandha (AKBh); Kunjed Gyalpo orientation.",
+      "is_heavy": false,
+      "is_integration": false,
+      "tensions": [
+        "T3",
+        "T4"
+      ],
+      "items": [
+        {
+          "id": "S1-W2-READ-ytt-manual-section-1-finish-annamayapran",
+          "type": "READ",
+          "label": "YTT Manual: Section 1 (finish) — Annamaya/Prāṇamaya; Manomaya/Vijñānamaya; Aura"
+        },
+        {
+          "id": "S1-W2-READ-module-b-wk-2-mmk-ch-1-analysis-of-condi",
+          "type": "READ",
+          "label": "Module B Wk 2: MMK Ch. 1 (Analysis of Conditions); MMK Ch. 2 (Analysis of Motion)"
+        },
+        {
+          "id": "S1-W2-READ-module-c-wk-2-akbh-ch-1-i628-rupa-skandh",
+          "type": "READ",
+          "label": "Module C Wk 2: AKBh Ch. 1, I.6–28 (rūpa-skandha, four primary elements, eight-substance molecule); I.29–47 (eighteen dhātus enumeration — skim structure)"
+        },
+        {
+          "id": "S1-W2-READ-module-a-wk-2-smith-yns-kunjed-gyalpo-se",
+          "type": "READ",
+          "label": "Module A Wk 2: Smith, YNS — Kunjed Gyalpo section; gzhi as ground of all appearances"
+        },
+        {
+          "id": "S1-W2-READ-d-integration-tenzin-wangyal-awakening-t",
+          "type": "READ",
+          "label": "\\[\\[D-integration\\]\\] Tenzin Wangyal, Awakening the Sacred Body — introductory chapters on Bön/Dzogchen subtle body (nine breathings, tsa-lung)"
+        },
+        {
+          "id": "S1-W2-WRITE-causation-in-the-prana-claim",
+          "type": "WRITE",
+          "label": "*Causation in the prāṇa-claim",
+          "note_file": "S1-W02-prana-causation-analysis.md",
+          "word_target": "400–600 words"
+        },
+        {
+          "id": "S1-W2-PRACTICE-continue-samatha-add-brief-analytic",
+          "type": "PRACTICE",
+          "label": "Continue śamatha; add brief analytical sit on \"where does the breath come from?\" (MMK 1 applied somatically)."
+        }
+      ]
+    },
+    {
+      "id": "S1-W3",
+      "week_number": 3,
+      "title": "Ayurveda",
+      "ytt_module": "M2",
+      "tradition_focus": "Guṇas, tattvas, doṣas; āyatanas/skandhas/dhātus; Leick three-doors investigation.",
+      "is_heavy": false,
+      "is_integration": false,
+      "tensions": [
+        "T1",
+        "T3"
+      ],
+      "items": [
+        {
+          "id": "S1-W3-READ-ytt-manual-section-2-vedas-gunas-tattvas",
+          "type": "READ",
+          "label": "YTT Manual: Section 2 — Vedas, Guṇas, Tattvas, Tridoṣic System, Disease Process"
+        },
+        {
+          "id": "S1-W3-READ-satchidananda-ys-2129-kriya-yoga-klesas-",
+          "type": "READ",
+          "label": "Satchidananda, YS: 2.1–2.9 (kriyā yoga, kleśas, avidyā); 2.18–2.25 (the seen and the Seer; three guṇas)"
+        },
+        {
+          "id": "S1-W3-READ-iyengar-loy-review-eight-limbs-material-",
+          "type": "READ",
+          "label": "Iyengar, LoY: review eight-limbs material with attention to the body's relationship to constitution"
+        },
+        {
+          "id": "S1-W3-READ-module-b-wk-3-mmk-ch-35-ayatanas-skandha",
+          "type": "READ",
+          "label": "Module B Wk 3: MMK Ch. 3–5 (Āyatanas, Skandhas, Dhātus); Letter to a Friend — opening verses on six sense-spheres"
+        },
+        {
+          "id": "S1-W3-READ-module-c-wk-3-akbh-ch-1-i515-five-skandh",
+          "type": "READ",
+          "label": "Module C Wk 3: AKBh Ch. 1, I.5–15 (five skandhas formally defined); three unconditioned dharmas; conditioned characteristics"
+        },
+        {
+          "id": "S1-W3-READ-module-a-wk-3-smith-yns-short-aural-line",
+          "type": "READ",
+          "label": "Module A Wk 3: Smith, YNS — short aural lineage I"
+        },
+        {
+          "id": "S1-W3-READ-d-integration-tenzin-wangyal-healing-wit",
+          "type": "READ",
+          "label": "\\[\\[D-integration\\]\\] Tenzin Wangyal, Healing with Form, Energy, and Light — five elements as outer/inner phenomena (chapters covering threefold path)"
+        },
+        {
+          "id": "S1-W3-LISTEN-leick-the-way-to-understand-nature-and-o",
+          "type": "LISTEN",
+          "label": "Leick, \"The Way to Understand Nature and Oneself\""
+        },
+        {
+          "id": "S1-W3-WRITE-three-doors-vs",
+          "type": "WRITE",
+          "label": "*Three-doors vs",
+          "note_file": "S1-W03-three-doors-vs-tridosic.md",
+          "word_target": "500–700 words"
+        },
+        {
+          "id": "S1-W3-PRACTICE-brief-daily-three-doors-investigati",
+          "type": "PRACTICE",
+          "label": "Brief daily three-doors investigation (body / energy / mind, as Leick demonstrates)."
+        }
+      ]
+    },
+    {
+      "id": "S1-W4",
+      "week_number": 4,
+      "title": "Yoga Nidra",
+      "ytt_module": "M3",
+      "tradition_focus": "Four states, *turīya*, witness-self, *saṅkalpa*, iRest; *bsam pa* applied to consciousness states.",
+      "is_heavy": false,
+      "is_integration": false,
+      "tensions": [
+        "T1",
+        "T2"
+      ],
+      "items": [
+        {
+          "id": "S1-W4-READ-ytt-manual-section-3-states-of-conscious",
+          "type": "READ",
+          "label": "YTT Manual: Section 3 — States of Consciousness, Turīya, Saṅkalpa, Self as Witness, iRest"
+        },
+        {
+          "id": "S1-W4-READ-satchidananda-ys-117151-samadhi-stages-t",
+          "type": "READ",
+          "label": "Satchidananda, YS: 1.17–1.51 (samādhi stages through nirbīja); 3.1–3.11 (dhāraṇā/dhyāna/samādhi)"
+        },
+        {
+          "id": "S1-W4-READ-iyengar-loy-pranayama-intro-technique-se",
+          "type": "READ",
+          "label": "Iyengar, LoY: prāṇāyāma intro \\+ technique sections (the bridge from gross to subtle)"
+        },
+        {
+          "id": "S1-W4-READ-module-b-wk-4-mmk-ch-69-relational-ident",
+          "type": "READ",
+          "label": "Module B Wk 4: MMK Ch. 6–9 (relational identity; agent/action; saṃsāra; the composite)"
+        },
+        {
+          "id": "S1-W4-READ-module-c-wk-4-akbh-ch-2-samskara-citta-m",
+          "type": "READ",
+          "label": "Module C Wk 4: AKBh Ch. 2 (saṃskāra; citta; mahābhūmika mental factors — Mental Factors selections)"
+        },
+        {
+          "id": "S1-W4-READ-module-a-wk-4-smith-yns-short-aural-line",
+          "type": "READ",
+          "label": "Module A Wk 4: Smith, YNS — short aural lineage II; rang rig introduction"
+        },
+        {
+          "id": "S1-W4-READ-ksemaraja-pratyabhijnahrdayam-sutra-18-t",
+          "type": "READ",
+          "label": "Kṣemarāja, Pratyabhijñāhṛdayam sūtra 18 (turīya and turyātīta — the strongest defense of witness-self)"
+        },
+        {
+          "id": "S1-W4-READ-d-integration-satyananda-yoga-nidra-intr",
+          "type": "READ",
+          "label": "\\[\\[D-integration\\]\\] Satyananda, Yoga Nidrā — introductory chapters; four-level consciousness map; rotation-of-consciousness protocol"
+        },
+        {
+          "id": "S1-W4-LISTEN-berkovich-ohana-meditation-psychedelics-",
+          "type": "LISTEN",
+          "label": "Berkovich-Ohana, \"Meditation, Psychedelics and the Self\""
+        },
+        {
+          "id": "S1-W4-WRITE-three-accounts-of-turiya",
+          "type": "WRITE",
+          "label": "*Three accounts of turīya",
+          "note_file": "S1-W04-turiya-three-accounts.md",
+          "word_target": "600–800 words"
+        },
+        {
+          "id": "S1-W4-PRACTICE-samatha-vipasyana-integration-one-y",
+          "type": "PRACTICE",
+          "label": "Śamatha-vipaśyanā integration; one Yoga Nidra session this week observed analytically (notice when the cueing language imports a witness-self, and what your mind does with it)."
+        }
+      ]
+    },
+    {
+      "id": "S1-W5",
+      "week_number": 5,
+      "title": "Advanced Anatomy & Physiology",
+      "ytt_module": "M4",
+      "tradition_focus": "Subtle ↔ gross interaction; nervous system; fascia; prāṇāyāma anatomy; bardo material compressed from Module A.",
+      "is_heavy": true,
+      "is_integration": false,
+      "tensions": [
+        "T3",
+        "T4"
+      ],
+      "items": [
+        {
+          "id": "S1-W5-READ-ytt-manual-section-4-subtle-energy-physi",
+          "type": "READ",
+          "label": "YTT Manual: Section 4 — Subtle Energy \\+ Physical Body Interaction, Nervous System, Fascia, Prāṇāyāma Anatomy"
+        },
+        {
+          "id": "S1-W5-READ-satchidananda-ys-326348-samyama-on-the-b",
+          "type": "READ",
+          "label": "Satchidananda, YS: 3.26–3.48 (saṃyama on the body and its elements)"
+        },
+        {
+          "id": "S1-W5-READ-iyengar-loy-asana-intro-56-specific-asan",
+          "type": "READ",
+          "label": "Iyengar, LoY: āsana intro; 5–6 specific āsana descriptions from your current teaching practice (read for implicit assumptions about the practitioner-self)"
+        },
+        {
+          "id": "S1-W5-READ-module-b-wk-5-mmk-ch-1012-firefuel-samsa",
+          "type": "READ",
+          "label": "Module B Wk 5: MMK Ch. 10–12 (Fire/Fuel; Saṃsāra; Suffering)"
+        },
+        {
+          "id": "S1-W5-READ-module-c-wk-5-akbh-ch-2-cittaviprayukta-",
+          "type": "READ",
+          "label": "Module C Wk 5: AKBh Ch. 2 — cittaviprayukta (factors dissociated from mind)"
+        },
+        {
+          "id": "S1-W5-READ-module-a-wks-56-compressed-smith-yns-mid",
+          "type": "READ",
+          "label": "Module A Wks 5–6 compressed: Smith, YNS — middle-length aural lineage (bardo material). This is the only compression point in Module A; give it real attention."
+        },
+        {
+          "id": "S1-W5-READ-ksemaraja-pratyabhijnahrdayam-sutra-14-f",
+          "type": "READ",
+          "label": "Kṣemarāja, Pratyabhijñāhṛdayam sūtra 14 (fivefold activity of citi)"
+        },
+        {
+          "id": "S1-W5-READ-d-integration-anand-neuroscience-of-yoga",
+          "type": "READ",
+          "label": "\\[\\[D-integration\\]\\] Anand, Neuroscience of Yoga Part 1 — autonomic regulation, HPA-axis, vagal tone"
+        },
+        {
+          "id": "S1-W5-READ-d-integration-murphy-brewer-interoceptio",
+          "type": "READ",
+          "label": "\\[\\[D-integration\\]\\] Murphy & Brewer, Interoception: A Comprehensive Guide — introductory chapters defining interoception"
+        },
+        {
+          "id": "S1-W5-WRITE-the-fascia-as-prana-medium-audit",
+          "type": "WRITE",
+          "label": "*The fascia-as-prāṇa-medium audit",
+          "note_file": "S1-W05-fascia-prana-audit.md",
+          "word_target": "400–600 words"
+        },
+        {
+          "id": "S1-W5-PRACTICE-add-interoceptive-precision-to-your",
+          "type": "PRACTICE",
+          "label": "Add interoceptive precision to your daily practice: name temperature, pressure, density rather than \"energy\" or \"prāṇa.\" Begin Cue Log entries explicitly testing replacement cues."
+        }
+      ]
+    },
+    {
+      "id": "S1-W6",
+      "week_number": 6,
+      "title": "Advanced Sequencing",
+      "ytt_module": "M5",
+      "tradition_focus": "Sequencing as dependent origination; peak-pose logic; pedagogical theory.",
+      "is_heavy": false,
+      "is_integration": false,
+      "tensions": [
+        "T3"
+      ],
+      "items": [
+        {
+          "id": "S1-W6-READ-ytt-manual-section-5-sequencing-logic-as",
+          "type": "READ",
+          "label": "YTT Manual: Section 5 — Sequencing Logic, Āsana Architecture, Mind-Body in Āsana, Chakra-Informed Sequencing"
+        },
+        {
+          "id": "S1-W6-READ-satchidananda-ys-112116-abhyasa-and-vair",
+          "type": "READ",
+          "label": "Satchidananda, YS: 1.12–1.16 (abhyāsa and vairāgya); 2.46–2.53 (āsana, prāṇāyāma, pratyāhāra)"
+        },
+        {
+          "id": "S1-W6-READ-iyengar-loy-asana-classification-section",
+          "type": "READ",
+          "label": "Iyengar, LoY: āsana classification sections (forward bends, back bends, twists, inversions); at least one complete standing pose set"
+        },
+        {
+          "id": "S1-W6-READ-module-b-wk-6-mmk-ch-1315-conjunction-th",
+          "type": "READ",
+          "label": "Module B Wk 6: MMK Ch. 13–15 (Conjunction, the Composite, Svabhāva — the heart of the emptiness argument)"
+        },
+        {
+          "id": "S1-W6-READ-module-c-wk-6-akbh-ch-3-loka-sentient-be",
+          "type": "READ",
+          "label": "Module C Wk 6: AKBh Ch. 3 (loka — sentient beings and their world; six hetus \\+ four pratyayas as causal framework)"
+        },
+        {
+          "id": "S1-W6-READ-module-a-wk-7-smith-yns-middle-length-au",
+          "type": "READ",
+          "label": "Module A Wk 7: Smith, YNS — middle-length aural lineage II"
+        },
+        {
+          "id": "S1-W6-READ-ksemaraja-pratyabhijnahrdayam-sutra-8-un",
+          "type": "READ",
+          "label": "Kṣemarāja, Pratyabhijñāhṛdayam sūtra 8 (unmeṣa / nimeṣa; spanda)"
+        },
+        {
+          "id": "S1-W6-READ-d-integration-betsy-ng-ed-self-determina",
+          "type": "READ",
+          "label": "\\[\\[D-integration\\]\\] Betsy Ng (ed.), Self-Determination Theory and Socioemotional Learning — autonomy-supportive teaching chapters"
+        },
+        {
+          "id": "S1-W6-WRITE-a-6-pose-sequence-built-on-dependent-ori",
+          "type": "WRITE",
+          "label": "*A 6-pose sequence built on dependent origination",
+          "note_file": "S1-W06-dependent-origination-sequence.md"
+        },
+        {
+          "id": "S1-W6-PRACTICE-teach-this-sequence-or-rehearse-it-",
+          "type": "PRACTICE",
+          "label": "Teach this sequence (or rehearse it solo if no class)."
+        }
+      ]
+    },
+    {
+      "id": "S1-W7",
+      "week_number": 7,
+      "title": "Prenatal Yoga",
+      "ytt_module": "M6",
+      "tradition_focus": "Ethics of interdependence; ratnāvalī axis opens; AKBh karma; Lifshitz/Veissière threading begins.",
+      "is_heavy": false,
+      "is_integration": false,
+      "tensions": [
+        "T1"
+      ],
+      "items": [
+        {
+          "id": "S1-W7-READ-ytt-manual-section-6-female-anatomy-repr",
+          "type": "READ",
+          "label": "YTT Manual: Section 6 — Female Anatomy, Reproductive Cycle, Developing Fetus, Fourth Trimester"
+        },
+        {
+          "id": "S1-W7-READ-satchidananda-ys-230245-yamas-niyamas-in",
+          "type": "READ",
+          "label": "Satchidananda, YS: 2.30–2.45 (yamas \\+ niyamas in detail); special attention to ahiṃsā and aparigraha"
+        },
+        {
+          "id": "S1-W7-READ-iyengar-loy-sections-on-womens-health-as",
+          "type": "READ",
+          "label": "Iyengar, LoY: sections on women's health āsanas / supported inversions (Sarvāṅgāsana family)"
+        },
+        {
+          "id": "S1-W7-READ-module-b-wk-7-mmk-ch-1617-bondage-and-li",
+          "type": "READ",
+          "label": "Module B Wk 7: MMK Ch. 16–17 (Bondage and Liberation; Examination of Action) — opens Phase III"
+        },
+        {
+          "id": "S1-W7-READ-module-c-wk-7-akbh-ch-4-karma-opens-the-",
+          "type": "READ",
+          "label": "Module C Wk 7: AKBh Ch. 4 (karma — opens the ethics module)"
+        },
+        {
+          "id": "S1-W7-READ-module-a-wk-8-smith-yns-great-aural-line",
+          "type": "READ",
+          "label": "Module A Wk 8: Smith, YNS — great aural lineage I"
+        },
+        {
+          "id": "S1-W7-READ-ksemaraja-pratyabhijnahrdayam-sutra-13-c",
+          "type": "READ",
+          "label": "Kṣemarāja, Pratyabhijñāhṛdayam sūtra 13 (cidānanda-lābha)"
+        },
+        {
+          "id": "S1-W7-LISTEN-lifshitz-veissiere-cultural-neurophenome",
+          "type": "LISTEN",
+          "label": "Lifshitz & Veissière, \"Cultural Neurophenomenology of Hypnosis and Meditation\""
+        },
+        {
+          "id": "S1-W7-WRITE-the-self-other-boundary-in-prenatal-teac",
+          "type": "WRITE",
+          "label": "*The self-other boundary in prenatal teaching",
+          "note_file": "S1-W07-prenatal-self-other.md",
+          "word_target": "400–600 words"
+        },
+        {
+          "id": "S1-W7-PRACTICE-continue-samatha-vipasyana",
+          "type": "PRACTICE",
+          "label": "Continue śamatha-vipaśyanā."
+        }
+      ]
+    },
+    {
+      "id": "S1-W8",
+      "week_number": 8,
+      "title": "Restorative Yoga",
+      "ytt_module": "M7",
+      "tradition_focus": "*Praśrabdhi* (suppleness); CNS regulation; \"surrender\" and its theological commitments.",
+      "is_heavy": false,
+      "is_integration": false,
+      "tensions": [
+        "T1",
+        "T4"
+      ],
+      "items": [
+        {
+          "id": "S1-W8-READ-ytt-manual-section-7-cns-regulation-nerv",
+          "type": "READ",
+          "label": "YTT Manual: Section 7 — CNS Regulation, Nervous System, Props, Therapeutic Sequencing"
+        },
+        {
+          "id": "S1-W8-READ-satchidananda-ys-130139-obstacles-isvara",
+          "type": "READ",
+          "label": "Satchidananda, YS: 1.30–1.39 (obstacles \\+ īśvarapraṇidhāna as antidote); 2.46–2.48 (āsana as sthira-sukha)"
+        },
+        {
+          "id": "S1-W8-READ-iyengar-loy-savasana-and-viparita-karani",
+          "type": "READ",
+          "label": "Iyengar, LoY: Śavāsana and Viparīta Karaṇī in detail"
+        },
+        {
+          "id": "S1-W8-READ-module-b-wk-8-mmk-ch-1820-self-time-comb",
+          "type": "READ",
+          "label": "Module B Wk 8: MMK Ch. 18–20 (Self, Time, Combination — Phase II close)"
+        },
+        {
+          "id": "S1-W8-READ-module-c-wk-8-akbh-ch-5-anusaya-latent-d",
+          "type": "READ",
+          "label": "Module C Wk 8: AKBh Ch. 5 (anuśaya / latent dispositions — the kleśa map begins)"
+        },
+        {
+          "id": "S1-W8-READ-module-a-wk-9-smith-yns-great-aural-line",
+          "type": "READ",
+          "label": "Module A Wk 9: Smith, YNS — great aural lineage II"
+        },
+        {
+          "id": "S1-W8-READ-ksemaraja-pratyabhijnahrdayam-sutra-19-s",
+          "type": "READ",
+          "label": "Kṣemarāja, Pratyabhijñāhṛdayam sūtra 19 (samāveśa; cittapralaya)"
+        },
+        {
+          "id": "S1-W8-READ-d-integration-chogyal-namkhai-norbu-teac",
+          "type": "READ",
+          "label": "\\[\\[D-integration\\]\\] Chögyal Namkhai Norbu, Teachers' Training — discussion of teacher's responsibility in pointing-out moments (opening chapters)"
+        },
+        {
+          "id": "S1-W8-LISTEN-kirkland-harnessing-the-power-of-physica",
+          "type": "LISTEN",
+          "label": "Kirkland, \"Harnessing the Power of Physical Activity for Mental Health\""
+        },
+        {
+          "id": "S1-W8-WRITE-surrender-without-atman",
+          "type": "WRITE",
+          "label": "*\"Surrender\" without ātman",
+          "note_file": "S1-W08-savasana-three-drafts.md",
+          "word_target": "400–600 words"
+        },
+        {
+          "id": "S1-W8-PRACTICE-longer-restorative-session-this-wee",
+          "type": "PRACTICE",
+          "label": "Longer restorative session this week observed as condition-creation rather than rest-attainment."
+        }
+      ]
+    },
+    {
+      "id": "S1-W9",
+      "week_number": 9,
+      "title": "Yin Yoga",
+      "ytt_module": "M8",
+      "tradition_focus": "Daoism, yin-yang, meridians; two truths; *abhyāsa-vairāgya* as the more rigorous polarity.",
+      "is_heavy": false,
+      "is_integration": false,
+      "tensions": [
+        "T3"
+      ],
+      "items": [
+        {
+          "id": "S1-W9-READ-ytt-manual-section-8-daoism-yin-yang-mer",
+          "type": "READ",
+          "label": "YTT Manual: Section 8 — Daoism, Yin-Yang, Meridians, Fascia, Long Holds"
+        },
+        {
+          "id": "S1-W9-READ-satchidananda-ys-112116-revisit-abhyasa-",
+          "type": "READ",
+          "label": "Satchidananda, YS: 1.12–1.16 (revisit abhyāsa \\+ vairāgya with yin-yang in mind)"
+        },
+        {
+          "id": "S1-W9-READ-iyengar-loy-forward-bend-descriptions-pa",
+          "type": "READ",
+          "label": "Iyengar, LoY: forward-bend descriptions (Paścimottānāsana family) — read for what sustained passive stretching is described as doing"
+        },
+        {
+          "id": "S1-W9-READ-module-b-wk-9-mmk-ch-2123-arising-and-ce",
+          "type": "READ",
+          "label": "Module B Wk 9: MMK Ch. 21–23 (Arising and Ceasing; Tathāgata; False Conceptions — Phase III work)"
+        },
+        {
+          "id": "S1-W9-READ-module-c-wk-9-akbh-ch-5-klesa-map-contin",
+          "type": "READ",
+          "label": "Module C Wk 9: AKBh Ch. 5 (kleśa map continued)"
+        },
+        {
+          "id": "S1-W9-READ-module-a-wk-10-smith-yns-great-guide-six",
+          "type": "READ",
+          "label": "Module A Wk 10: Smith, YNS — Great Guide; six lamps introduction"
+        },
+        {
+          "id": "S1-W9-READ-ksemaraja-pratyabhijnahrdayam-sutra-8-re",
+          "type": "READ",
+          "label": "Kṣemarāja, Pratyabhijñāhṛdayam sūtra 8 (revisit spanda)"
+        },
+        {
+          "id": "S1-W9-WRITE-three-frameworks-for-a-yin-class",
+          "type": "WRITE",
+          "label": "*Three frameworks for a Yin class",
+          "note_file": "S1-W09-yin-three-frameworks.md",
+          "word_target": "400–600 words"
+        },
+        {
+          "id": "S1-W9-PRACTICE-one-long-hold-session-this-week-310",
+          "type": "PRACTICE",
+          "label": "One long-hold session this week (3–10 min per pose) as temporal phenomenology — observe the moment-to-moment shifts in sensation, thought, attention."
+        }
+      ]
+    },
+    {
+      "id": "S1-W10",
+      "week_number": 10,
+      "title": "Trauma-Informed Yoga",
+      "ytt_module": "M9",
+      "tradition_focus": "Suffering as process, not possession; the *kleśa* map; Capriles on Four Noble Truths of Ecology. **The heaviest listening week of the semester — plan accordingly.**",
+      "is_heavy": true,
+      "is_integration": false,
+      "tensions": [
+        "T1",
+        "T4"
+      ],
+      "items": [
+        {
+          "id": "S1-W10-READ-ytt-manual-section-9-somatic-experiencin",
+          "type": "READ",
+          "label": "YTT Manual: Section 9 — Somatic Experiencing, ANS, Identity, Separation, Inner Critic"
+        },
+        {
+          "id": "S1-W10-READ-satchidananda-ys-21217-klesas-samskaras-",
+          "type": "READ",
+          "label": "Satchidananda, YS: 2.1–2.17 (kleśas \\+ saṃskāras); 2.33–2.34 (pratipakṣa bhāvanā)"
+        },
+        {
+          "id": "S1-W10-READ-iyengar-loy-pranayama-chapter-psychologi",
+          "type": "READ",
+          "label": "Iyengar, LoY: prāṇāyāma chapter — psychological effects sections"
+        },
+        {
+          "id": "S1-W10-READ-module-b-wk-10-mmk-ch-24-examination-of-",
+          "type": "READ",
+          "label": "Module B Wk 10: MMK Ch. 24 (Examination of the Four Noble Truths — the prapañcopaśama / dependent-origination verse)"
+        },
+        {
+          "id": "S1-W10-READ-module-c-wk-10-akbh-ch-5-continued-full-",
+          "type": "READ",
+          "label": "Module C Wk 10: AKBh Ch. 5 continued (full kleśa exhaustive taxonomy)"
+        },
+        {
+          "id": "S1-W10-READ-module-a-wk-11-smith-yns-six-lamps-detai",
+          "type": "READ",
+          "label": "Module A Wk 11: Smith, YNS — six lamps detailed"
+        },
+        {
+          "id": "S1-W10-READ-d-integration-anand-neuroscience-of-yoga",
+          "type": "READ",
+          "label": "\\[\\[D-integration\\]\\] Anand, Neuroscience of Yoga Part 1 — trauma-relevant chapters (vagal tone, HPA, documented PTSD findings)"
+        },
+        {
+          "id": "S1-W10-LISTEN-capriles-the-four-noble-truths-of-ecolog",
+          "type": "LISTEN",
+          "label": "Capriles, \"The Four Noble Truths of Ecology\""
+        },
+        {
+          "id": "S1-W10-LISTEN-if-pacing-wont-accommodate-both-split-ca",
+          "type": "LISTEN",
+          "label": "If pacing won't accommodate both, split Capriles across Weeks 10 and 12 rather than displace him. The MMK 24 \\+ Capriles convergence is too clean to give up."
+        },
+        {
+          "id": "S1-W10-WRITE-trauma-as-conditioned-pattern-not-stored",
+          "type": "WRITE",
+          "label": "*Trauma as conditioned pattern (not stored object)",
+          "note_file": "S1-W10-trauma-conditioned-pattern.md",
+          "word_target": "500–700 words"
+        },
+        {
+          "id": "S1-W10-PRACTICE-honest-evaluation-of-your-own-pract",
+          "type": "PRACTICE",
+          "label": "Honest evaluation of your own practice in difficult conditions this week."
+        }
+      ]
+    },
+    {
+      "id": "S1-W11",
+      "week_number": 11,
+      "title": "Adaptive Yoga (M10) \\+ M11 Business deep-dive lands",
+      "ytt_module": "",
+      "tradition_focus": "*Upāya-kauśalya*; the path adapted to capacity; M11 Business / Ethics receives its full philosophical analysis this week (per Module D structure).",
+      "is_heavy": true,
+      "is_integration": false,
+      "tensions": [
+        "T1",
+        "T3"
+      ],
+      "items": [
+        {
+          "id": "S1-W11-READ-ytt-manual-section-10-adaptive-populatio",
+          "type": "READ",
+          "label": "YTT Manual: Section 10 — Adaptive Populations, Modification, Inclusion, Chair Yoga"
+        },
+        {
+          "id": "S1-W11-READ-ytt-manual-section-11-business-of-yoga-f",
+          "type": "READ",
+          "label": "YTT Manual: Section 11 — Business of Yoga (full read this week; module material was threaded earlier but the deep analysis lands here)"
+        },
+        {
+          "id": "S1-W11-READ-satchidananda-ys-120122-three-levels-of-",
+          "type": "READ",
+          "label": "Satchidananda, YS: 1.20–1.22 (three levels of intensity); 2.30–2.39 revisited (yamas, esp. aparigraha)"
+        },
+        {
+          "id": "S1-W11-READ-iyengar-loy-prop-system-sections-preface",
+          "type": "READ",
+          "label": "Iyengar, LoY: prop-system sections; preface (Krishnamacharya relationship)"
+        },
+        {
+          "id": "S1-W11-READ-module-b-wk-11-mmk-ch-2527-nirvana-twelv",
+          "type": "READ",
+          "label": "Module B Wk 11: MMK Ch. 25–27 (Nirvāṇa; Twelve-link chain; Views — closing of MMK)"
+        },
+        {
+          "id": "S1-W11-READ-module-c-wk-11-akbh-ch-5-close-bridge-to",
+          "type": "READ",
+          "label": "Module C Wk 11: AKBh Ch. 5 close \\+ bridge to Ch. 6 (mārga survey)"
+        },
+        {
+          "id": "S1-W11-READ-module-a-wks-1112-begin-smith-yns-four-t",
+          "type": "READ",
+          "label": "Module A Wks 11–12 begin: Smith, YNS — four thögal visions; Ultimate Mirror"
+        },
+        {
+          "id": "S1-W11-READ-ksemaraja-pratyabhijnahrdayam-sutra-19-r",
+          "type": "READ",
+          "label": "Kṣemarāja, Pratyabhijñāhṛdayam sūtra 19 (revisit — Trika tripartite upāyas)"
+        },
+        {
+          "id": "S1-W11-READ-d-integration-norbu-teachers-training-fu",
+          "type": "READ",
+          "label": "\\[\\[D-integration\\]\\] Norbu, Teachers' Training — full priority pick: opening chapters on authentic teacher qualities \\+ relational discipline of transmission"
+        },
+        {
+          "id": "S1-W11-READ-d-integration-tien-feng-lee-buddhist-eth",
+          "type": "READ",
+          "label": "\\[\\[D-integration\\]\\] Tien-Feng Lee, Buddhist Ethics for Laypeople — chapters on right speech, right livelihood"
+        },
+        {
+          "id": "S1-W11-READ-d-integration-nicholson-buddhism-cogniti",
+          "type": "READ",
+          "label": "\\[\\[D-integration\\]\\] Nicholson, Buddhism, Cognitive Science, and the Doctrine of Selflessness — selective for studio-translation language"
+        },
+        {
+          "id": "S1-W11-LISTEN-lifshitzveissiere-pt-3",
+          "type": "LISTEN",
+          "label": "Lifshitz/Veissière Pt. 3"
+        },
+        {
+          "id": "S1-W11-WRITE-adaptive-teaching-without-a-normative-bo",
+          "type": "WRITE",
+          "label": "Adaptive teaching without a normative body",
+          "note_file": "S1-W11a-adaptive-no-norm-body.md"
+        },
+        {
+          "id": "S1-W11-WRITE-cue-log-working-entry-the-brand-question",
+          "type": "WRITE",
+          "label": "Cue Log working entry — the brand question",
+          "note_file": "S1-W11b-brand-aparigraha-audit.md"
+        },
+        {
+          "id": "S1-W11-PRACTICE-adaptive-variations-explored-in-you",
+          "type": "PRACTICE",
+          "label": "Adaptive variations explored in your own sit; honest evaluation of how your practice serves (or doesn't) the breadth of bodies you encounter."
+        }
+      ]
+    },
+    {
+      "id": "S1-W12",
+      "week_number": 12,
+      "title": "INTEGRATION: Tensions Review",
+      "ytt_module": "",
+      "tradition_focus": "",
+      "is_heavy": false,
+      "is_integration": true,
+      "tensions": [
+        "T1",
+        "T2",
+        "T3",
+        "T4"
+      ],
+      "items": [
+        {
+          "id": "S1-W12-READ-module-d-appendix-b-central-philosophica",
+          "type": "READ",
+          "label": "Module D Appendix B (Central Philosophical Tensions Tracker) — full read-through with your semester's journal entries on each tension"
+        },
+        {
+          "id": "S1-W12-READ-re-read-your-week-1-week-4-week-7-writte",
+          "type": "READ",
+          "label": "Re-read your Week 1, Week 4, Week 7 written deliverables (the tension anchors)"
+        },
+        {
+          "id": "S1-W12-READ-smith-on-the-gzhi-nyingma-madhyamaka-syn",
+          "type": "READ",
+          "label": "Smith on the gzhi / Nyingma-Madhyamaka synthesis (re-read of YNS introduction)"
+        },
+        {
+          "id": "S1-W12-READ-ksemaraja-ph-sutras-14-and-12-counterpoi",
+          "type": "READ",
+          "label": "Kṣemarāja PH sūtras 1–4 and 12 (counterpoint anchors)"
+        },
+        {
+          "id": "S1-W12-READ-vasubandhu-akbh-ix-selections-on-the-ref",
+          "type": "READ",
+          "label": "Vasubandhu AKBh IX selections on the refutation of the self (the Pudgala-pratiṣedha; this is preview material — the chapter itself is not formally on the Module C 15-week scope, but selections frame Week 12's tensions work)"
+        },
+        {
+          "id": "S1-W12-READ-module-b-wk-12-candrakirti-madhyamakavat",
+          "type": "READ",
+          "label": "Module B Wk 12: Candrakīrti Madhyamakāvatāra Ch. 1–6 (first six perfections; bodhisattva grounds)"
+        },
+        {
+          "id": "S1-W12-READ-module-c-wk-12-akbh-ch-6-marga-the-path-",
+          "type": "READ",
+          "label": "Module C Wk 12: AKBh Ch. 6 (mārga — the path), Vol. 2 close. (Note: the recalibrated Module C ends with Ch. 5; mārga is preview-only via the Series II overview class.)"
+        },
+        {
+          "id": "S1-W12-READ-module-a-four-thogal-visions-continued",
+          "type": "READ",
+          "label": "Module A: four thögal visions continued"
+        },
+        {
+          "id": "S1-W12-LISTEN-capriles-re-listen-on-the-saksin-critiqu",
+          "type": "LISTEN",
+          "label": "Capriles re-listen on the sākṣin critique (the \"false non-duality\" formulation) — Running Tension \\#1 anchor"
+        },
+        {
+          "id": "S1-W12-LISTEN-berkovich-ohana-re-listen-on-self-patter",
+          "type": "LISTEN",
+          "label": "Berkovich-Ohana re-listen on self-pattern theory — Running Tension \\#1 anchor"
+        },
+        {
+          "id": "S1-W12-WRITE-the-tensions-document-week-12-deliverabl",
+          "type": "WRITE",
+          "label": "The Tensions Document (Week 12 deliverable)",
+          "note_file": "S1-W12-tensions-document.md"
+        },
+        {
+          "id": "S1-W12-PRACTICE-sitting-prompts-one-per-tension-fro",
+          "type": "PRACTICE",
+          "label": "Sitting prompts (one per tension, from Module D Week 12):"
+        }
+      ]
+    },
+    {
+      "id": "S1-W13",
+      "week_number": 13,
+      "title": "INTEGRATION: Cue Log Audit",
+      "ytt_module": "",
+      "tradition_focus": "",
+      "is_heavy": false,
+      "is_integration": true,
+      "tensions": [
+        "T1"
+      ],
+      "items": [
+        {
+          "id": "S1-W13-READ-your-cue-log-fourteen-weeks-of-entries-c",
+          "type": "READ",
+          "label": "Your Cue Log — fourteen weeks of entries, chronological order"
+        },
+        {
+          "id": "S1-W13-READ-norbu-teachers-training-sections-on-view",
+          "type": "READ",
+          "label": "Norbu, Teachers' Training — sections on view / conduct / speech (the audit framework)"
+        },
+        {
+          "id": "S1-W13-READ-module-b-wk-13-candrakirti-ma-ch-611-san",
+          "type": "READ",
+          "label": "Module B Wk 13: Candrakīrti MA Ch. 6–11; Śāntarakṣita Madhyamakālaṃkāra (Yogācāra-Madhyamaka synthesis as model for holding two views together)"
+        },
+        {
+          "id": "S1-W13-READ-module-c-wk-13-madhyamika-critique-of-ab",
+          "type": "READ",
+          "label": "Module C Wk 13: Mādhyamika critique of Abhidharma (transition material; AKBh IX selections on the refutation of the self where Module C bridges to Module B's Phase IV)"
+        },
+        {
+          "id": "S1-W13-READ-module-a-integration-synthesis-of-the-fo",
+          "type": "READ",
+          "label": "Module A: integration / synthesis of the four visions"
+        },
+        {
+          "id": "S1-W13-WRITE-uncertain",
+          "type": "WRITE",
+          "label": "uncertain",
+          "note_file": "S1-W13-cue-inventory.md"
+        },
+        {
+          "id": "S1-W13-PRACTICE-practice-from-view-test-the-survivi",
+          "type": "PRACTICE",
+          "label": "Practice from view: test the surviving cues in studio."
+        }
+      ]
+    },
+    {
+      "id": "S1-W14",
+      "week_number": 14,
+      "title": "INTEGRATION: Teaching Philosophy Statement",
+      "ytt_module": "",
+      "tradition_focus": "",
+      "is_heavy": false,
+      "is_integration": true,
+      "tensions": [
+        "T1"
+      ],
+      "items": [
+        {
+          "id": "S1-W14-READ-your-tensions-document-week-12",
+          "type": "READ",
+          "label": "Your Tensions Document (Week 12\\)"
+        },
+        {
+          "id": "S1-W14-READ-your-working-cue-inventory-week-13",
+          "type": "READ",
+          "label": "Your Working Cue Inventory (Week 13\\)"
+        },
+        {
+          "id": "S1-W14-READ-smith-yns-re-read-of-the-introduction",
+          "type": "READ",
+          "label": "Smith, YNS — re-read of the Introduction"
+        },
+        {
+          "id": "S1-W14-READ-norbu-teachers-training-final-chapters-o",
+          "type": "READ",
+          "label": "Norbu, Teachers' Training — final chapters on integration of teaching and practice"
+        },
+        {
+          "id": "S1-W14-READ-module-b-wk-14-nagarjuna-ratnavali-surve",
+          "type": "READ",
+          "label": "Module B Wk 14: Nāgārjuna Ratnāvalī survey (esp. chapters on teaching, transmission, teacher-student); second-semester orientation"
+        },
+        {
+          "id": "S1-W14-READ-module-c-wk-14-bridge-madhyamika-critiqu",
+          "type": "READ",
+          "label": "Module C Wk 14: bridge / Mādhyamika critique of Abhidharma; orientation toward the deferred Vols 3–4 module"
+        },
+        {
+          "id": "S1-W14-READ-module-a-wks-1112-close-compressed-final",
+          "type": "READ",
+          "label": "Module A Wks 11–12 close compressed: final YNS synthesis of the four visions"
+        },
+        {
+          "id": "S1-W14-WRITE-the-teaching-philosophy-statement-week-1",
+          "type": "WRITE",
+          "label": "The Teaching Philosophy Statement (Week 14 deliverable)",
+          "note_file": "S1-W14-teaching-philosophy.md",
+          "word_target": "250–400 words"
+        },
+        {
+          "id": "S1-W14-PRACTICE-whatever-practice-has-emerged-as-fo",
+          "type": "PRACTICE",
+          "label": "Whatever practice has emerged as foundational over the semester."
+        }
+      ]
+    }
+  ],
+  "tensions": [
+    {
+      "id": "T1",
+      "label": "ātman / anātman",
+      "color": "#7F77DD"
+    },
+    {
+      "id": "T2",
+      "label": "svāsaṃvedana / vimarśa / rang rig",
+      "color": "#1D9E75"
+    },
+    {
+      "id": "T3",
+      "label": "prapañca / māyā",
+      "color": "#E24B4A"
+    },
+    {
+      "id": "T4",
+      "label": "gzhi vs. ground",
+      "color": "#D4537E"
+    }
+  ]
+}
+</script>
+
+<!-- ── App ────────────────────────────────────────────────── -->
+<script>
+'use strict';
+
+// ── Constants ─────────────────────────────────────────────────────────────
+
+const CX = 270, CY = 270;         // SVG canvas center
+const RING_R   = 195;              // week orbit radius
+const NODE_R   = 22;               // week circle radius
+const SAT_DIST = 28;               // satellite distance from node center
+const SAT_R    = 5.5;              // satellite circle radius
+const HALO_R   = 230;              // glow halo radius
+const CORE_R   = 85;               // warm core glow radius
+
+const TENSION_COLORS = {
+  T1: 'var(--t1)', T2: 'var(--t2)', T3: 'var(--t3)', T4: 'var(--t4)'
+};
+
+// Anchor weeks per tension (from scope doc)
+const CHORD_ANCHORS = [
+  { id: 'T1', w1: 1,  w2: 12 },
+  { id: 'T2', w1: 4,  w2: 12 },
+  { id: 'T3', w1: 2,  w2: 10 },
+  { id: 'T4', w1: 8,  w2: 12 },
+];
+
+// Satellite angular offsets relative to outward direction (degrees)
+const SAT_ANGLE_OFFSETS = [-38, -19, 0, 19, 38];
+
+// ── State ──────────────────────────────────────────────────────────────────
+
+const STATE_KEY = 'ytt-tracker-state-v1';
+
+let semData = null;    // loaded from embedded JSON
+let appState = null;   // loaded from localStorage
+let selectedWeekId = null;
+let selectedTensionId = null;
+
+// ── Geometry helpers ───────────────────────────────────────────────────────
+
+function weekAngle(weekNum) {
+  return ((weekNum - 1) / 14) * 2 * Math.PI - Math.PI / 2;
+}
+
+function weekPos(weekNum) {
+  const a = weekAngle(weekNum);
+  return { x: CX + RING_R * Math.cos(a), y: CY + RING_R * Math.sin(a) };
+}
+
+function satPos(weekNum, slotIndex, totalSlots) {
+  const outward = weekAngle(weekNum);
+  // Use subset of offsets centered for the item count
+  const offsets = SAT_ANGLE_OFFSETS.slice(0, Math.min(totalSlots, 5));
+  const offsetDeg = offsets[slotIndex] || 0;
+  const angle = outward + (offsetDeg * Math.PI / 180);
+  const { x: wx, y: wy } = weekPos(weekNum);
+  return {
+    x: wx + SAT_DIST * Math.cos(angle),
+    y: wy + SAT_DIST * Math.sin(angle),
+  };
+}
+
+// ── SVG helpers ────────────────────────────────────────────────────────────
+
+const SVG_NS = 'http://www.w3.org/2000/svg';
+
+function el(tag, attrs = {}, children = []) {
+  const e = document.createElementNS(SVG_NS, tag);
+  for (const [k, v] of Object.entries(attrs)) {
+    if (v !== null && v !== undefined) e.setAttribute(k, v);
+  }
+  for (const c of children) {
+    if (c) e.appendChild(typeof c === 'string' ? document.createTextNode(c) : c);
+  }
+  return e;
+}
+
+function htmlEl(tag, attrs = {}, children = []) {
+  const e = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs)) {
+    if (k === 'class') e.className = v;
+    else if (k === 'style' && typeof v === 'object') Object.assign(e.style, v);
+    else e.setAttribute(k, v);
+  }
+  for (const c of children) {
+    if (c == null) continue;
+    e.appendChild(typeof c === 'string' ? document.createTextNode(c) : c);
+  }
+  return e;
+}
+
+// ── State helpers ──────────────────────────────────────────────────────────
+
+function emptyState() {
+  return {
+    version: 1,
+    schema: 'thigle-v1',
+    current_semester: 'S1',
+    semesters: {
+      S1: {
+        title: 'YTT integration',
+        started_at: new Date().toISOString(),
+        items: {},
+        weeks: {},
+        tensions: { T1: { notes: '' }, T2: { notes: '' }, T3: { notes: '' }, T4: { notes: '' } },
+      }
+    },
+    streak: { current_days: 0, last_session_date: null },
+    preferences: { show_tension_chords: true, show_satellite_items: true, theme: 'auto' },
+  };
+}
+
+function loadState() {
+  try {
+    const raw = localStorage.getItem(STATE_KEY);
+    if (raw) return JSON.parse(raw);
+  } catch (_) {}
+  return emptyState();
+}
+
+function saveState() {
+  localStorage.setItem(STATE_KEY, JSON.stringify(appState));
+}
+
+function itemStatus(itemId) {
+  return appState.semesters.S1.items[itemId]?.status || 'not-started';
+}
+
+function weekCompletion(week) {
+  const total = week.items.length;
+  if (!total) return 0;
+  const done = week.items.filter(i => itemStatus(i.id) === 'done').length;
+  return done / total;
+}
+
+function overallProgress() {
+  if (!semData) return 0;
+  const allItems = semData.weeks.flatMap(w => w.items);
+  if (!allItems.length) return 0;
+  const done = allItems.filter(i => itemStatus(i.id) === 'done').length;
+  return done / allItems.length;
+}
+
+// ── Week visual state ──────────────────────────────────────────────────────
+
+function weekState(week) {
+  const comp = weekCompletion(week);
+  if (comp === 1) return 'complete';
+  if (comp > 0)   return 'in-progress';
+  if (week.id === selectedWeekId) return 'active';
+  return 'upcoming';
+}
+
+function weekColors(week) {
+  const state = weekState(week);
+  const isSelected = week.id === selectedWeekId;
+  if (state === 'complete') {
+    return { ring: 'var(--c-complete)', fill: 'var(--c-complete-fill)', text: 'var(--c-complete-text)', ringW: 2 };
+  }
+  if (state === 'in-progress') {
+    return { ring: 'var(--c-complete)', fill: 'var(--c-active-fill)', text: 'var(--c-complete-text)', ringW: 2 };
+  }
+  if (isSelected) {
+    return { ring: 'var(--c-active)', fill: 'var(--c-active-fill)', text: 'var(--c-active-text)', ringW: 3 };
+  }
+  if (week.is_heavy) {
+    return { ring: 'var(--c-heavy)', fill: 'var(--c-heavy-fill)', text: 'var(--c-heavy-text)', ringW: 1.5, opacity: 0.75 };
+  }
+  if (week.is_integration) {
+    return { ring: 'var(--c-integration)', fill: 'var(--c-active-fill)', text: 'var(--c-active-text)', ringW: 1.5, opacity: 0.65, dashed: true };
+  }
+  return { ring: 'var(--c-upcoming)', fill: 'none', text: 'var(--c-upcoming-text)', ringW: 1.5, opacity: 0.55 };
+}
+
+function satColor(item) {
+  const status = itemStatus(item.id);
+  if (status === 'done')        return 'var(--c-complete)';
+  if (status === 'in-progress') return 'var(--t1)';
+  const typeColors = { READ: 'var(--text-dim)', LISTEN: 'var(--t3)', WRITE: 'var(--t4)', PRACTICE: 'var(--t2)' };
+  return typeColors[item.type] || 'var(--c-upcoming)';
+}
+
+// ── SVG rendering ──────────────────────────────────────────────────────────
+
+function renderDefs(svg) {
+  const defs = el('defs');
+
+  // Glow halo: warm pink → purple → teal
+  const halo = el('radialGradient', { id: 'grad-halo', cx: '50%', cy: '50%', r: '50%', gradientUnits: 'userSpaceOnUse',
+    x1: CX - HALO_R, y1: CY - HALO_R, x2: CX + HALO_R, y2: CY + HALO_R });
+  halo.setAttribute('cx', CX); halo.setAttribute('cy', CY);
+  [
+    { offset: '0%',   color: '#F09595', opacity: '0.11' },
+    { offset: '28%',  color: '#AFA9EC', opacity: '0.08' },
+    { offset: '60%',  color: '#5DCAA5', opacity: '0.04' },
+    { offset: '100%', color: '#5DCAA5', opacity: '0'    },
+  ].forEach(s => {
+    const stop = el('stop', { offset: s.offset });
+    stop.setAttribute('stop-color', s.color);
+    stop.setAttribute('stop-opacity', s.opacity);
+    halo.appendChild(stop);
+  });
+  defs.appendChild(halo);
+
+  // Core glow: amber → coral
+  const core = el('radialGradient', { id: 'grad-core', cx: '50%', cy: '50%', r: '50%', gradientUnits: 'userSpaceOnUse' });
+  core.setAttribute('cx', CX); core.setAttribute('cy', CY);
+  [
+    { offset: '0%',   color: '#F5C97A', opacity: '0.42' },
+    { offset: '42%',  color: '#E8895A', opacity: '0.20' },
+    { offset: '100%', color: '#E8895A', opacity: '0'    },
+  ].forEach(s => {
+    const stop = el('stop', { offset: s.offset });
+    stop.setAttribute('stop-color', s.color);
+    stop.setAttribute('stop-opacity', s.opacity);
+    core.appendChild(stop);
+  });
+  defs.appendChild(core);
+
+  // Active week glow filter
+  const activeGlow = el('filter', { id: 'filter-active-glow', x: '-50%', y: '-50%', width: '200%', height: '200%' });
+  const feGaussian = el('feGaussianBlur', { in: 'SourceGraphic', stdDeviation: '4', result: 'blur' });
+  const feBlend = el('feComposite', { in: 'SourceGraphic', in2: 'blur', operator: 'over' });
+  activeGlow.appendChild(feGaussian);
+  activeGlow.appendChild(feBlend);
+  defs.appendChild(activeGlow);
+
+  svg.appendChild(defs);
+}
+
+function renderBackground(svg) {
+  // Halo (large soft gradient)
+  svg.appendChild(el('circle', {
+    cx: CX, cy: CY, r: HALO_R,
+    fill: 'url(#grad-halo)',
+  }));
+
+  // Outer dashed ring
+  svg.appendChild(el('circle', {
+    cx: CX, cy: CY, r: RING_R,
+    fill: 'none',
+    stroke: 'currentColor',
+    'stroke-opacity': '0.18',
+    'stroke-width': '1',
+    'stroke-dasharray': '3 6',
+  }));
+}
+
+function renderCore(svg) {
+  // Warm core glow
+  svg.appendChild(el('circle', {
+    cx: CX, cy: CY, r: CORE_R,
+    fill: 'url(#grad-core)',
+  }));
+
+  // Center text group
+  const g = el('g', { 'text-anchor': 'middle', 'dominant-baseline': 'middle' });
+
+  g.appendChild(el('text', {
+    x: CX, y: CY - 16,
+    fill: 'var(--text-muted)',
+    'font-size': '9',
+    'font-weight': '600',
+    'letter-spacing': '0.14em',
+    'text-transform': 'uppercase',
+  }, ['SEMESTER 1']));
+
+  g.appendChild(el('text', {
+    x: CX, y: CY + 2,
+    fill: 'var(--c-active-text)',
+    'font-size': '14',
+    'font-weight': '600',
+  }, ['YTT integration']));
+
+  const progressText = el('text', {
+    id: 'center-progress-text',
+    x: CX, y: CY + 18,
+    fill: 'var(--text-muted)',
+    'font-size': '9.5',
+    'font-weight': '400',
+  }, ['14 weeks · 0% complete']);
+  g.appendChild(progressText);
+
+  svg.appendChild(g);
+}
+
+function renderChords(svg) {
+  const chordsG = el('g', { 'class': 'tension-chords' });
+  const labelsG = el('g', { 'class': 'tension-labels' });
+
+  for (const chord of CHORD_ANCHORS) {
+    const p1 = weekPos(chord.w1);
+    const p2 = weekPos(chord.w2);
+    const color = TENSION_COLORS[chord.id];
+
+    const chordActive   = selectedTensionId === chord.id;
+    const chordInactive = selectedTensionId && selectedTensionId !== chord.id;
+    chordsG.appendChild(el('line', {
+      x1: p1.x, y1: p1.y, x2: p2.x, y2: p2.y,
+      stroke: color,
+      'stroke-width':   chordActive ? '2.2' : '1.2',
+      'stroke-dasharray': chordActive ? '4 4' : '3 5',
+      'stroke-opacity': chordActive ? '1' : chordInactive ? '0.18' : '0.65',
+      'class': `chord chord-${chord.id}`,
+      'data-tension': chord.id,
+    }));
+
+    // Chip at the perimeter, just outside the ring at the first anchor's angle
+    const a1 = weekAngle(chord.w1);
+    const chipX = CX + (RING_R + 20) * Math.cos(a1);
+    const chipY = CY + (RING_R + 20) * Math.sin(a1);
+
+    const chipOpacity = chordInactive ? '0.25' : '1';
+    const chipG = el('g', { 'class': `tension-chip tension-chip-${chord.id}`, 'data-tension': chord.id,
+      transform: `translate(${chipX},${chipY})`, opacity: chipOpacity, style: 'cursor:pointer' });
+    chipG.appendChild(el('rect', {
+      x: -11, y: -8, width: 22, height: 16, rx: 4,
+      fill: 'var(--surface)',
+      stroke: color,
+      'stroke-width': '1',
+      'stroke-opacity': '0.8',
+      'fill-opacity': '0.92',
+    }));
+    chipG.appendChild(el('text', {
+      x: 0, y: 0,
+      fill: color,
+      'font-size': '9',
+      'font-weight': '600',
+      'text-anchor': 'middle',
+      'dominant-baseline': 'middle',
+    }, [chord.id]));
+    labelsG.appendChild(chipG);
+  }
+
+  svg.appendChild(chordsG);
+  svg.appendChild(labelsG);
+}
+
+function renderWeekNode(week) {
+  const { x, y } = weekPos(week.week_number);
+  const colors = weekColors(week);
+  const comp = weekCompletion(week);
+  const isSelected = week.id === selectedWeekId;
+
+  // Dim when something else is selected
+  const dimmed = (selectedWeekId && !isSelected) ||
+                 (selectedTensionId && !week.tensions.includes(selectedTensionId));
+  // Highlight when this week's tension is selected
+  const tensionHighlight = selectedTensionId && week.tensions.includes(selectedTensionId) && !isSelected;
+
+  const g = el('g', {
+    'class': `week-node${isSelected ? ' selected' : ''}`,
+    'data-week-id': week.id,
+    transform: `translate(${x},${y})`,
+    opacity: dimmed ? '0.28' : '1',
+    'aria-label': `Week ${week.week_number}: ${week.title}`,
+  });
+
+  // Selection / tension-highlight glow halo
+  if (isSelected) {
+    g.appendChild(el('circle', {
+      cx: 0, cy: 0, r: NODE_R + 7,
+      fill: 'var(--c-active)',
+      'fill-opacity': '0.15',
+    }));
+  } else if (tensionHighlight) {
+    const tc = TENSION_COLORS[selectedTensionId];
+    g.appendChild(el('circle', {
+      cx: 0, cy: 0, r: NODE_R + 5,
+      fill: tc,
+      'fill-opacity': '0.18',
+      stroke: tc,
+      'stroke-width': '1.5',
+      'stroke-opacity': '0.55',
+    }));
+  }
+
+  // Background fill circle
+  g.appendChild(el('circle', {
+    cx: 0, cy: 0, r: NODE_R,
+    fill: colors.fill || 'none',
+    opacity: colors.opacity || '1',
+  }));
+
+  // Completion arc (if in-progress: draw partial arc)
+  if (comp > 0 && comp < 1) {
+    const angle = comp * 2 * Math.PI - Math.PI / 2;
+    const ex = NODE_R * Math.cos(angle);
+    const ey = NODE_R * Math.sin(angle);
+    const large = comp > 0.5 ? 1 : 0;
+    const arcPath = `M 0 ${-NODE_R} A ${NODE_R} ${NODE_R} 0 ${large} 1 ${ex} ${ey}`;
+    g.appendChild(el('path', {
+      d: arcPath,
+      fill: 'none',
+      stroke: 'var(--c-complete)',
+      'stroke-width': '2',
+      'stroke-linecap': 'round',
+    }));
+    // Gray remainder arc
+    const remPath = `M ${ex} ${ey} A ${NODE_R} ${NODE_R} 0 ${1-large} 1 0 ${-NODE_R}`;
+    g.appendChild(el('path', {
+      d: remPath,
+      fill: 'none',
+      stroke: 'var(--c-upcoming)',
+      'stroke-width': '1.5',
+      'stroke-linecap': 'round',
+      'stroke-opacity': '0.4',
+    }));
+  } else {
+    // Full ring
+    const dash = colors.dashed ? '4 3' : null;
+    const ringEl = el('circle', {
+      cx: 0, cy: 0, r: NODE_R,
+      fill: 'none',
+      stroke: colors.ring,
+      'stroke-width': colors.ringW,
+      opacity: colors.opacity || '1',
+      'class': 'node-ring',
+    });
+    if (dash) ringEl.setAttribute('stroke-dasharray', dash);
+    g.appendChild(ringEl);
+  }
+
+  // Week label
+  g.appendChild(el('text', {
+    x: 0, y: 0,
+    fill: colors.text,
+    'font-size': '11',
+    'font-weight': '500',
+    'text-anchor': 'middle',
+    'dominant-baseline': 'middle',
+    opacity: colors.opacity || '1',
+  }, [`W${week.week_number}`]));
+
+  return g;
+}
+
+function renderSatellites(week) {
+  const isWeekSelected = week.id === selectedWeekId;
+  const dimmed = (selectedWeekId && !isWeekSelected) ||
+                 (selectedTensionId && !week.tensions.includes(selectedTensionId));
+
+  const g = el('g', {
+    'class': `satellites-${week.id}`,
+    'data-week-id': week.id,
+    opacity: dimmed ? '0.2' : '1',
+  });
+  const displayItems = week.items.slice(0, 5);
+  displayItems.forEach((item, i) => {
+    const { x, y } = satPos(week.week_number, i, displayItems.length);
+    const color = satColor(item);
+    const status = itemStatus(item.id);
+
+    const satG = el('g', {
+      'class': 'satellite',
+      'data-item-id': item.id,
+      'data-week-id': week.id,
+      transform: `translate(${x},${y})`,
+      style: 'cursor:pointer',
+    });
+
+    // Larger invisible hit target
+    satG.appendChild(el('circle', {
+      cx: 0, cy: 0, r: SAT_R + 4,
+      fill: 'transparent',
+    }));
+
+    satG.appendChild(el('circle', {
+      cx: 0, cy: 0, r: SAT_R,
+      fill: status === 'not-started' ? 'none' : color,
+      stroke: color,
+      'stroke-width': status === 'not-started' ? '1.2' : '0',
+      'fill-opacity': status === 'not-started' ? '0' : '0.85',
+      opacity: isWeekSelected ? '1' : '0.6',
+    }));
+
+    // Center dot for unstarted (type indicator)
+    if (status === 'not-started') {
+      satG.appendChild(el('circle', {
+        cx: 0, cy: 0, r: 1.8,
+        fill: color,
+        'fill-opacity': '0.55',
+      }));
+    }
+
+    g.appendChild(satG);
+  });
+
+  // If more than 5, show count badge on last satellite
+  if (week.items.length > 5) {
+    const { x, y } = satPos(week.week_number, 4, 5);
+    g.appendChild(el('text', {
+      x: x + 7, y: y - 4,
+      fill: 'var(--text-muted)',
+      'font-size': '7',
+      'font-weight': '600',
+    }, [`+${week.items.length - 5}`]));
+  }
+
+  return g;
+}
+
+function renderThigle() {
+  const svg = document.getElementById('thigle-svg');
+  svg.innerHTML = '';
+
+  renderDefs(svg);
+  renderBackground(svg);
+
+  if (appState.preferences.show_tension_chords) {
+    renderChords(svg);
+  }
+
+  renderCore(svg);
+
+  // Satellites (behind week nodes)
+  if (appState.preferences.show_satellite_items) {
+    const satLayer = el('g', { 'class': 'satellite-layer' });
+    for (const week of semData.weeks) {
+      satLayer.appendChild(renderSatellites(week));
+    }
+    svg.appendChild(satLayer);
+  }
+
+  // Week nodes (on top)
+  const nodeLayer = el('g', { 'class': 'node-layer' });
+  for (const week of semData.weeks) {
+    nodeLayer.appendChild(renderWeekNode(week));
+  }
+  svg.appendChild(nodeLayer);
+
+  // Update center progress text
+  const prog = overallProgress();
+  const progEl = document.getElementById('center-progress-text');
+  if (progEl) {
+    progEl.textContent = `14 weeks · ${Math.round(prog * 100)}% complete`;
+  }
+
+  // Update top bar stats
+  document.getElementById('stat-progress').textContent = `${Math.round(prog * 100)}%`;
+  const streak = appState.streak.current_days;
+  document.getElementById('stat-streak').textContent = `${streak} day${streak !== 1 ? 's' : ''}`;
+}
+
+// ── Side panel rendering ───────────────────────────────────────────────────
+
+function renderPanel() {
+  const panel = document.getElementById('side-panel');
+  panel.innerHTML = '';
+
+  if (selectedTensionId) {
+    renderTensionPanel(panel);
+  } else if (selectedWeekId) {
+    const week = semData.weeks.find(w => w.id === selectedWeekId);
+    if (week) renderWeekPanel(panel, week);
+  } else {
+    renderSummaryPanel(panel);
+  }
+}
+
+function renderSummaryPanel(panel) {
+  const total = semData.weeks.length;
+  const complete  = semData.weeks.filter(w => weekCompletion(w) === 1).length;
+  const inProg    = semData.weeks.filter(w => { const c = weekCompletion(w); return c > 0 && c < 1; }).length;
+  const upcoming  = total - complete - inProg;
+  const prog = Math.round(overallProgress() * 100);
+
+  // Find next suggested week
+  const next = semData.weeks.find(w => weekCompletion(w) < 1);
+
+  const items = [
+    ['Overall progress', `${prog}%`],
+    ['Complete', complete],
+    ['In progress', inProg],
+    ['Upcoming', upcoming],
+    ['Current streak', `${appState.streak.current_days} days`],
+  ];
+
+  panel.appendChild(htmlEl('div', {class: 'panel-section-label'}, ['Summary']));
+
+  const statsDiv = htmlEl('div', {});
+  items.forEach(([label, val]) => {
+    statsDiv.appendChild(htmlEl('div', {class: 'summary-stat'}, [
+      htmlEl('span', {class: 'summary-stat-label'}, [label]),
+      htmlEl('span', {class: 'summary-stat-value'}, [String(val)]),
+    ]));
+  });
+  panel.appendChild(statsDiv);
+
+  if (next) {
+    panel.appendChild(htmlEl('div', {style: {marginTop: '12px'}},[
+      htmlEl('div', {class: 'panel-section-label'}, ['Next up']),
+      htmlEl('div', {style: {fontSize: '13px', color: 'var(--text)', lineHeight: '1.4'}}, [
+        htmlEl('span', {style: {fontWeight: '600'}}, [`W${next.week_number} — ${next.title}`]),
+        htmlEl('br', {}),
+        htmlEl('span', {style: {color: 'var(--text-muted)'}}, [next.tradition_focus || '']),
+      ]),
+    ]));
+  }
+
+  panel.appendChild(htmlEl('div', {style: {marginTop: '12px'}},[
+    htmlEl('div', {class: 'panel-section-label'}, ['Tensions']),
+    htmlEl('div', {class: 'tensions-row'}, semData.tensions.map(t =>
+      buildTensionChip(t)
+    )),
+  ]));
+}
+
+function renderWeekPanel(panel, week) {
+  const comp = weekCompletion(week);
+  const compPct = Math.round(comp * 100);
+
+  panel.appendChild(htmlEl('div', {class: 'panel-section-label'}, ['Selected']));
+
+  panel.appendChild(htmlEl('div', {class: 'panel-week-title'},
+    [`Week ${week.week_number} — ${week.title}`]
+  ));
+
+  const subtitle = [week.ytt_module, week.tradition_focus].filter(Boolean).join(' · ');
+  if (subtitle) {
+    panel.appendChild(htmlEl('div', {class: 'panel-week-subtitle'}, [subtitle]));
+  }
+
+  // Progress bar
+  const barWrap = htmlEl('div', {class: 'panel-progress-bar'});
+  barWrap.appendChild(htmlEl('div', {
+    class: 'panel-progress-fill',
+    style: { width: `${compPct}%` },
+  }));
+  panel.appendChild(barWrap);
+  panel.appendChild(htmlEl('div', {style: {fontSize: '11px', color: 'var(--text-muted)', marginBottom: '12px', marginTop: '-10px'}},
+    [`${compPct}% complete · ${week.items.length} items`]
+  ));
+
+  // Items
+  if (week.items.length) {
+    panel.appendChild(htmlEl('div', {class: 'panel-section-label'}, ['Items']));
+    const listEl = htmlEl('div', {class: 'item-list'});
+    week.items.forEach(item => {
+      listEl.appendChild(buildItemRow(item));
+    });
+    panel.appendChild(listEl);
+  }
+
+  // Tensions
+  if (week.tensions.length) {
+    panel.appendChild(htmlEl('div', {style: {marginTop: '12px'}},[
+      htmlEl('div', {class: 'panel-section-label'}, ['Tensions touched']),
+      htmlEl('div', {class: 'tensions-row'}, week.tensions.map(tid => {
+        const t = semData.tensions.find(x => x.id === tid);
+        return t ? buildTensionChip(t) : null;
+      }).filter(Boolean)),
+    ]));
+  }
+}
+
+function renderTensionPanel(panel) {
+  const tension = semData.tensions.find(t => t.id === selectedTensionId);
+  if (!tension) return;
+
+  const color = TENSION_COLORS[tension.id];
+
+  panel.appendChild(htmlEl('div', {class: 'panel-section-label'}, ['Tension']));
+  panel.appendChild(htmlEl('div', {style: {fontSize: '16px', fontWeight: '700', color: 'var(--text)', marginBottom: '4px'}},
+    [tension.id + ' — ' + tension.label]
+  ));
+
+  const weeks = semData.weeks.filter(w => w.tensions.includes(tension.id));
+  panel.appendChild(htmlEl('div', {style: {fontSize: '12px', color: 'var(--text-muted)', marginBottom: '12px'}},
+    [`${weeks.length} weeks`]
+  ));
+
+  panel.appendChild(htmlEl('div', {class: 'panel-section-label'}, ['Weeks']));
+  const listEl = htmlEl('div', {style: {display: 'flex', flexDirection: 'column', gap: '4px'}});
+  weeks.forEach(w => {
+    const comp = Math.round(weekCompletion(w) * 100);
+    listEl.appendChild(htmlEl('div', {
+      style: {
+        display: 'flex', justifyContent: 'space-between', alignItems: 'center',
+        padding: '6px 8px', borderRadius: '6px', cursor: 'pointer',
+        background: w.id === selectedWeekId ? 'var(--surface-2)' : 'transparent',
+      },
+      'data-week-id': w.id,
+    }, [
+      htmlEl('span', {style: {fontSize: '13px'}},
+        [`W${w.week_number} — ${w.title}`]
+      ),
+      htmlEl('span', {style: {fontSize: '11px', color: 'var(--text-muted)'}},
+        [`${comp}%`]
+      ),
+    ]));
+  });
+  panel.appendChild(listEl);
+}
+
+function buildItemRow(item) {
+  const status = itemStatus(item.id);
+  const done = status === 'done';
+  const inProg = status === 'in-progress';
+
+  let iconSvg;
+  if (done) {
+    iconSvg = `<svg viewBox="0 0 16 16" fill="none" stroke="var(--c-complete)" stroke-width="2" stroke-linecap="round"><path d="M3 8l3.5 3.5L13 4.5"/></svg>`;
+  } else if (inProg) {
+    iconSvg = `<svg viewBox="0 0 16 16" fill="none"><polygon points="5,3 13,8 5,13" fill="var(--t1)" opacity="0.85"/></svg>`;
+  } else {
+    iconSvg = `<svg viewBox="0 0 16 16" fill="none" stroke="var(--c-upcoming)" stroke-width="1.5"><circle cx="8" cy="8" r="5.5"/></svg>`;
+  }
+
+  const iconSpan = htmlEl('span', {class: 'item-icon'});
+  iconSpan.innerHTML = iconSvg;
+
+  const labelEl = htmlEl('span', {class: `item-label${done ? ' done' : ''}`}, [item.label]);
+  const badgeEl = htmlEl('span', {class: 'item-type-badge'}, [item.type]);
+
+  return htmlEl('div', {
+    class: 'item-row',
+    'data-item-id': item.id,
+    'data-week-id': selectedWeekId,
+  }, [iconSpan, labelEl, badgeEl]);
+}
+
+function buildTensionChip(tension) {
+  const color = TENSION_COLORS[tension.id];
+  const chip = htmlEl('div', {
+    class: 'tension-chip',
+    'data-tension': tension.id,
+    style: {
+      borderColor: color,
+      color: color,
+      background: color + '18',
+    },
+  }, [`${tension.id} ${tension.label.split(' /')[0].split(' vs')[0]}`]);
+  return chip;
+}
+
+// ── Interaction logic ──────────────────────────────────────────────────────
+
+function todayStr() { return new Date().toISOString().slice(0, 10); }
+
+function yesterdayStr() {
+  const d = new Date(); d.setDate(d.getDate() - 1);
+  return d.toISOString().slice(0, 10);
+}
+
+function updateStreak() {
+  const today = todayStr();
+  const last  = appState.streak.last_session_date;
+  if (last === today) return;                       // already counted today
+  if (last === yesterdayStr()) {
+    appState.streak.current_days += 1;
+  } else {
+    appState.streak.current_days = 1;              // reset or first day
+  }
+  appState.streak.last_session_date = today;
+}
+
+function cycleItemStatus(itemId) {
+  const cur = itemStatus(itemId);
+  const next = { 'not-started': 'in-progress', 'in-progress': 'done', 'done': 'not-started' }[cur];
+  const rec  = appState.semesters.S1.items[itemId] || {};
+  rec.status = next;
+  if (next === 'done')        rec.completed_at  = new Date().toISOString();
+  if (next === 'in-progress') rec.started_at    = new Date().toISOString();
+  appState.semesters.S1.items[itemId] = rec;
+  if (next !== 'not-started') updateStreak();
+  saveState();
+  renderThigle();
+  renderPanel();
+}
+
+function selectWeek(weekId) {
+  if (selectedWeekId === weekId) { deselect(); return; }
+  selectedWeekId   = weekId;
+  selectedTensionId = null;
+  renderThigle();
+  renderPanel();
+}
+
+function selectTension(tensionId) {
+  if (selectedTensionId === tensionId) { deselect(); return; }
+  selectedTensionId = tensionId;
+  selectedWeekId   = null;
+  renderThigle();
+  renderPanel();
+}
+
+function deselect() {
+  selectedWeekId   = null;
+  selectedTensionId = null;
+  renderThigle();
+  renderPanel();
+}
+
+// ── Tooltip ────────────────────────────────────────────────────────────────
+
+let _tip = null;
+
+function showTip(text, cx, cy) {
+  if (!_tip) {
+    _tip = document.createElement('div');
+    _tip.style.cssText = [
+      'position:fixed','z-index:9999','pointer-events:none',
+      'background:var(--surface-3)','border:1px solid var(--border-mid)',
+      'color:var(--text)','font-size:12px','padding:5px 9px',
+      'border-radius:6px','white-space:nowrap',
+      'box-shadow:0 2px 10px rgba(0,0,0,0.5)',
+      'max-width:260px','white-space:normal','line-height:1.35',
+    ].join(';');
+    document.body.appendChild(_tip);
+  }
+  _tip.textContent = text;
+  _tip.style.display = 'block';
+  const tw = _tip.offsetWidth, th = _tip.offsetHeight;
+  let tx = cx + 14, ty = cy - 10;
+  if (tx + tw > window.innerWidth  - 8) tx = cx - tw - 14;
+  if (ty + th > window.innerHeight - 8) ty = cy - th - 4;
+  _tip.style.left = tx + 'px';
+  _tip.style.top  = ty + 'px';
+}
+
+function hideTip() { if (_tip) _tip.style.display = 'none'; }
+
+// ── SVG event delegation ───────────────────────────────────────────────────
+
+function onSvgClick(e) {
+  const sat     = e.target.closest('.satellite[data-item-id]');
+  const chip    = e.target.closest('.tension-chip[data-tension]');
+  const node    = e.target.closest('.week-node[data-week-id]');
+
+  if (sat)  { cycleItemStatus(sat.getAttribute('data-item-id')); return; }
+  if (chip) { selectTension(chip.getAttribute('data-tension'));  return; }
+  if (node) { selectWeek(node.getAttribute('data-week-id'));     return; }
+
+  // Click on center circle or empty canvas → deselect
+  const svgEl  = document.getElementById('thigle-svg');
+  const sr     = svgEl.getBoundingClientRect();
+  const scale  = sr.width / 540;
+  const svgX   = (e.clientX - sr.left) / scale;
+  const svgY   = (e.clientY - sr.top)  / scale;
+  const dist   = Math.hypot(svgX - CX, svgY - CY);
+  if (dist < CORE_R + 20 || dist > RING_R + 30) deselect();
+}
+
+function onSvgMouseMove(e) {
+  const sat  = e.target.closest('.satellite[data-item-id]');
+  const node = e.target.closest('.week-node[data-week-id]');
+
+  if (sat) {
+    const item = (() => {
+      const weekId = sat.getAttribute('data-week-id');
+      const itemId = sat.getAttribute('data-item-id');
+      return semData.weeks.find(w => w.id === weekId)?.items.find(i => i.id === itemId);
+    })();
+    if (item) {
+      const status = itemStatus(item.id);
+      const statusLabel = { 'not-started': 'not started', 'in-progress': 'in progress', 'done': 'done' }[status] || status;
+      showTip(`${item.label}  ·  ${statusLabel}`, e.clientX, e.clientY);
+    }
+    return;
+  }
+
+  if (node) {
+    const week = semData.weeks.find(w => w.id === node.getAttribute('data-week-id'));
+    if (week) {
+      const comp = Math.round(weekCompletion(week) * 100);
+      showTip(`W${week.week_number} — ${week.title}  ·  ${comp}% complete`, e.clientX, e.clientY);
+    }
+    return;
+  }
+
+  hideTip();
+}
+
+// ── Side-panel event delegation ────────────────────────────────────────────
+
+function onPanelClick(e) {
+  const itemRow   = e.target.closest('[data-item-id]');
+  const chipEl    = e.target.closest('[data-tension]');
+  const weekRowEl = e.target.closest('[data-week-id]');
+
+  if (itemRow)   { cycleItemStatus(itemRow.getAttribute('data-item-id'));    return; }
+  if (chipEl)    { selectTension(chipEl.getAttribute('data-tension'));       return; }
+  if (weekRowEl) { selectWeek(weekRowEl.getAttribute('data-week-id'));       return; }
+}
+
+// ── Keyboard navigation ────────────────────────────────────────────────────
+
+function onKeyDown(e) {
+  if (e.key === 'Escape') { deselect(); return; }
+
+  if (!selectedWeekId && !selectedTensionId) return;
+
+  if (selectedWeekId) {
+    const week = semData.weeks.find(w => w.id === selectedWeekId);
+    if (!week) return;
+
+    if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
+      e.preventDefault();
+      selectWeek(`S1-W${(week.week_number % 14) + 1}`);
+    } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
+      e.preventDefault();
+      selectWeek(`S1-W${((week.week_number - 2 + 14) % 14) + 1}`);
+    } else if (e.key === ' ') {
+      e.preventDefault();
+      const next = week.items.find(i => itemStatus(i.id) !== 'done');
+      if (next) cycleItemStatus(next.id);
+    }
+  }
+}
+
+// ── Export ─────────────────────────────────────────────────────────────────
+
+function exportState() {
+  const filename = `ytt-tracker-state-${todayStr()}.json`;
+  const blob = new Blob([JSON.stringify(appState, null, 2)], { type: 'application/json' });
+  const url  = URL.createObjectURL(blob);
+  const a    = Object.assign(document.createElement('a'), { href: url, download: filename });
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+}
+
+// ── Initialisation ─────────────────────────────────────────────────────────
+
+function init() {
+  semData   = JSON.parse(document.getElementById('semester-data').textContent);
+  appState  = loadState();
+
+  renderThigle();
+  renderPanel();
+
+  // Wire up events
+  const svg   = document.getElementById('thigle-svg');
+  const panel = document.getElementById('side-panel');
+  svg.addEventListener('click',     onSvgClick);
+  svg.addEventListener('mousemove', onSvgMouseMove);
+  svg.addEventListener('mouseleave', hideTip);
+  panel.addEventListener('click',   onPanelClick);
+  document.getElementById('btn-export').addEventListener('click', exportState);
+  document.addEventListener('keydown', onKeyDown);
+}
+
+document.addEventListener('DOMContentLoaded', init);
+</script>
+</body>
+</html>

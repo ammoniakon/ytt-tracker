@@ -1,0 +1,1432 @@
+================================================================================
+MODULE EXTRACTS — WEEKS 1–4
+Extracted from all four source files for readings.json "why" field population
+================================================================================
+
+SOURCE MODULES:
+  Module A — Yoga of the Natural State (Dzogchen / Aural Lineage)
+              Longchen Rabjam, trans. Ācārya Malcolm Smith (Wisdom Publications, 2025)
+  Module B — 20-Week Madhyamaka Curriculum
+              Primary texts: MMK (Siderits & Katsura, 2013), VV (Westerhoff, 2010),
+              GSN (Geshe Sopa, Wisdom, 2023), LF (Kangyur Rinpoche / Padmakara, 2006)
+  Module C — Abhidharmakośa-Bhāṣya 15-Week Co-Curriculum
+              Gelong Lodrö Sangpo translation (Motilal, 2012), Vols. 1–2
+              Keyed to Malcolm Smith's Abhidharma Teaching Series (Series I & II)
+  Module D — Integrated Master Curriculum (YTT Integrative / Module D)
+              The coordinating document; keyed to My Vinyasa Practice 300-hr YTT Manual
+              Five-part analysis format throughout
+
+PACING NOTE (Module D cross-curriculum table):
+  Week 1 → YTT M1 (Subtle Bodies) | Mod-B Wk 1 | Mod-C Wk 1 | Mod-A Wk 1
+  Week 2 → YTT M1 cont.           | Mod-B Wk 2 | Mod-C Wk 2 | Mod-A Wk 2
+  Week 3 → YTT M2 (Ayurveda)      | Mod-B Wk 3 | Mod-C Wk 3 | Mod-A Wk 3
+  Week 4 → YTT M3 (Yoga Nidra)    | Mod-B Wk 4 | Mod-C Wk 4 | Mod-A Wk 4
+
+================================================================================
+MODULE A — WEEK 1
+================================================================================
+
+Primary reading:
+  Malcolm Smith, trans., Yoga of the Natural State: The Dzogchen Aural Lineage
+  (Wisdom Publications, 2025)
+  — Translator's Introduction, pp. 1–12: from the opening through the end of
+    "The Historical Context of the Great Perfection." Read slowly. Read twice.
+
+Thematic focus:
+  WHAT TO UNDERSTAND:
+  (1) What distinguishes an aural lineage (nyan brgyud / rna brgyud) from a
+      textual lineage (dpe brgyud) — this is the foundational structural claim
+      of the entire book.
+  (2) Longchenpa's triple classification of the intimate instruction series:
+      outer, inner, and secret cycles, and where the unwritten aural lineage
+      sits within the secret and unsurpassed secret cycles.
+  (3) Malcolm Smith's argument that the Great Perfection is an independent
+      tradition — not merely the culmination of Mahāyoga or the completion stage
+      of Anuyoga — and how this bears on your own Anuyoga practice context.
+
+  KEY PASSAGE TO MARK: The passage where the Introduction distinguishes the
+  Great Perfection's basis of purification (ignorance / ma rig pa) from
+  Mahāyoga's (the five aggregates, bases, and elements). This is foundational
+  for YTT work: the Shaiva Tantric framework similarly treats the aggregates
+  as the locus of transformation, and Dzogchen's radical departure from that
+  approach will be a recurring critical tool.
+
+  CONTEMPLATION: Malcolm notes that "the Great Perfection takes quite literally
+  the Buddha's description of awakening… that buddhahood is peaceful,
+  uncompounded, pure, free from all proliferation, and blissful." Sit with this.
+  Ask yourself: is your current practice oriented toward generating something,
+  or recognizing something already present? How does the uncompounded
+  (asaṃskṛta) character of rigpa differ from the Śiva-consciousness of Kashmir
+  Shaivism, which presents awakening as a recognition of an already-existing
+  absolute Śiva-nature? Note your observations without resolving them — this
+  tension will be with you all fourteen weeks.
+
+  JOURNAL PROMPT: What is the relationship between hearing a teaching and knowing
+  a teaching? Why would Malcolm Smith argue that the oral transmission is
+  indispensable, not merely culturally quaint?
+
+Tensions / cross-refs:
+  Mod-B Wk 1: MMK Preface and VV Introduction — the self-refutation problem of
+  emptiness. Where Madhyamaka opens with the question of how the claim of
+  emptiness applies to itself, Dzogchen opens with the question of how the
+  recognition of the natural state is transmitted if the natural state is itself
+  uncompounded. Both are grappling with the same structural problem from different
+  angles: how a non-substantial truth can be taught.
+
+  Mod-C Wk 1: AKBh I.1–5 — the dharma-ontology question. Abhidharma's project
+  of cataloguing dharmas presumes that the basic constituents of experience are
+  analytically given; the aural lineage tradition's claim is that the basic given
+  is not a dharma but a recognition. The tension: is the Abhidharma's exhaustive
+  catalogue an aid or a hindrance to recognition? Vasubandhu's later
+  Pudgala-pratiṣedha (Module C Week 13) will partially answer this; the aural
+  lineage's answer is structurally different.
+
+---
+
+================================================================================
+MODULE A — WEEK 2
+================================================================================
+
+Primary reading:
+  Malcolm Smith, trans., Yoga of the Natural State
+  — Translator's Introduction, pp. 12–33: from "The Mind Series Aural Lineage"
+    through the end of the Introduction, including all footnotes relevant to the
+    six aural lineages and the texts included in this volume.
+
+Thematic focus:
+  WHAT TO UNDERSTAND:
+  (1) Map the three main aural lineage traditions: the mind series (Vimalamitra),
+      the space series (Vajra Bridge / Namkhai Norbu), and the intimate instruction
+      series (Longchenpa) — the subject of this book.
+  (2) Understand the six aural lineage texts included in this volume and their
+      relationship to the Lama Yangtik and Zabmo Yangtik cycles.
+  (3) Understand the structural scheme organizing all texts: the six bardos and
+      the six lamps, introduced by Longchenpa into Great Perfection literature
+      in the fourteenth century.
+
+  KEY PASSAGE TO MARK: Malcolm's explanation of the unwritten aural lineage:
+  its dependence not on texts or formal empowerment but on direct pointing-out
+  by a qualified guru, and the physiological rather than analytical basis for
+  distinguishing sems (mind) from ye shes (pristine consciousness). This will
+  become extremely important in Weeks 5–8.
+
+  COMPREHENSION CHECK: Draw a simple diagram mapping the lineage:
+  Samantabhadra → Vajrasattva → Garab Dorjé → Mañjuśrīmitra → Śrī Siṃha →
+  Jñānasūtra → Vimalamitra → … → Kumarāja → Longchenpa. Observe that this is
+  a lineage of direct oral transmission, not textual inheritance alone.
+
+  CONTEMPLATION: The three texts in the Lama Yangtik are: (1) the short aural
+  lineage, focused on the practice of empty vidyā in this life; (2) the
+  middle-length aural lineage, focused on luminosity in the six bardos; (3) the
+  great aural lineage, integrating both. Ask yourself honestly: which of the
+  three calibers — best, middling, average — do you find yourself in most
+  naturally? Not as a judgment but as a diagnostic for how to read the
+  remainder of the book.
+
+  PRACTICE: Continue daily guru yoga and natural state rest. This week, after
+  settling, spend five minutes deliberately distinguishing sems (conceptual
+  elaboration, discursive movement) from rig pa (naked non-conceptual awareness).
+  Don't analyze — just notice whether there is a felt difference.
+
+  JOURNAL PROMPT: Malcolm argues that the Great Perfection "eschews the kind of
+  intellectual analysis Western attention is focused upon." How does this challenge
+  or confirm your own approach to studying Dharma? How does it relate to the
+  pramāṇa tradition and the role of inference vs. direct perception in your
+  understanding of Madhyamaka?
+
+Tensions / cross-refs:
+  Mod-B Wk 2: MMK Ch. 1–2 (Causation, Motion). Dzogchen's lineage transmission
+  is not a causal sequence in the sense Madhyamaka analyzes (cause produces
+  effect). It is presented as a transmission of recognition, not a generation
+  of new content. This is structurally compatible with Mādhyamika analysis of
+  causation as empty of inherent productive activity.
+
+  Mod-C Wk 2: AKBh I.6–47 — rūpa-skandha (matter, atoms, sense-fields).
+  Abhidharma's atomic analysis of matter is the conventional-level framework
+  that Dzogchen's subtle-body teaching (Weeks 5–11) will engage critically.
+  The touchpoint: what is the body, analytically? Abhidharma offers atoms;
+  Dzogchen offers nāḍī, vāyu, and bindu as the channels of pristine
+  consciousness. The two analyses are not competing on the same level.
+
+---
+
+================================================================================
+MODULE A — WEEK 3
+================================================================================
+
+Primary reading:
+  Malcolm Smith, trans., Yoga of the Natural State
+  — Self-Appearing Pristine Consciousness: The Short Aural Lineage,
+    from the opening verse through Section 2.1.7 (The Yoga of the Natural State),
+    approximately pages 33–38.
+
+Thematic focus:
+  WHAT TO UNDERSTAND:
+  (1) Memorize or deeply familiarize yourself with the seven preliminary
+      practices: (1) Guru Yoga, (2) Maṇḍala Yoga, (3) Vajrasattva, (4) Yoga of
+      Impermanence, (5) Yoga of the Suffering of Saṃsāra, (6) Yoga of
+      Bodhicitta, (7) Yoga of the Natural State.
+  (2) Understand the structural logic of this preliminary sequence: why does
+      the natural state investigation come last? What has been prepared by the
+      six prior practices?
+  (3) Pay close attention to the seventh yoga — the natural state investigation —
+      and its classical fourfold analysis: Where does mind arise from? What is
+      its producing agent? Where does it dwell? Where does it depart?
+
+  KEY PASSAGE TO MARK AND WHY IT MATTERS FOR YTT:
+  "Examine apparent objects for subtle particles. After the mind arises from an
+  object, does it stay or go? Identify the entity by investigating the dwelling
+  agent, a moment of one's mind — does it exist as a sign, mark, shape, or
+  color? As nothing whatsoever can be found with a thorough investigation, the
+  inexpressible, uniform state is called 'the transcendent state of original
+  purity's own place.'"
+
+  This passage is directly relevant to your YTT context. The fourfold
+  investigation (origin, agent, dwelling, departure) is structurally identical
+  to Vasubandhu's Abhidharmakośa analysis of momentary dharmas — but the
+  purpose is diametrically opposed to Abhidharma: not to catalogue the dharmas
+  of experience but to dissolve any referent for the investigator.
+
+  FOR YOUR YTT: Your YTT likely teaches some form of body-scan, prāṇāyāma, or
+  inquiry as preliminary practices. Note the parallel structure but the
+  radically different endpoint: Shaiva Tantra's preliminaries orient practice
+  toward the recognition of Śiva-consciousness as one's own nature (a universal
+  self-recognition). Dzogchen's seventh yoga points toward the recognition that
+  the investigator itself cannot be found — there is no ātman, universal or
+  individual, to recover. The kalyāṇa (beneficent quality) of natural state
+  investigation is precisely its non-finding.
+
+Tensions / cross-refs:
+  Mod-B Wk 3: MMK Ch. 3–5 (Āyatanas, Skandhas, Dhātus). Strong convergence
+  this week: Nāgārjuna's analysis of the aggregates and Longchenpa's fourfold
+  investigation of mind are doing the same work from different angles. Nāgārjuna
+  asks where the aggregate is when analyzed; Longchenpa asks where the mind
+  that examines the aggregate is. Both arrive at non-finding.
+
+  Mod-C Wk 3: AKBh I.5–15 — the five aggregates and unconditioned dharmas.
+  The conventional-level catalogue against which Madhyamaka's emptiness analysis
+  and Dzogchen's natural-state investigation are both operating. Hold the three
+  frameworks in active relationship this week: the aggregates as Abhidharma
+  analyzes them are conventionally real; as Madhyamaka analyzes them they are
+  empty of inherent existence; as Longchenpa investigates them they cannot be
+  found by the investigator who is also empty.
+
+---
+
+================================================================================
+MODULE A — WEEK 4
+================================================================================
+
+Primary reading:
+  Malcolm Smith, trans., Yoga of the Natural State
+  — Self-Appearing Pristine Consciousness: The Short Aural Lineage,
+    Sections 2.2 through 3 (The Conclusion), approximately pages 38–50.
+
+Thematic focus:
+  WHAT TO UNDERSTAND:
+  (1) The two-part structure of the direct introduction: (a) introducing
+      self-abiding consciousness (rang bzhin gnas pa'i shes pa) as unfabricated,
+      and (b) introducing self-arising consciousness (rang shar gyi shes pa) as
+      great self-liberation.
+  (2) The three examples, five natures, and four signs of heat for each
+      introduction — the technical scaffolding of the practice instruction.
+  (3) The conduct section (2.2.1.3): training in the sixfold group during
+      equipoise, and the eight examples of illusion in post-equipoise.
+
+  KEY PASSAGES TO MARK AND MEMORIZE:
+  The five natures of the first introduction: "dwell in that state, maintain it
+  with mindfulness, do not be moved by concepts, eliminate hope and fear, and
+  annul lethargy or agitation." These are the five key points of trekchö
+  practice summarized in a single sentence.
+
+  The three examples for the second introduction: waves dissolving into a river
+  (self-liberation of play), ripples on water (vanishing without a trace),
+  coils of a snake (self-liberation on its own). These classic similes recur
+  throughout the Nyingma literature. Internalize them.
+
+  COMPREHENSION CHECK: Explain the difference between "self-abiding
+  consciousness" and "self-arising consciousness." Why are both needed? What
+  is the danger of attaining the first without the second? (The first risks
+  falling into a fixed, blank stillness — jing ne — without the dynamic
+  recognition of self-liberation in movement.)
+
+  TECHNICAL ANALYSIS: The four signs of heat for the second introduction
+  include: "Since concepts do not harm the stilled mind, conceptuality and
+  nonconceptuality are the same." This is the Dzogchen resolution of the
+  classical Mahāyāna tension between śamatha and vipaśyanā — not a progressive
+  integration, but a simultaneous recognition. Compare this with Nāgārjuna's
+  Vigrahavyāvartanī: the absence of inherent existence in phenomena does not
+  require abandoning their appearance. The appearances arise; recognition
+  liberates them. No separate antidote is needed.
+
+  PRACTICE LAYER: Using the text as a literal practice guide, formally attempt
+  the first introduction: relax body and mind; rest in vidyā's unceasing
+  radiance, applying the three examples, then the five natures. Then attempt
+  the second: rest in the limpid state (ngang dwangs), and watch whatever
+  concepts arise — introducing them as self-arising and self-liberated using
+  the three examples.
+
+Tensions / cross-refs:
+  Mod-B Wk 4: MMK Ch. 6–9 (the analysis of agent, action, and substance).
+  Nāgārjuna's analysis of the relationship between agent and action lands
+  precisely on the question Dzogchen's two introductions address: when there
+  is no agent who acts and no action that is acted, what is recognition?
+  Madhyamaka analyzes the absence; Dzogchen rests in the recognition that is
+  the absence's positive aspect.
+
+  Mod-C Wk 4: AKBh II — saṃskāra-skandha and citta / cittaviprayukta-saṃskāra.
+  The conventional analysis of mental formations and mind. The touchpoint:
+  Abhidharma's "mental factors" are precisely what Dzogchen's second introduction
+  asks the practitioner to see as self-arising and self-liberated. The Abhidharma
+  categorizes; the Dzogchen practice releases.
+
+---
+
+================================================================================
+MODULE B — WEEK 1
+================================================================================
+
+Primary reading:
+  (a) Nāgārjuna, Mūlamadhyamakakārikā (MMK) — Preface and Introduction
+      (Siderits & Katsura, 2013, pp. ix–15)
+  (b) Nāgārjuna, Vigrahavyāvartanī (VV) — Introduction (Westerhoff, 2010, pp. 1–30)
+  (c) Geshe Sopa, Nāgārjuna's Advice for Buddhists (GSN) — Chapter 1,
+      "Overview of the Middle Way," through Geshe Sopa's opening commentary
+
+Thematic focus:
+  THEMATIC FOCUS: What does it mean to assert that all things are empty (śūnya)
+  of intrinsic nature (svabhāva)? The central distinction from the opening
+  movement is this: emptiness is not the claim that things do not exist, but
+  that they do not exist from their own side — independently, permanently, or
+  self-sufficiently. Siderits & Katsura's introduction clarifies that the MMK's
+  27 chapters constitute a sustained philosophical demonstration of this single
+  thesis across domains of causation, selfhood, time, motion, and liberation.
+  Westerhoff's introduction to the VV situates the epistemological stakes: if
+  Nāgārjuna's own words have no intrinsic nature, does his argument undermine
+  itself? This self-refutation objection is the problem the VV addresses, and
+  encountering it in week one forces immediate engagement with the recursive
+  dimension of emptiness-talk.
+
+  CONTEMPLATIVE PRACTICE FOCUS: Begin sitting with the question: What do I
+  assume is "just there" — present, stable, self-existing — in my experience
+  right now? Notice the tacit assumption of a perceiver who stands apart from
+  perceived contents. This is not yet a Madhyamaka analysis; it is an
+  orientation toward what the analysis will eventually disrupt.
+
+  YOGA TEACHING APPLICATION: In opening a class, consider how the cue "arrive
+  in your body" or "come home to yourself" implicitly posits a self that travels
+  and a home that awaits. This week's practice is simply noticing those
+  assumptions. You need not revise the language yet — noticing is the first
+  layer of teaching. A possible cue that begins to soften: "Let attention settle
+  into sensations arising right now — not to a place, but into the dynamic flow
+  of what is actually present."
+
+Tensions / cross-refs:
+  Abhidharma Pairing: AKBh Ch. 1 on dharmas — the Abhidharma's atomistic
+  decomposition of experience into irreducible constituents provides the
+  philosophical baseline Nāgārjuna will interrogate. The Vaibhāṣika claim that
+  dharmas possess svabhāva in the intrinsic-nature sense is precisely what
+  Madhyamaka refutes. Holding both readings simultaneously — Abhidharma's
+  conventionally necessary categories and Madhyamaka's ultimate analysis —
+  trains the two-truth lens from the start.
+
+  Sitting question (Shaiva interlocutor): In the YTT context, Śiva-consciousness
+  is posited as the ground of all appearances. PH sūtra 1 (Singh, p. 47) states:
+  "The absolute citi (Consciousness), out of its own free will, is the cause of
+  the siddhi of the universe." What would it mean for that citi to also be empty
+  of svabhāva? Is that a destabilizing thought or a liberating one?
+
+---
+
+================================================================================
+MODULE B — WEEK 2
+================================================================================
+
+Primary reading:
+  (a) MMK: Ch. 1 "An Analysis of Conditions" and Ch. 2 "An Analysis of the
+      Traversed, the Not Yet Traversed, and the Presently Being Traversed"
+      (Siderits & Katsura, pp. 17–40)
+  (b) GSN: Geshe Sopa's commentary on dependent origination as the heart of
+      the middle way
+
+Thematic focus:
+  THEMATIC FOCUS: Chapter 1 is arguably the most densely analytical chapter in
+  the entire text, and beginning here is non-negotiable. Nāgārjuna examines the
+  four conditions recognized by Buddhist Abhidharma — causal condition
+  (hetu-pratyaya), object condition (ālambanapratyaya), immediately preceding
+  condition (samanantarapratyaya), and dominant condition (adhipatipratyaya) —
+  and argues that none of them can explain how effects arise from their own side.
+  Effects do not pre-exist in causes, nor do they arise from nothing; they arise
+  dependently (pratītyasamutpāda). Chapter 2 applies this logic to motion: the
+  traversed path, the not-yet traversed, and the presently-being-traversed each
+  fail, under analysis, to sustain the concept of motion as an independently real
+  process.
+
+  CONTEMPLATIVE PRACTICE FOCUS: Sit with a single breath. Notice: does the
+  breath exist before it arises? Does it exist after it ceases? Where exactly
+  is the "breath" — as an independent, intrinsically real event? This is not
+  rhetorical; let it be a genuine phenomenological inquiry.
+
+  YOGA TEACHING APPLICATION: Sequence logic — the idea that one pose causes
+  the next — often carries a hidden substantialist assumption: that the first
+  pose establishes a "real" state that is then transferred to the second. A
+  Madhyamaka re-framing: "Notice how each shape arises out of the conditions
+  of the previous one — nothing is fixed in place, each position is already
+  releasing into what comes next." This dissolves the implicit fixation on
+  "achieving" a pose as a stable end-state.
+
+Tensions / cross-refs:
+  Abhidharma Pairing: AK Ch. 2 on causation (hetupratyaya). The Vaibhāṣika
+  enumeration of causes and conditions is the direct target of MMK Ch. 1. Reading
+  them side by side illuminates what Nāgārjuna is refusing: not the convention of
+  causation, but any theory that grants causes or conditions intrinsic causal power.
+
+  Sitting question (Shaiva interlocutor): MMK 1 attacks the Abhidharma notion
+  that dharmas have causal power from their own side. Does the Shaiva Tantra
+  notion of Śakti as the dynamic power of Śiva survive this analysis? PH sūtra 2
+  (Singh, p. 49) gives the Trika position: "By the power of her own free will,
+  she [citi] unfolds the universe on her own screen." What would Nāgārjuna's
+  logic imply for this claim that the universe arises by citi's autonomous power?
+
+---
+
+================================================================================
+MODULE B — WEEK 3
+================================================================================
+
+Primary reading:
+  (a) MMK: Ch. 3 "An Analysis of the Āyatanas," Ch. 4 "An Analysis of the
+      Skandhas," Ch. 5 "An Analysis of the Dhātus" (Siderits & Katsura, pp. 41–73)
+  (b) LF: Opening verses and Kangyur Rinpoche's commentary on the six sense
+      spheres and the absence of a possessor
+
+Thematic focus:
+  THEMATIC FOCUS: These three short but potent chapters attack the Abhidharma's
+  conventional categories from the inside. The twelve āyatanas (sense bases),
+  the five skandhas (aggregates), and the eighteen dhātus (elements of
+  experience) are the Abhidharma's decomposition of what ordinary thought takes
+  to be a "self." Nāgārjuna does not reject these categories as conventionally
+  valid; he demonstrates that they cannot be understood as intrinsically real
+  even by Abhidharma's own logic. Crucially for your practice context: the
+  skandhas are the body-mind complex precisely as it appears in yogic inquiry —
+  rūpa (form/body), vedanā (sensation-tone), saṃjñā (perception), saṃskāra
+  (volition/formations), vijñāna (consciousness). MMK Ch. 4's analysis of these
+  as lacking svabhāva is a direct interlocutor to the YTT teaching that the
+  body is a field of Śiva-consciousness.
+
+  CONTEMPLATIVE PRACTICE FOCUS: In formal sitting, move through a body scan
+  framed not as "feeling into my body" (possessive self-assumption) but as
+  "noticing the arising and passing of form-sensations without locating a center
+  from which noticing occurs." Let the āyatana analysis become phenomenological.
+
+  YOGA TEACHING APPLICATION: The five-kośa model (annamaya, prāṇamaya, manomaya,
+  vijñānamaya, ānandamaya) that appears in many YTT curricula maps loosely onto
+  the skandhas and operates with the same risk: that the "sheaths" are real
+  containers of a self within them. A Madhyamaka cue: "As you move through this
+  form, notice that what we call 'the body' is a dynamic process — sensation
+  arising, shifting, dissolving — without a fixed center that owns the movement."
+
+Tensions / cross-refs:
+  Abhidharma Pairing: AK Chs. 1–2 on the dharma lists and the
+  skandha-āyatana-dhātu taxonomy. This is the most direct pairing in the
+  curriculum: read the Abhidharma's positive account of these categories alongside
+  Nāgārjuna's negative analysis of them. The contrast illuminates both.
+
+  Sitting question: If the skandhas have no svabhāva individually, does the
+  aggregate person have any more or less reality than its parts? What does
+  Candrakīrti's analysis of the chariot (MA Ch. 6) anticipate here?
+
+  Sitting question (somatic context): In somatic yoga therapy, practitioners
+  often speak of "releasing held patterns in the body." What is the implicit
+  theory of self in that language? Can it be reframed through the skandha
+  analysis?
+
+---
+
+================================================================================
+MODULE B — WEEK 4
+================================================================================
+
+Primary reading:
+  (a) MMK: Ch. 6 "Desire and the One Who Desires," Ch. 7 "The Conditioned,"
+      Ch. 8 "Object and Agent," Ch. 9 "What Is Prior," Ch. 10 "Fire and Fuel"
+      (Siderits & Katsura, pp. 75–130)
+  (b) VV: Translation of the root verses with Westerhoff's commentary
+      (full text, pp. 30–100)
+
+Thematic focus:
+  THEMATIC FOCUS: These chapters constitute Nāgārjuna's sustained analysis of
+  relational identity — the way we speak of agent and action, seer and seen,
+  enjoyer and enjoyed as though they stood in determinate, intrinsic relations.
+  Chapter 10's fire-fuel analysis is among the most elegant: fire and fuel cannot
+  be identical (since fire would burn itself) nor entirely distinct (since fire
+  without fuel is nothing). The relationship between them has no intrinsic nature;
+  it is dependently constituted. This logic directly parallels the Shaiva Tantra
+  teaching on Śiva and Śakti — but with a crucial divergence: for Nāgārjuna, the
+  relational constitution of fire-and-fuel does not produce a higher-order
+  substance (Śiva as absolute ground); it produces śūnyatā. This is where careful
+  inter-traditional dialogue must be most precise. The VV's self-refutation
+  discussion deepens this: Nāgārjuna's words themselves arise dependently — they
+  have the epistemic force they do not because they intrinsically possess it, but
+  through their dependent relationship with the philosophical context that makes
+  them intelligible.
+
+  CONTEMPLATIVE PRACTICE FOCUS: Sit with the question: Am I the one who is
+  meditating, or is meditation arising? Notice the tendency to install an agent
+  behind the activity. Let the agent-action distinction soften without dissolving
+  into confusion.
+
+  YOGA TEACHING APPLICATION: The prāṇa model in Shaiva Tantra posits prāṇa as
+  the dynamic power of consciousness. When we teach "direct your prāṇa," we
+  implicitly posit a directing agent who is distinct from the directed prāṇa.
+  A Madhyamaka-informed cue: "Rather than directing the breath, let the breath
+  be noticed — the distinction between breather and breath softening into the
+  single event of breathing."
+
+Tensions / cross-refs:
+  Abhidharma Pairing: AK Ch. 9 on the pudgala — the Pudgalavādin's claim that
+  there is a real "person" (pudgala) that is neither identical to nor different
+  from the skandhas. Nāgārjuna's MMK Ch. 6–10 arguments apply equally well
+  against this quasi-substantialist position, making the pairing doctrinally
+  precise.
+
+  Sitting question (Trika interlocutor): The fire-fuel analysis bears directly
+  on the Trika's Śiva-Śakti relation. PH sūtra 4 (Singh, p. 60): "The individual
+  [experient], in whom citi or consciousness is contracted, has the universe [as
+  his body] in a contracted form." The contracted experient is neither identical
+  with citi (since citi is unlimited) nor entirely different (since the
+  contraction is citi's own saṅkoca). How does Nāgārjuna's fire-fuel logic apply
+  to this Śiva-Śakti relation as Kṣemarāja sets it up?
+
+  Sitting question (Dzogchen resonance): How does the VV's response to the
+  self-refutation objection relate to Dzogchen's claim that rigpa is
+  self-validating (rang gi rig pa)? Is there a tension between Madhyamaka's
+  dissolution of epistemic foundations and Dzogchen's confident assertion of the
+  self-knowing quality of awareness?
+
+---
+
+================================================================================
+MODULE C — WEEK 1
+================================================================================
+
+Primary reading:
+  Vasubandhu, Abhidharmakośa-Bhāṣya (AKBh)
+  Gelong Lodrö Sangpo trans. (Motilal, 2012), Vol. 1
+  Malcolm's Class: Series 1, Class 1 | AKBh Chapter 1 (Dhātunirdeśa): Introduction
+
+  — Root verses: I.1–5
+  — Sangpo Vol. 1: Prefatory material, Introduction by Poussin (trans. Sangpo), pp. xix–lv
+  — Root verses I.1–5 (the three jewels opening; definition of Abhidharma)
+  — Commentary on I.1–5
+
+Thematic focus:
+  CORE DOCTRINAL TOPICS:
+  · What does 'Abhidharma' mean? Three senses: (1) pure wisdom (prajñā),
+    (2) its attendant dharmas, (3) the śāstra itself
+  · The five inner sciences (adhyātmavidyā) and Abhidharma's place among them
+  · Vasubandhu as author: Kashmiri Vaibhāṣika presentation with Sautrāntika critique
+  · Sarva-dharma: the universe as skandha–āyatana–dhātu triad
+  · Buddhist nominalism vs. Nyāya-Vaiśeṣika realism: what is at stake?
+
+  SITTING QUESTION: Malcolm says 'the purpose of Abhidharma is to reduce our
+  world to its phenomenological components so we can correctly identify
+  experience.' Try this literally in a 20-minute sit: note each arising
+  phenomenon and ask — which aggregate is this?
+
+  JOURNALING PROMPT: Where do I encounter the five aggregates in my yoga
+  teaching? When do I (or my students) implicitly treat the body-mind complex
+  as a unified self?
+
+Tensions / cross-refs:
+  Madhyamaka (Week 1): Both courses begin with the question 'what exists?' —
+  AKBh answers with dharma-lists; MMK answers with dependent origination
+  dissolving those lists.
+
+  Dzogchen parallel: Malcolm's framing of Abhidharma as prerequisite for
+  understanding Dzogchen — the 'anatomy' argument; gzhi (basis) cannot be
+  understood without knowing what it underlies.
+
+  Shaiva Tantra — Kṣemarāja's doxography: PH sūtra 8 with Kṣemarāja's
+  auto-commentary (Singh, pp. 79–84). This is the place in the Trika corpus
+  where the Buddhist position is named most directly. Kṣemarāja places the
+  philosophical schools as graduated 'roles of the Self': "the Buddhists also
+  consider only the functions of buddhi as the Self"; "some of the Vedāntins and
+  the Mādhyamikas regard non-being as the fundamental principle"; the Trika alone
+  maintains "that the Ātman is both immanent and transcendent." For your YTT
+  context, this is the precise structural opposite of the AKBh's dharma-ontology.
+  The AKBh refuses any role-of-the-Self framing because there is no Self for the
+  roles to be of.
+
+  Open question: Is the AKBh's dharma-ontology (momentary, typed dharmas)
+  compatible with any framework that posits a unified ground of consciousness,
+  or does the dharma-ontology require eliminating such ground-talk altogether?
+
+---
+
+================================================================================
+MODULE C — WEEK 2
+================================================================================
+
+Primary reading:
+  AKBh (Sangpo trans.), Vol. 1
+  Malcolm's Classes: Series 1, Class 1 (cont.) & Class 2, Part 1
+  AKBh Chapter 1 (Dhātunirdeśa): Matter
+
+  — Root verses: I.6–47
+  — Root verses I.6–28 (rūpa-skandha through the four primary elements)
+  — Commentary on I.6–28 — focus on: the four primary elements as qualities not
+    substances; the eight-substance molecule; non-informative matter (avijñapti-rūpa)
+  — Skim commentary on I.29–47 (eighteen dhātus enumeration) — note structure only
+
+Thematic focus:
+  CORE DOCTRINAL TOPICS:
+  · Rūpa-skandha: five sense organs + five sense objects + non-informative matter
+  · Four primary elements as qualities (solidity, cohesion, heat, motility)
+    — not substances
+  · Paramāṇu (atom): eight-substance minimum molecule; the sense organ as refined
+    matter (cumin-flower-shaped patch of atoms in the eye)
+  · Avijñapti (non-informative matter): how taking vows materially changes the
+    aggregate
+  · Malcolm's upadeśa: 'you are sharing a material aggregate with everyone in this
+    room right now' — the radical implication of rūpa-skandha
+
+  ĀSANA APPLICATION: Teach a class where you explicitly name the five elements as
+  qualities of sensory experience ('notice the earth quality — solidity — in your
+  feet'). Observe whether this framing creates more phenomenological precision
+  than 'feel the ground beneath you'.
+
+  SITTING QUESTION: In meditation, can you observe the five sense objects as they
+  arise and pass? Can you catch the moment when the sense organ 'meets' its object
+  (sparśa) before elaboration?
+
+  CONTEMPLATION: 'This body — these five organs and five objects — is my material
+  aggregate. It is not mine. It is not me.' Hold this for 10 minutes.
+
+Tensions / cross-refs:
+  Madhyamaka (Week 2): MMK Ch. 15 on svabhāva — the AKBh's paramāṇu theory is
+  exactly what Nāgārjuna deconstructs; atoms as irreducible svabhāva-bearers vs.
+  dependent arising.
+
+  Pratyāhāra connection: Malcolm explicitly links Abhidharma pratyāhāra
+  (withdrawal of sense-consciousness from organs) to Patañjali's pratyāhāra
+  and to Kālacakra's ṣaḍaṅga-yoga — crucial bridge for your YTT context.
+
+  Dzogchen: five elements as five wisdoms/five lights — the outer-selflessness
+  of rūpa-skandha is the 'outer' level of a threefold analysis that goes inner →
+  secret.
+
+  Shaiva Tantra: Compare the pañca-mahābhūta and tanmātra system of the Trika
+  tattvas. In Kṣemarāja's framework (PH sūtra 7, Singh p. 73), the 35 tattvas
+  extend from Śiva to the earth, with the mahābhūtas as the gross terminus of a
+  manifest descent. The elements arise from Śakti's vibration (spanda) and
+  ultimately from citi's own free-will manifestation. This is categorically
+  different ontological ground than AKBh's causal conditioning: in AKBh, the four
+  primary elements are qualities co-arising with their objects under causal
+  conditions without prior substance; in Trika, they are the most contracted
+  appearance of an ontologically prior pure consciousness.
+
+  Open questions: If the rūpa-skandha includes both the sense organ AND the sense
+  object, what are the implications for non-duality? Malcolm says 'this makes
+  non-dualism trivial' — is he right from a Dzogchen perspective? And: avijñapti-
+  rūpa is rejected by Sautrāntikas and Mādhyamikas — but the concept of vows
+  materially transforming the aggregate is functionally important in Vajrayāna.
+  How is this handled in higher-vehicle frameworks?
+
+---
+
+================================================================================
+MODULE C — WEEK 3
+================================================================================
+
+Primary reading:
+  AKBh (Sangpo trans.), Vol. 1
+  Malcolm's Classes: Series 1, Class 2, Parts 1–2
+  AKBh Chapter 1 (Dhātunirdeśa): Aggregates & Unconditioned
+
+  — Root verses: I.5–15, I.40–47
+  — Root verses I.5–15 revisited (five skandhas formally defined)
+  — Commentary: the three unconditioned dharmas — ākāśa, pratisaṃkhyā-nirodha,
+    apratisaṃkhyā-nirodha
+  — Commentary on the question 'what is sarva-dharma?' (pp. 97–100 approx.)
+  — Selected: commentary on conditioned characteristics (saṃskṛta-lakṣaṇa):
+    arising, duration, aging, impermanence
+
+Thematic focus:
+  CORE DOCTRINAL TOPICS:
+  · Five upādāna-skandhas as 'addictive aggregates' — Malcolm's key teaching:
+    you are helplessly addicted to rebirth
+  · Three unconditioned dharmas: unobstructed space; analytical cessation
+    (path-result); non-analytical cessation (simple absence of cause)
+  · Saṃskṛta-lakṣaṇa: the four conditioned characteristics as applying to every
+    conditioned phenomenon including their own characteristics
+  · Pure vs. impure skandhas: why pure skandhas belong only to arhats and buddhas
+  · Sautrāntika critique: conditioned characteristics are not real dharmas
+
+  SITTING QUESTION: In a moment of deep stillness, is there a sense of 'absence
+  of arising'? Can you distinguish between a positive experiential fullness and
+  a simple cessation of agitation? This is the AKBh's practical pointing to
+  nirodha.
+
+  JOURNAL: Vasubandhu says 'the five aggregates in their totality are not your
+  self.' Write out every way you identify with each aggregate in daily life.
+  Where does the identification feel most solid? Most vulnerable to examination?
+
+Tensions / cross-refs:
+  Madhyamaka (Week 3): The three unconditioned dharmas — especially
+  pratisaṃkhyā-nirodha — become emptiness itself in MMK; compare how Candrakīrti
+  treats nirodha.
+
+  Dzogchen: the parallel between ākāśa (unconditioned space) and Dzogchen's ngang
+  (expanse) or dbyings; but the key disanalogy: ākāśa in AKBh is a non-entity
+  (non-obstruction only), while Dzogchen's expanse is the ground (gzhi) of
+  awareness.
+
+  Shaiva Tantra: PH sūtra 20 (Singh, p. 110) names the Trika liberation directly:
+  the realization of pūrṇo'haṁtā (perfect I-ness) is "in essence cit and ānanda."
+  The AKBh's account of freedom is precisely the opposite shape: freedom (nirodha)
+  is simply an absence, not a positive state, and certainly not a state of
+  bliss-identity. The Trika position holds that liberation is the recovery of a
+  substantial unconditioned (citi), realized as the perfect I; the AKBh holds that
+  liberation is the non-arising of conditioned dharmas, with no further substantial
+  unconditioned to recover. Holding this contrast without softening it is itself
+  a meditation.
+
+  Open questions: Is pratisaṃkhyā-nirodha (analytical cessation through the path)
+  equivalent to rigpa? What would Malcolm say?
+
+---
+
+================================================================================
+MODULE C — WEEK 4
+================================================================================
+
+Primary reading:
+  AKBh (Sangpo trans.), Vol. 1
+  Malcolm's Classes: Series 1, Class 3, Parts 1–2
+  AKBh Chapter 2 (Indriyanirdeśa): Faculties I
+
+  — Root verses: II.1–14
+  — Root verses II.1–14 (the 22 indriyas — five sense faculties through three
+    pure faculties)
+  — Commentary on II.1–7: the five sense organs as indriya; gender faculty;
+    vital faculty
+  — Commentary on II.8–14: the five mental faculties (faith, energy, mindfulness,
+    samādhi, discernment)
+  — Commentary on the three pure faculties (ajñātamājñāsyāmīndriya, ājñendriya,
+    ājñātāvindriya)
+
+Thematic focus:
+  CORE DOCTRINAL TOPICS:
+  · 22 indriyas: 14 that keep us in saṃsāra (six senses + gender + life-faculty
+    + five sensations) vs. 8 that support liberation
+  · Three pure faculties corresponding to path of seeing, path of meditation,
+    path of no-more-learning
+  · Faith (śraddhā), energy (vīrya), mindfulness (smṛti), samādhi, prajñā as
+    the five liberated faculties
+  · Samādhi as omnipresent mental factor: Malcolm's teaching that everything we
+    do is already samādhi — the question is only its object
+
+  ĀSANA LAB: Teach a class organized around the five liberating faculties — set
+  an intention of śraddhā (confidence/faith), sustain with vīrya (energy), anchor
+  with smṛti (mindfulness of bodily sensation), deepen with samādhi (one-
+  pointedness), close with prajñā (discernment of what arose).
+
+  SITTING QUESTION: In meditation, which of the 22 faculties are most active?
+  Which are weakest? Is there a relationship between which faculties dominate
+  and the quality of your practice?
+
+Tensions / cross-refs:
+  Madhyamaka (Week 4): The indriya system provides the conventional basis that
+  Madhyamaka's ultimate analysis deconstructs — this is the two-truths axis at
+  work practically.
+
+  Yoga Sūtra: the five faculties map partially onto Patañjali's five kliṣṭa and
+  akliṣṭa vṛttis; but the AKBh's faculties are ontological categories (dharmas),
+  not phenomenological modifications of a puruṣa.
+
+  Shaiva Tantra: The 36 tattvas include jñānendriya (cognitive senses) and
+  karmendriya (active senses) as tattvas 17–26 — structurally parallel but
+  grounded in Śiva-consciousness rather than in momentary conditioned dharmas.
+  PH sūtra 7's commentary (Singh, p. 73) frames the indriyas as features of
+  contracted citi at the level of the pramātṛ (experient), not as ontological
+  primitives. In AKBh, the indriya is a dharma; in Trika, the indriya is a
+  contraction of a prior unitary consciousness. Where you, as a teacher, locate
+  the indriyas ontologically determines whether you implicitly teach a Self that
+  has senses or a process of sensing without a senser.
+
+  Malcolm's samādhi teaching: connects directly to your YTT — when teaching,
+  frame samādhi not as a special state but as the natural quality of attention
+  already present in āsana practice.
+
+  Open question: The three pure faculties are 'path dharmas' — they are
+  conditioned but non-afflictive. How does this relate to Dzogchen's teaching
+  that rigpa is not something produced by the path but is always already present?
+  Is there a structural tension here or a complementarity?
+
+---
+
+================================================================================
+MODULE D — WEEK 1
+YTT MODULE 1: SUBTLE BODIES (Kosha System, Chakras, Nāḍīs, Prāṇa, Aura)
+================================================================================
+
+Cross-curriculum landing:
+  Mod-B Wk 1 (MMK Preface, VV Intro) | Mod-C Wk 1 (AKBh I.1–5) | Mod-A Wk 1
+
+Co-readings assigned this week:
+  MADHYAMAKA (Phase I, Week 1):
+  · MMK Preface and Introduction; VV Introduction — What is śūnyatā? The
+    self-refutation problem
+
+  ABHIDHARMA (Phase I, Week 1):
+  · AKBh Ch. 1, I.1–5 — What is Abhidharma? The dharma-ontology question vs.
+    kosha-ontology
+
+  DZOGCHEN (YNS Weeks 1–2):
+  · Yoga of the Natural State, Weeks 1–2 (Kunjed Gyalpo orientation; gzhi as
+    ground of all appearances, distinct from any substrate-consciousness)
+
+  SHAIVA COUNTERPOINT:
+  · Pratyabhijñāhṛdayam sūtras 1–4 (Singh translation) — Kṣemarāja's foundational
+    claim that citi (consciousness) is the cause of the universe's manifestation,
+    persistence, and reabsorption. Read this carefully alongside MMK 1: the
+    structural form of the argument (consciousness as cause) is exactly what
+    Madhyamaka analysis of causation refuses to grant intrinsic status. This is
+    the most precise locus where the Trika and Madhyamaka positions diverge.
+
+Required & recommended texts assigned:
+  (a) Satchidananda, Yoga Sūtras of Patañjali:
+      · Book 1 (Samādhi Pāda): Sūtras 1.1–1.11 (definition of yoga; the five
+        vṛttis); 1.17–1.19 (samprajñāta samādhi and the question of a
+        witness-self); 1.41 (the mind like a crystal — the ātman-identification
+        problem)
+      · Reading guide: Satchidananda consistently identifies the observer/witness
+        with Puruṣa or Ātman. Track every instance where a permanent observer is
+        assumed. Note: Patañjali's Yoga is dualist (Sāṃkhya-based) — Puruṣa and
+        Prakṛti are permanently distinct. This is neither Vedāntic Brahman-identity
+        nor Buddhist anātman. Keep the traditions clearly distinguished.
+
+  (b) Iyengar, Light on Yoga:
+      · Introduction: "The whole man" (Iyengar's account of the eight limbs); the
+        section on prāṇāyāma and its relationship to the subtle body
+      · Reading guide: Iyengar is a Vedāntic practitioner. His language of "the
+        soul" (jīvātman merged in Paramātman) carries Vedāntic ātman commitments.
+        Note where he treats the self as the ultimate beneficiary of practice —
+        this is precisely the structure Madhyamaka's pudgalanairātmya analysis
+        interrogates.
+
+  [D-integration] SUBTLE BODY VAJRAYĀNA TRIAD:
+  · Tenzin Wangyal, Awakening the Sacred Body (Drive ID: 1VkeFr4AGeKlmnUGDT-LRr0Ox5mjZXdPR)
+    — Introductory chapters on the Bön/Dzogchen view of subtle body, the nine
+    breathings practice, and the tsa-lung exercises. WHY THIS MATTERS FOR STUDIO
+    TEACHING: gives you a Vajrayāna-grounded subtle-body teaching (rtsa / channels,
+    rlung / winds, thig le / drops) to set alongside the Shaiva nāḍī/prāṇa/bindu
+    system. Structurally similar; doctrinally compatible with anātman.
+  · Tenzin Wangyal, Healing with Form, Energy, and Light (Drive ID: 1JZZr_P4dQFm8FFR9ORc56aVF3J_qN-zC)
+    — The five elements as both outer and inner phenomena; the threefold path
+    (form, energy, light). Companion to the above; gives you a Vajrayāna
+    five-element vocabulary to set against the Sāṃkhya/Ayurvedic engagement
+    coming in Module 2.
+  · Gyalwa Yangönpa, Secret Map of the Body (Drive ID: 1eQmsmZQ1hRKm7Rq7_2qQRfs8llg18Jrm)
+    — Introductory framing and the first two sections on outer and inner body.
+    A Tibetan medical/yogic classic with unusual depth on the relationship between
+    physical anatomy and contemplative experience. Use for the precision of
+    Tibetan-medical vocabulary when students report subtle-body phenomena.
+
+  [D-integration] SOMATIC-SCIENTIFIC CALIBRATION:
+  · Murphy & Brewer (eds.), Interoception: A Comprehensive Guide (Drive ID: 1hgBet7jkWVTYMZHbzOB_u5HLEdqsWd4N)
+    — Introductory chapters defining interoception, plus chapters on interoceptive
+    accuracy, sensibility, and awareness. WHY THIS MATTERS: the single best
+    reference for translating "subtle body" cueing language into terms that don't
+    require students to hold either the Trika ontology or a scientistic reductionism.
+    "Notice the temperature shift in your chest as you breathe" points to the same
+    phenomenology as "feel the prāṇa moving in your heart center" without the
+    metaphysical baggage.
+  · Anand (ed.), Neuroscience of Yoga, Part 1 (Drive ID: 18lXKiIx9Tumcfu2RXoP5qWVSvqbbKOVX)
+    — Chapters on autonomic regulation, HPA-axis modulation, and vagal tone.
+    Use this to distinguish what yoga can be said to do (with reasonable empirical
+    support) from what it is claimed to do (the broader YTT cosmology).
+
+  [D-integration] TRANSLATION LAYER:
+  · Hugh R. Nicholson, Buddhism, Cognitive Science, and the Doctrine of Selflessness
+    (Drive ID: 1itJ-JX4iPOdMQRYj0FtwkMt3HKQYhYiL)
+    — Introduction and chapters on the cognitive-scientific framing of anātman.
+    CAVEAT: engage as a translation resource for studio explanation, not as a
+    settled philosophical position. MMK and AKBh remain authoritative; Nicholson
+    can drift into reductive framings ("the self is just a neural process") that
+    flatten the anātman teaching.
+
+Five-part analysis — YTT Module 1 (Subtle Bodies):
+
+  1. WHAT THE YTT TEACHES:
+  The YTT manual opens with the pañcamaya kosha system — five energetic sheaths
+  from gross to subtle: annamaya (physical/food body), prāṇamaya (energetic/breath
+  body), manomaya (emotional/mental body), vijñānamaya (intellectual/psychic body),
+  and ānandamaya (bliss/spiritual body). The manual explicitly identifies the
+  ānandamaya kosha as Ātman, the Self, God, or Universal Consciousness — the
+  innermost reality that the other sheaths conceal and that yoga practice
+  progressively reveals. The manual states directly: "By working to balance all
+  five kosha bodies, yogis can experience the ānandamaya kosha. This is Ātman,
+  the Self, God, or Universal Consciousness." The chakra system (seven centers
+  from mūlādhāra to sahasrāra) is presented as a map of energetic concentrations
+  along the suṣumnā nāḍī. Prāṇa is described as a universal life-force drawn
+  from oxygen, food, sunlight, relationships. The aura is presented as the
+  outermost manifestation of tejas (refined prāṇa). The teaching arc is clear:
+  yoga practice moves energy from gross to subtle, ultimately culminating in the
+  experience of Ātman / Universal Consciousness. The Yoga Sūtras reading
+  reinforces this: Patañjali's definition of yoga implies a Seer (draṣṭā, Puruṣa)
+  who is revealed when the fluctuations cease; Satchidananda's commentary
+  identifies this Seer with the eternal, unchanging Self.
+
+  2. WHAT THE CANON AFFIRMS:
+  On prāṇa as dependently arising process: The YTT's description of prāṇa as a
+  process that "animates" the body rather than a fixed entity resonates with
+  Abhidharma's account of the prāṇendriya (vital faculty) as a conditioned,
+  momentary dharma that sustains the body's activities. Vasubandhu does not treat
+  the vital faculty as a permanent substance but as a causally conditioned stream.
+  Similarly, the AKBh's analysis of rūpa-skandha treats the body not as a unified
+  substantial entity but as a dynamic, causally interdependent network of momentary
+  material dharmas.
+
+  On the phenomenological value of the kosha model: The kosha system as a map —
+  not as an ontological claim — has genuine diagnostic value. The YTT's use of it
+  to structure somatic and therapeutic inquiry (which kosha is affected? where is
+  the dis-ease showing up?) aligns with the Abhidharma's own phenomenological
+  project: reduce your experience to its constituents for the purpose of insight,
+  not because the categories are ultimately real. Read this way, the koshas are
+  what Madhyamaka calls a saṃvṛti (conventional) designation — useful for
+  navigation without being ultimately real.
+
+  On the Dzogchen resonance with turīya: Chögyal Namkhai Norbu's teaching on the
+  three kāyas (trikāya) as the three dimensions of the basis (gzhi) —
+  dharmakāya as the open dimension, saṃbhogakāya as clarity, nirmāṇakāya as
+  display — has structural parallels with the AUM/turīya model. Namkhai Norbu is
+  explicit, however, that the Dzogchen recognition of rigpa is not the same as
+  the Vedāntic recognition of Ātman: rigpa is not a Self, not a permanent subject,
+  not Universal Consciousness in the ātman-sense.
+
+  On the five elements: The pañca-mahābhūta as appearing in the YTT and the
+  Abhidharma's four primary elements both treat the elements as qualities of
+  experience rather than metaphysical substances. This is a point of genuine
+  convergence: neither framework treats "earth" as a thing, but as a quality of
+  sensory experience (solidity, resistance).
+
+  3. WHERE THERE'S TENSION:
+  The ātman/anātman fault line — the central tension of the entire YTT:
+  The YTT manual states that the ānandamaya kosha is Ātman, the Self, God, or
+  Universal Consciousness. This is a precise Vedāntic claim. It is the claim that
+  Śāntarakṣita's Madhyamakālaṃkāra (Phase IV, Weeks 13–14 of the Madhyamaka
+  curriculum) most directly refutes. Śāntarakṣita's systematic critique of
+  Sāṃkhya's puruṣa and Vedānta's ātman — permanent, self-luminous consciousness-
+  principles — applies with full force here. The crucial question: is the ānandamaya
+  kosha (a) genuinely distinct from the other koshas (in which case it is other-
+  natured, parabhāva, and cannot be intrinsically real per MMK 15); or (b)
+  identical with them (in which case it is just the aggregates under another name)?
+
+  The Trika alternative and its precise structural difference: The
+  Pratyabhijñāhṛdayam offers a more sophisticated alternative. Kṣemarāja holds
+  that citi (consciousness, the same as Śiva-nature) is the cause of the
+  universe's manifestation (sūtra 1), and that this citi is self-luminous
+  (svaprakāśa) and self-aware (vimarśa-rūpā). The contraction (saṅkoca) of this
+  universal consciousness into limited individual consciousness produces the
+  appearance of separate selves and a world of objects. This is more refined than
+  the kosha-Ātman identification, but the structural problem from a Mādhyamika
+  perspective is exactly the same — and arguably worse, because it is more
+  philosophically robust. The citi of Pratyabhijñā has svabhāva: self-luminosity,
+  self-awareness, autonomy (svātantrya). Candrakīrti's Prāsaṅgika analysis denies
+  that consciousness can have svabhāva — denies, in particular, svasaṃvedana
+  (consciousness's reflexive self-knowing), which is the very functional core of
+  Kṣemarāja's citi.
+
+  The container metaphor: The YTT uses the "Russian nesting doll" image — the
+  physical body as the innermost doll, the spiritual body as the outermost
+  container. This spatial metaphor implies literal containment: the Ātman as the
+  largest, most real sheath that contains all others. This is a substantialist
+  metaphor: it implies the sheaths have stable boundaries, endure through time,
+  and are independently locatable. The Abhidharma's own decomposition of the body
+  into momentary, causally conditioned dharmic streams gives no support to a
+  "sheath" that persists with determinate properties across time.
+
+  Prāṇa as substance vs. process: The YTT treats prāṇa as storable, transferable,
+  depletable — a quasi-material energy substance. "Prenatal prāṇa" given by the
+  mother, "postnatal prāṇa" drawn from food and sunlight — this is clearly a
+  substance-model, not a process-model. The Buddhist parallel: prāṇendriya (vital
+  faculty) is not a substance but a causally conditioned stream of moments, each
+  arising and passing, each dependent on conditions. Wangyal's Bön/Dzogchen
+  account of rlung is structurally process-compatible: rlung is not a substance
+  but a quality of conditioned arising, the dynamism of the mind-body system,
+  which is why it can be "ridden" by both confusion (karma rlung) and pristine
+  cognition (ye shes rlung) without itself being a thing.
+
+  Chakras as map vs. real structures: The YTT presents chakras as real energetic
+  centers correlated with nerve plexuses, capable of being "activated," "blocked,"
+  or "balanced." From the Madhyamaka two-truths framework (Phase II, Week 8), the
+  chakras might be understood as saṃvṛti-satya — functional designations that
+  organize energetic experience reliably, not intrinsically real structures with
+  svabhāva. The problem is that the YTT treats them as real in the stronger sense,
+  particularly when it claims kuṇḍalinī rises through them as it pierces each one.
+
+  The Sāṃkhya substrate in Patañjali: Satchidananda's Yoga Sūtras commentary
+  presents Patañjali's yoga through a broadly Vedāntic lens, but the Yoga Darśana
+  is technically dualist — Puruṣa and Prakṛti are permanently distinct. The YTT
+  manual (which conflates Vedāntic non-dualism with Patañjali's dualism) and the
+  Satchidananda commentary (which assimilates both to Vedānta) are philosophically
+  inconsistent with each other, and both are inconsistent with Buddhist anātman.
+
+  4. REFRAME — THROUGH YOUR LINEAGE'S FRAMEWORK:
+  The koshas as conventional phenomenological map: In your teaching, the kosha
+  system can be retained as a saṃvṛti (conventional) diagnostic map — a useful
+  way to help students tune attentional resolution from gross to subtle, from
+  physical sensation to breath-tone to mental quality to discriminative awareness.
+  The reframe is not that "the koshas don't exist" but that they do not exist from
+  their own side. They are process-clusters, not containers. A reframed teaching:
+  "We move attention from coarser to subtler textures of experience — not traveling
+  from one layer to another as if crossing a border, but noticing that what we
+  call 'the body' and what we call 'the breath' and what we call 'awareness' are
+  not separate things, but different resolutions of a single dynamic process
+  arising right now."
+
+  Dzogchen reframe of the ānandamaya kosha: Where the YTT teaches that the
+  ānandamaya kosha is Ātman, your lineage offers a different pointer: what is
+  recognized in the deepest stillness is not a Self (which would imply a permanent
+  subject distinct from its objects), but the gzhi (basis) of the natural state —
+  open, luminous, and unimpeded, but not a "self" in any substantialist sense.
+  Chögyal Namkhai Norbu is precise here: rigpa is not the same as Universal
+  Consciousness in the Vedāntic sense. It is awareness without a center, luminous
+  without a locus. The cue: "What remains when the need to locate a self in
+  experience dissolves? Not emptiness as absence — but an open, luminous quality
+  that was never a thing to begin with."
+
+  Prāṇa reframe — interoception as the secular bridge: In teaching contexts, prāṇa
+  can be reframed as a designative term for what we experience as the vitality of
+  conditioned arising — the felt aliveness of the body is the body functioning as
+  a dependently arising process. It is not a substance that fills us like water in
+  a vessel. Murphy & Brewer's interoception literature gives you the bridge: "felt
+  sense of body state" is exactly what prāṇa designates phenomenologically, without
+  the metaphysical claim. A teaching cue: "What we call 'prāṇa' is not something
+  you have — it is the quality of this moment of arising, right now, this breath,
+  this heartbeat. When conditions are present, vitality arises. When conditions
+  cease, it ceases. This isn't frightening — it's how a conditioned process works."
+
+  Chakras as phenomenological anchors: Teach chakras as attentional foci — places
+  where the mapping of awareness onto the body reveals patterns, textures, and
+  tendencies — without committing to their intrinsic existence as real energetic
+  structures. "When we bring attention to the region of the heart, what arises?
+  Not because a 'heart chakra' is a fixed structure there, but because attention
+  finds certain qualities of experience more available in certain regions. The map
+  is useful. The map is not the territory."
+
+  5. OPEN QUESTIONS:
+  · The YTT equates ānandamaya kosha with Ātman and then with Brahman / Universal
+    Consciousness. But the Taittirīya Upaniṣad's original teaching (from which the
+    five-kosha model derives) treats the ānandamaya as the subtlest sheath — not
+    as Ātman itself, which transcends all sheaths. Is the YTT manual accurately
+    representing the Taittirīya teaching, or conflating Ātman with the last sheath?
+    This matters: if Ātman transcends all koshas, it is an even stronger
+    substantialist claim than if it is identified with one of them.
+  · The Pratyabhijñāhṛdayam sūtras 1–4 present citi as both immanent in and
+    transcendent to the manifest world. Is the Trika position a "stronger" or
+    "weaker" form of substantialism than the YTT's kosha-Ātman identification?
+    How does this affect the strategic question of where to focus critical
+    attention?
+  · The Abhidharma teaches avijñapti-rūpa: the taking of vows materially alters
+    the aggregate. This is a striking parallel to the YTT claim that practice
+    transforms the subtle bodies. Malcolm Smith notes this is rejected by
+    Sautrāntikas and Mādhyamikas — but the Vajrayāna is not a Sautrāntika system.
+    How does Vajrayāna account for the transformation of the body through practice
+    (e.g., the vajrakāya) without importing substantialist assumptions?
+  · Iyengar's framing of yoga as the integration of "the whole man" maps closely
+    onto the kosha system but with a more embodied, less hierarchical emphasis.
+    Where does Iyengar's commitment to a real, benefitting Self (jīvātman) show
+    up most clearly in his practice instructions?
+  · Nicholson's cognitive-scientific framing of anātman lets you translate
+    Buddhist non-self vocabulary into terms a secular student can engage. Where
+    does this translation lose something essential? (The hardest case: anātman
+    is not the same as "the self is a brain process." The former dissolves the
+    question of substrate; the latter affirms a different substrate.)
+
+---
+
+================================================================================
+MODULE D — WEEK 2
+YTT MODULE 1 (cont.): SUBTLE BODIES — continued engagement
+================================================================================
+
+Cross-curriculum landing:
+  Mod-B Wk 2 (MMK Ch. 1–2) | Mod-C Wk 2 (AKBh I.6–47) | Mod-A Wk 2
+
+[Note: Module D's Week 2 continues the Subtle Bodies analysis. The five-part
+analysis block for Module 1 was provided in Week 1 above and continues into
+Week 2 as the YTT Manual's Module 1 spans both weeks. Weeks 2–11 in Module D
+each receive a full five-part analysis keyed to the YTT module in progress.
+The co-readings for Week 2 shift to the next unit in each parallel module:
+
+  MADHYAMAKA: Phase I Week 2 — MMK Ch. 1–2 (Causation, Motion): "Dependent
+  origination as the ground of all energetic teaching"
+
+  ABHIDHARMA: Phase I Week 2 — AKBh Ch. 1, I.6–47: "Rūpa-skandha: matter,
+  atoms, sense-fields — the physical kosha deconstructed"
+
+  DZOGCHEN: YNS Week 2 — Kunjed Gyalpo orientation; gzhi as ground of all
+  appearances, distinct from any substrate-consciousness
+
+  SHAIVA: Pratyabhijñāhṛdayam sūtras 1–4 reading continues for Weeks 1–2
+  of the Subtle Bodies module]
+
+---
+
+================================================================================
+MODULE D — WEEK 3
+YTT MODULE 2: AYURVEDA (Vedas, Guṇas, Tattvas, Tridoṣic System, Disease Process)
+================================================================================
+
+Cross-curriculum landing:
+  Mod-B Wk 3 (MMK Ch. 3–5) | Mod-C Wk 3 (AKBh I.5–15) | Mod-A Wk 3
+
+Co-readings assigned this week:
+  MADHYAMAKA (Phase I, Weeks 3–5):
+  · Week 3: MMK Ch. 3–5 (Āyatanas, Skandhas, Dhātus) — "The five koshas as
+    five aggregates under analysis"
+  · Week 4: MMK Ch. 6–10 (Fire/Fuel; Agent/Action; Relational Identity) —
+    "The tattva system as relational, not substantial"
+  · Week 5: MMK Ch. 11–13 (Saṃsāra, Suffering, the Composite) — "Dis-ease
+    as process, not possession"
+  · Week 6: MMK Ch. 14–15 (Conjunction, Svabhāva) — "The guṇas as the
+    clearest case of svabhāva-claims"
+
+  ABHIDHARMA (Phase I, Weeks 3–4):
+  · Week 3: AKBh Ch. 1, I.5–15 — "Five aggregates and unconditioned dharmas;
+    the problem of the 'bliss body'"
+  · Week 4: AKBh Ch. 2, II.1–14 (Indriyas — the 22 faculties) — "The
+    Abhidharma's own elemental analysis as counterpart to dosha theory"
+  · Week 5: AKBh Ch. 2, II.24–47 (Mahābhūmika) — "Mental factors vs. guṇas
+    as maps of mental quality"
+
+  DZOGCHEN: YNS Week 3 — the five elements as five wisdoms in their pure aspect
+
+  SHAIVA COUNTERPOINT: Pratyabhijñāhṛdayam sūtras 5–7 (Singh translation) — on
+  the kalās, tattvas, and the contraction of universal consciousness into limited
+  subjects. Kṣemarāja's treatment of the 36 tattvas of Trika cosmology offers a
+  more sophisticated alternative to the Sāṃkhya 24-tattva emanation scheme: in
+  Trika, the highest tattvas (Śiva, Śakti, Sadāśiva, Īśvara, Suddhavidyā) are
+  not "subtler matter" but stages of universal consciousness's self-veiling. Read
+  alongside MMK 15: even this more refined emanation scheme posits a svabhāvic
+  ultimate (Śiva-tattva) that the Mādhyamika analysis refuses.
+
+Required & recommended texts assigned:
+  (a) Satchidananda, Yoga Sūtras:
+      · Book 2 (Sādhana Pāda): Sūtras 2.1–2.9 (kriyā yoga; the five kleśas;
+        avidyā as the root) — "The kleśas as Patañjali's version of a dis-ease
+        etiology"
+      · Sūtras 2.18–2.25 (the seen and the Seer; the nature of Prakṛti and its
+        three guṇas) — "The guṇas as Sāṃkhya's metaphysical foundation"
+      · Reading guide: Patañjali's account of the three guṇas (sattva, rajas,
+        tamas) is Sāṃkhyan: the guṇas are understood as real, constitutive
+        properties of Prakṛti — the matter-energy-mind complex. This is a
+        straightforwardly substantialist claim. Compare: in Ayurveda, guṇas are
+        also treated as real properties of food, body, and mind. In Madhyamaka,
+        no property can be intrinsically possessed by anything (MMK 15). Track
+        the difference carefully.
+
+  (b) Iyengar, Light on Yoga:
+      · Introduction chapter: The section on the eight limbs of yoga and their
+        relationship to bodily health — "Iyengar's account of yoga as a complete
+        science of the person"
+      · Reading guide: Iyengar does not engage Ayurveda systematically, but his
+        insistence that precise physical alignment affects the whole person is
+        functionally parallel to the kosha-and-dosha framework. Note where he
+        appeals to prāṇa, the nervous system, and health in ways that presuppose
+        a unified, enduring patient who benefits.
+
+  [D-integration] VAJRAYĀNA FIVE-ELEMENT COUNTERPART:
+  · Tenzin Wangyal, Healing with Form, Energy, and Light (Drive ID: 1JZZr_P4dQFm8FFR9ORc56aVF3J_qN-zC)
+    — Chapters on the five elements as both outer and inner phenomena. WHY THIS
+    MATTERS FOR STUDIO TEACHING: gives you a Vajrayāna five-element vocabulary
+    that engages the same phenomena the Ayurvedic pañca-mahābhūta framework
+    engages — but within a Buddhist substrate. When the YTT cues "let earth
+    element ground you," you can hold the same somatic intervention while
+    bracketing the substantialist commitment.
+
+Five-part analysis — YTT Module 2 (Ayurveda):
+
+  1. WHAT THE YTT TEACHES:
+  Ayurveda, presented as the sister science of yoga, is built on the Vedas and
+  structured through three major conceptual frameworks: the guṇas (tamas, rajas,
+  sattva — inertia, activity, clarity); the tattvas (24 elements of manifestation
+  from Brahman through the five gross elements); and the tridoṣic system (vāta,
+  pitta, kapha — three bodily energies derived from the five elements). Disease
+  is understood as an imbalance in these systems, and health as their
+  harmonization. The manual presents prakṛti (one's natural constitution) and
+  vikṛti (one's current imbalanced state) as clinical assessment tools. The
+  tattva section explicitly names Brahman and "universal intelligence" among the
+  24+ tattvas, framing manifestation as a hierarchical emanation from a single
+  ground. The guṇas are treated as real qualities that exist in food, bodily
+  tissue, environments, and relationships — and that can be assessed, modified,
+  and balanced through diet, yoga, and vibrational attunement.
+
+  2. WHAT THE CANON AFFIRMS:
+  On diagnostic categories as conventional tools: The Abhidharma's own taxonomic
+  project — dharma-lists, mental factor maps, elemental categories — is similarly
+  motivated: provide a precise phenomenological vocabulary that can be used for
+  diagnosis and practice. The tridoṣic system and the mahābhūmika mental factor
+  chart are both conventional maps serving analogous functions. Malcolm Smith's
+  teaching that "Abhidharma is like bug-checking the software of your mind"
+  applies equally to Ayurvedic clinical assessment. The value is diagnostic, not
+  ontological.
+
+  On the five elements: The AKBh's four primary elements (earth/solidity,
+  water/cohesion, fire/heat, air/motility) correspond closely to Ayurveda's five
+  (with the addition of ākāśa/space). More importantly, both traditions treat the
+  elements as qualities of experience — ways that bodily phenomena present
+  themselves to awareness — rather than as metaphysical substances. Wangyal's
+  Vajrayāna five-element teaching shares this phenomenological orientation while
+  explicitly framing the elements as appearances of mind rather than as primary
+  constituents of an external world.
+
+  On the fire-and-fuel logic and pitta: Nāgārjuna's fire-fuel analysis (MMK Ch. 10)
+  applies directly to Ayurveda's pitta: pitta is associated with fire and water,
+  and governs digestion as transformative heat. The fire-fuel analysis demonstrates
+  that fire and fuel cannot be intrinsically related — the transformation (pitta's
+  digestive function) is a dependently arising process, not an intrinsic power.
+  This supports the Ayurvedic clinical picture (the process of transformation is
+  real at the conventional level) while refusing the ontological commitment to
+  pitta as an independently real entity with svabhāva.
+
+  3. WHERE THERE'S TENSION:
+  The guṇas as svabhāva-claims: This is the most philosophically precise tension
+  in the entire module. The guṇas in Sāṃkhya-Yoga are understood as real
+  constitutive properties of Prakṛti — tamas, rajas, and sattva are the actual
+  structural constituents of matter-energy-mind. Everything that exists (except
+  Puruṣa) is made of guṇas in various proportions. This is a substantialist
+  metaphysics: properties inhere in substances and are intrinsically possessed
+  by them. MMK Ch. 15 refutes svabhāva with this precision: if sattva is
+  intrinsically sattva (i.e., clarity is really, from its own side, clarity),
+  then it cannot transform into rajas (activity). But Ayurveda's clinical model
+  depends on the guṇas transforming into each other — pratipakṣa bhāvanā works
+  by substituting one guṇa for another. If they can transform, they are not
+  intrinsically what they are. If they are not intrinsically what they are, they
+  lack svabhāva. The Sāṃkhya-Ayurvedic framework cannot have it both ways.
+
+  The tattva system and emanation ontology: The Sāṃkhyan 24-tattva scheme and
+  the Trika 36-tattva scheme both have three problems from the Madhyamaka
+  perspective: (1) they posit an unconditioned ground (Brahman in Sāṃkhya,
+  Śiva-tattva in Trika) with svabhāva; (2) the emanation relation is a causal
+  claim, but MMK Ch. 1 argues that nothing can arise from an intrinsically real
+  cause with intrinsic causal power; (3) both models treat manifestation as a
+  departure from the real — gross matter is less real than the subtle tattvas.
+  Madhyamaka flatly denies this ontological hierarchy.
+
+  Prakṛti vs. vikṛti and the problem of an enduring constitution: The Ayurvedic
+  clinical distinction assumes that there is a stable, enduring "natural" state
+  that defines what the person really is. This assumes temporal continuity of a
+  self-nature across time. The Abhidharma alternative: there is no single "natural
+  constitution" that endures — there is a relational, moment-by-moment arising
+  of the organism in its environment, shaped by its causal history. Saṃskāras
+  (latent dispositions) account for the conventional appearance of stable
+  constitutional types without granting intrinsic natures to them.
+
+  4. REFRAME — THROUGH YOUR LINEAGE'S FRAMEWORK:
+  Guṇas as process-descriptors: Retain the guṇas as experiential quality-
+  descriptors — ways of characterizing the texture of arising moments. Rather
+  than "tamas is a quality your body has," frame it: "Right now, the quality of
+  arising is heavy, slow, resistant — what we call tamasic. This is not a property
+  of a self; it is a quality of this moment of arising. And qualities are
+  relational — what is tamasic relative to one condition is rajasic relative to
+  another." This is Madhyamaka-consistent: guṇas as conventional designations
+  functioning reliably without intrinsic nature.
+
+  Tattvas as conventional map: In teaching, the tattva system can be used as a
+  contemplative map from gross to subtle — a structured inquiry into the layers
+  of experience — without requiring commitment to emanation ontology. Frame the
+  tattvas as "a traditional model for moving attention from the coarser to the
+  subtler textures of experience — a map, not a cosmological claim."
+
+  Dis-ease as conditioned process: The Ayurvedic disease etiology — imbalance
+  arising from accumulation, aggravation, and overflow of doṣic qualities — can
+  be reframed as a process account: disease arises when conditions accumulate that
+  generate systemic imbalance; health is restored when conditions are altered to
+  support balance. A teaching cue: "Healing doesn't fix a broken person — it
+  creates conditions for a process to move differently."
+
+  Five elements as five wisdoms: Drawing on Module A Week 3 and Wangyal's
+  Healing with Form, Energy, and Light: in their pure aspect, the five elements
+  appear as the five wisdoms (pañca-jñāna). The earth element recognized in its
+  nature is the mirror-like wisdom; water as discriminating wisdom; fire as
+  equality wisdom; air as all-accomplishing wisdom; space as dharmadhātu wisdom.
+  This is the Vajrayāna alternative to the Ayurvedic clinical framing — both are
+  useful, neither requires substance commitments.
+
+  5. OPEN QUESTIONS:
+  · The Yoga Sūtras' account of the guṇas (as Sāṃkhya's real constituents of
+    Prakṛti) and the YTT's account of the guṇas (as Ayurvedic clinical
+    categories) use the same words for different ontological commitments. Is there
+    a way to use guṇa-language clinically without importing the Sāṃkhya
+    metaphysics?
+  · Malcolm Smith notes that in Vajrayāna, the five elements appear as five
+    wisdoms in their pure aspect (the "five lights" of the natural state). How
+    does this differ from Ayurveda's use of the five elements as constitutional
+    factors? The key question: do the five wisdoms require a permanent ground-
+    consciousness (Śiva or ātman) to be "pure," or are they already pure as
+    dependently arisen events?
+  · The Sautrāntika critique of the AKBh's elemental analysis: the four primary
+    elements as momentary qualities, not substances. Apply this to the Ayurvedic
+    claim that doṣas accumulate over time. Is there a moment-by-moment process
+    account of doṣic accumulation that doesn't require positing a substantial
+    doṣa-reservoir?
+  · Pratyabhijñāhṛdayam sūtra 5 places citi itself in the position of universal
+    cause-of-manifestation. This is structurally more sophisticated than Sāṃkhya's
+    Prakṛti-as-cause but raises the same problem: a cause with intrinsic causal
+    nature. How would Kṣemarāja respond to MMK 1's analysis of causation?
+
+---
+
+================================================================================
+MODULE D — WEEK 4
+YTT MODULE 3: YOGA NIDRA (States of Consciousness, Turīya, Saṅkalpa, Self as
+Witness, iRest)
+================================================================================
+
+Cross-curriculum landing:
+  Mod-B Wk 4 (MMK Ch. 6–9) | Mod-C Wk 4 (AKBh II — saṃskāra/citta) |
+  Mod-A Wk 4 (Short aural lineage II)
+
+Co-readings assigned this week:
+  MADHYAMAKA:
+  · Week 7: MMK Ch. 16–18 (Bondage, Liberation, The Self; pudgalanairātmya) —
+    "The witness-self and the anātman analysis"
+  · Week 11: MMK Ch. 22, 25 (Tathāgata; Nirvāṇa — saṃsāra and nirvāṇa not
+    intrinsically different) — "Turīya as neither arrival at a new state nor
+    escape from the present one"
+
+  ABHIDHARMA:
+  · Week 3: AKBh Ch. 1 (Unconditioned dharmas; cessation) — "Analytical
+    cessation vs. turīya as the 'fourth state'"
+  · Weeks 5–6: AKBh Ch. 2 (Mental factors; causes and conditions) — "The
+    structure of the mind in yoga nidrā states — which mental factors are
+    present?"
+
+  DZOGCHEN: YNS Weeks 4–5 (rang rig — self-knowing awareness; the difference
+  between turīya and the recognition of rigpa)
+
+  SHAIVA COUNTERPOINT: Pratyabhijñāhṛdayam sūtra 18 (Singh translation) —
+  Kṣemarāja's commentary on the four states (jāgrat, svapna, suṣupti, turīya)
+  and the fifth state (turyātīta, "beyond the fourth"). This is the single most
+  direct point of confrontation between the Trika and Buddhist accounts of yoga
+  nidrā phenomenology. Read it carefully — Kṣemarāja gives the most sophisticated
+  possible defense of a Self that pervades the four states.
+
+Required & recommended texts assigned:
+  (a) Satchidananda, Yoga Sūtras:
+      · Book 1: Sūtras 1.17–1.51 (the stages of samādhi — savitarka through
+        nirbīja; the "seedless" samādhi as the closest Patañjali gets to turīya)
+        — "Where does Patañjali's samādhi correspond to the four states?"
+      · Book 3 (Vibhūti Pāda): Sūtras 3.1–3.11 (dhāraṇā, dhyāna, samādhi
+        and their relationship to the states of consciousness)
+      · Reading guide: Satchidananda treats the witness (sākṣin) as the eternal
+        Self, unchanging through all four states. Notice that in nirbīja samādhi
+        (seedless, objectless samādhi — Sūtra 1.51), even the seed of self-concept
+        is extinguished. What remains? Satchidananda says Puruṣa. The question:
+        is Puruṣa a positive Self that remains, or is this the cessation of
+        grasping at a self? The ambiguity is philosophically generative.
+
+  (b) Iyengar, Light on Yoga:
+      · Prāṇāyāma chapter: Introduction and technique sections — "Iyengar's
+        account of prāṇāyāma as preparation for the meditative states; kumbhaka
+        (retention) and its relationship to states of consciousness"
+      · Reading guide: Iyengar treats prāṇāyāma as a bridge from the gross to
+        the subtle — from physical breath-control to awareness of prāṇa to the
+        witness of both. Track his language of "the soul" as the ultimate
+        beneficiary and witness of prāṇāyāma.
+
+  [D-integration] YOGA NIDRĀ AS PRACTICE AND COUNTER-TRADITION:
+  · Swami Satyananda Saraswati, Yoga Nidrā (Drive ID: 1fn0S-vzC64xEdXhIjluFYFQpFx5EvRa1)
+    — Introductory chapters on the practice's structure, the four levels of
+    consciousness map (jāgrat, svapna, suṣupti, turīya), and the rotation-of-
+    consciousness protocol. WHY THIS MATTERS FOR STUDIO TEACHING: yoga nidrā is
+    a practice you may teach and a practice your students will request.
+    Satyananda's account is the canonical Western source. With the Buddhist, Trika,
+    and Satyananda mappings all available — Module C Week 7 on the three realms and
+    antarābhava, Pratyabhijñāhṛdayam sūtra 18 on turya and turyātīta, Satyananda's
+    four-state protocol — you can teach yoga nidrā as a practice without subscribing
+    to any one metaphysical account of what is happening during it.
+
+  [D-integration] HISTORICAL CONTEXT:
+  · Giacomella Orofino, The Dawn of Physical Yoga (Drive ID: 1W5-J3kWfM4LckPA3PQbFSUpZt_Ia08D5)
+    — Historical chapters on the emergence of haṭha yoga from Buddhist tantric
+    sources and the cross-pollination between Vajrayāna and early Nāth lineages.
+    WHY RELEVANT HERE: the prāṇāyāma and pratyāhāra practices that ground yoga
+    nidrā have a more complex historical lineage than the YTT framework
+    acknowledges. Useful for students who ask about yoga's history.
+
+Five-part analysis — YTT Module 3 (Yoga Nidra):
+
+  1. WHAT THE YTT TEACHES:
+  The YTT presents four states of consciousness (waking/jāgrat, dream/svapna,
+  deep sleep/suṣupti, enlightenment/turīya) as a yogic map of the mind's states.
+  Yoga Nidra is positioned as a practice that cultivates the alpha-state (between
+  waking and dreaming), over time leading practitioners to turīya — a state of
+  complete harmony and "Pure Awareness" in which projections cease. The manual
+  states: "Awareness is the boundless, formless, and timeless Ātman within us
+  all. It has no beginning or end. It is indestructible. This awareness is the
+  Self that we long to know." [The five-part analysis continues in the source
+  document through its full development — the excerpt in the source file for
+  Module D ends at this point in Week 4's What the YTT Teaches section, with the
+  complete analysis for this module contained in the following sections.]
+
+  KEY TENSIONS flagged for this module (from the Shaiva counterpoint and
+  cross-curriculum notes):
+  · Kṣemarāja's PH sūtra 18 frames turīya and turyātīta as states unified by
+    Śiva-consciousness — the most sophisticated possible defense of a Self that
+    pervades all four states.
+  · The Buddhist anātman account: nirbīja samādhi (Patañjali's Sūtra 1.51)
+    extinguishes even the seed of self-concept — the question of what remains
+    (Puruṣa as positive Self vs. cessation of grasping) is philosophically
+    generative.
+  · Dzogchen's YNS Weeks 4–5 provide the rang rig analysis — self-knowing
+    awareness distinguished from the Trika's vimarśa: rang rig is not a Self
+    knowing itself but awareness without a center recognizing its own nature.
+  · Module C Week 3 (AKBh Ch. 1 on unconditioned dharmas and cessation) provides
+    the Abhidharma counter to turīya as the "fourth state" — analytical cessation
+    (pratisaṃkhyā-nirodha) is simply an absence, not a positive state of bliss-
+    identity.
+
+---
+
+================================================================================
+APPENDIX: D-INTEGRATION TEXTS SUMMARY (Weeks 1–4 relevant items)
+================================================================================
+
+The following [D-integration] texts are woven into specific modules in Module D.
+Full citations, Drive IDs, and "why this matters" rationales are provided inline
+above. Summary for quick reference:
+
+  MODULE 1 (Weeks 1–2 / Subtle Bodies):
+  · Tenzin Wangyal, Awakening the Sacred Body — Vajrayāna rtsa/rlung/thig le
+    alongside Shaiva nāḍī/prāṇa/bindu; doctrinally compatible with anātman
+  · Tenzin Wangyal, Healing with Form, Energy, and Light — five elements as
+    both outer and inner; Vajrayāna five-element vocabulary
+  · Gyalwa Yangönpa, Secret Map of the Body — Tibetan medical/yogic precision
+    on physical anatomy and contemplative experience
+  · Murphy & Brewer (eds.), Interoception: A Comprehensive Guide — secular
+    bridge from "subtle body" cueing to phenomenologically precise language
+    without Trika or scientistic commitment
+  · Anand (ed.), Neuroscience of Yoga, Part 1 — distinguishing what yoga can
+    empirically be said to do from broader YTT cosmological claims
+  · Hugh R. Nicholson, Buddhism, Cognitive Science, and the Doctrine of
+    Selflessness — translation resource; caveat against reductive flattening
+
+  MODULE 2 (Week 3 / Ayurveda):
+  · Tenzin Wangyal, Healing with Form, Energy, and Light [reused] — Vajrayāna
+    five-element counterpart to Ayurvedic pañca-mahābhūta framework
+
+  MODULE 3 (Week 4 / Yoga Nidra):
+  · Swami Satyananda Saraswati, Yoga Nidrā — canonical Western source for
+    four-states structure; enables teaching yoga nidrā without committing to
+    any single metaphysical account
+  · Giacomella Orofino, The Dawn of Physical Yoga — historical grounding;
+    prāṇāyāma and pratyāhāra's complex Buddhist-tantric lineage
+
+================================================================================
+END OF EXTRACT — MODULE EXTRACTS W1-4
+================================================================================
